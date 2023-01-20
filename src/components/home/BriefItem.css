@@ -1,0 +1,41 @@
+
+.brief-item {
+    display: flex;
+    padding: 1rem;
+}
+
+.vertical-section {
+    border: 2px solid var(--white-color);
+    margin-right: 2rem;
+    position: relative;
+    top: 22px;
+}
+
+.vertical-section::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: -7px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: var(--transition);
+}
+
+.brief-item h3 {
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.brief-item p {
+    font-size: 15px;
+}
+
+.brief-item:hover .vertical-section::before {
+
+    border: 2px solid var(--blue-color);
+    background-color: transparent;
+    transition: var(--transition);
+}

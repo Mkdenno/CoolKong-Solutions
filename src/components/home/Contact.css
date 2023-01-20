@@ -1,0 +1,39 @@
+
+.contact-section {
+  font-family: var(--source-font);
+  padding: 5rem 0;
+}
+
+.form-section {
+  margin: 2rem 25rem;
+}
+
+.form-section button {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 100px;
+  padding: 10px 33px;
+  font-family: var(--poppins-font);
+  font-size: 10px;
+  margin: 2rem 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+}
+
+input, textarea {
+  border: 1px solid #d6d6d6;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #d6d6d6;
+}

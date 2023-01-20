@@ -1,0 +1,247 @@
+.home-section {
+  background-image: url("../../public/images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: var(--white-color);
+  font-family: var(--source-font);
+}
+
+.main-header {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+.home-section-left {
+  width: 50%;
+  padding-top: 12rem;
+}
+
+.home-section-left h3 {
+  font-size: 50px;
+  margin: 20px 0 10px;
+}
+
+.home-section-left p {
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.home-section-left a {
+  font-size: 12px;
+  border: 1px solid var(--white-color);
+  margin: 10px;
+  padding: 12px 50px;
+  border-radius: 5px;
+}
+
+.about-section {
+  height: 100vh;
+  display: flex;
+  font-family: var(--source-font);
+}
+
+.about-section-left {
+  width: 80%;
+  padding: 3rem 4rem 3rem 8rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.about-section-right {
+  width: 100%;
+}
+
+.about-section-left h2 {
+  position: relative;
+}
+
+.about-section-left h2::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 10%;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.about-section-left p:nth-child(3) {
+  margin: 3rem 0 2rem 0;
+  font-size: 16px;
+}
+
+.about-section-right img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section-left a {
+  font-size: 11px;
+  border: 1px solid var(--white-color);
+  margin: 10px 0;
+  padding: 12px 35px;
+  border-radius: 2px;
+}
+
+.brief-section {
+  background-color: var(--background-color);
+  color: var(--onBackground-color);
+  font-family: var(--source-font);
+  padding: 6rem 0;
+}
+
+.wedo-section {
+  background-color: #eeeeee;
+  padding: 5rem 0;
+}
+
+.wedo-section h1 {
+  color: var(--secondary-color);
+}
+
+.we-do-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 9rem;
+  flex-wrap: wrap;
+}
+
+.products-section {
+  padding: 5rem 0 0 0;
+  color: var(--white-color);
+}
+
+.prod-header {
+  text-align: center;
+  position: relative;
+  font-family: var(--poppins-font);
+  color: var(--secondary-color);
+  font-size: 36px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 8rem;
+  flex-wrap: wrap;
+}
+
+.categories {
+  padding: 3rem 0 0 0;
+  display: flex;
+}
+
+.categories p {
+  margin-top: 2rem;
+  font-family: var(--poppins-font);
+  font-size: 14px;
+}
+
+.food-cat,
+.transportation-cat,
+.accounting-cat {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  color: var(--white-color);
+}
+
+.food-cat {
+  background: #ef473acc;
+}
+
+.transportation-cat {
+  background: #5e35b1cc;
+}
+
+.accounting-cat {
+  background: #1de9b6cc;
+}
+
+.food-bg,
+.trans-bg,
+.acc-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogs {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 8rem;
+}
+
+.partners-section {
+  display: flex;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: var(--poppins-font);
+}
+
+.partners-left {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.partners-left h1 {
+  font-size: 46px;
+}
+
+.partners-left h3 {
+  font-size: 22px;
+  color: var(--secondary-color);
+}
+
+.partners-right {
+  width: 100%;
+}
+
+.partners-right img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 40%;
+}
+
+.swiper {
+  width: 20%;
+  height: 200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
