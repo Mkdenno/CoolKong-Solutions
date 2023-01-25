@@ -29,9 +29,9 @@ const NavBar = () => {
               <div>
                 <ul className={scroll >= 1 ? "scroll-nav-links" : "links"}>
                   <Link to="/">HOME</Link>
-                  <Link>ABOUT</Link>
-                  <Link>OUR PRODUCTS</Link>
-                  <Link>OUR SERVICES</Link>
+                  <Link to="/about-us">ABOUT</Link>
+                  <Link to="/our-products">OUR PRODUCTS</Link>
+                  <Link to="/our-services">OUR SERVICES</Link>
                   <Link>BLOG</Link>
                   <Link>PARTNERSHIP PROGRAM</Link>
                   <Link>CAREER</Link>

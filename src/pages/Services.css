@@ -1,0 +1,134 @@
+.services-header {
+  background-image: url("../../public/images/service-bg.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  color: var(--white-color);
+  font-family: var(--poppins-font);
+}
+
+.service-bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: relative;
+}
+
+.service-header-content {
+  position: absolute;
+  top: -30vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-header-content h1 {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.intro-service {
+  padding: 5rem 0;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content p {
+  color: #4e4343;
+  font-size: 14px;
+  font-family: var(--source-font);
+  text-align: center;
+  width: 50%;
+}
+
+.services-section {
+  background-color: #eeeeee;
+  padding: 3rem 0;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 8rem;
+}
+
+.service {
+  font-family: var(--poppins-font);
+  display: flex;
+  margin: 1rem 0;
+}
+
+.service-desc {
+  margin-left: 2rem;
+}
+
+.service-desc h4 {
+  font-size: 16px;
+  color: var(--secondary-color);
+  text-align: left;
+}
+
+.service-desc p {
+  font-size: 14px;
+  color: #4e4343;
+  width: 20rem;
+}
+
+.strategic-section {
+  background-image: url("../../public/images/project-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+.strategic-bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: relative;
+}
+
+.strategic-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--poppins-font);
+}
+
+.strategic-desc h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--white-color);
+    width: 30rem;
+}
+
+.strategic-desc button {
+    font-size: 11px;
+    padding: 12px 35px;
+    border: 1px solid var(--white-color);
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: var(--transition);
+}
+
+.strategic-desc button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: var(--transition);
+}

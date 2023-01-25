@@ -17,6 +17,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Reviews from "../components/Reviews";
 
 export const Home = () => {
   const [prod, setProd] = useState([]);
@@ -281,7 +282,7 @@ export const Home = () => {
         </div>
       </section>
 
-    
+      <Reviews />
     </>
   );
 };
