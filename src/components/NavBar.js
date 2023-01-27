@@ -32,10 +32,10 @@ const NavBar = () => {
                   <Link to="/about-us">ABOUT</Link>
                   <Link to="/our-products">OUR PRODUCTS</Link>
                   <Link to="/our-services">OUR SERVICES</Link>
-                  <Link>BLOG</Link>
-                  <Link>PARTNERSHIP PROGRAM</Link>
-                  <Link>CAREER</Link>
-                  <Link>CONTACT US</Link>
+                  <Link to="/blogs">BLOG</Link>
+                  <Link to="/partnership">PARTNERSHIP PROGRAM</Link>
+                  <Link to="/careers">CAREER</Link>
+                  <Link to="/contact-us">CONTACT US</Link>
                 </ul>
               </div>
 

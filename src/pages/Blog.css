@@ -1,0 +1,174 @@
+.blogs-header {
+  background-image: url("../../public/images/blog-bg.jpg ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  color: var(--white-color);
+  font-family: var(--poppins-font);
+  object-fit: cover;
+}
+
+.blog-bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: relative;
+}
+
+.blog-header-content {
+  position: absolute;
+  top: -30vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-header-content h1 {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.blog-section {
+  background-color: #eeeeee;
+}
+
+.blog {
+  background-color: var(--white-color);
+  font-family: var(--poppins-font);
+}
+
+.blog-img {
+  height: 500px;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  transition: var(--transition);
+}
+
+.blog:hover .blog-img img {
+  transform: scale(1.1);
+  transition: var(--transition);
+}
+
+.blog-desc {
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.blog-desc p:nth-child(1) {
+  font-size: 14px;
+}
+
+.blog-desc p:nth-child(2) {
+  font-size: 10px;
+  color: var(--blue-color);
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1rem;
+}
+
+.blog-d {
+  padding: 3rem 0;
+  font-family: var(--poppins-font);
+}
+
+.blog-d p {
+  font-size: 14px;
+  color: #4e4343;
+}
+
+.blog-food {
+  margin: 2rem 0;
+  border-left: 4px solid var(--blue-color);
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.blog-food h3 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  font-family: var(--poppins-font);
+}
+
+.blog-food p {
+  font-size: 14px;
+  font-family: var(--source-font);
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-tags p {
+  margin: .3rem 0.5rem;
+  border: 1px solid #c0bfbf;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-family: var(--source-font);
+  color: #888888;
+}
+
+.blog-comment-no {
+  margin: 2rem 0;
+}
+
+.blog-comment-no h2,
+.blog-comment h2 {
+  color: var(--secondary-color);
+  font-family: var(--poppins-font);
+  font-size: 14px;
+  text-align: left;
+}
+
+.comment-r-1 {
+  display: flex;
+}
+
+.comment-form input {
+  border: none;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 200px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border: none;
+  padding: 1rem;
+}
+
+
+.comment-form button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 12px 32px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: .5rem 0;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+}
+
+.blog-search input{
+    border: none;
+    outline: none;
+}
+
+.archive-section h5, .categories-section h5, .tags-section h5 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-family: var(--poppins-font);
+    border-bottom: 1px solid #bbbbbb;
+    padding: 2rem 0 1rem 0;
+}
+
+.archive-section p, .categories-section p {
+    color: #888888;
+    font-family: var(--source-font);
+    font-size: 14px;
+}

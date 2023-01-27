@@ -1,7 +1,7 @@
 nav{
     position: fixed;
     top: 0;
-    height: 6rem;
+    height: 4rem;
     width: 100vw;
     z-index: 11;
     background: transparent;
@@ -20,11 +20,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
+    transition: var(--transition);
 }
 
 .scroll-nav-links a {
     font-size: 12px;
-    padding: 30px 15px;
+    padding: 3px 15px;
     color: var(--black-color);
     text-decoration: none;
 }

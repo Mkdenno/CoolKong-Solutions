@@ -3,7 +3,7 @@ import { Prod } from "../components/product/Prod";
 import { prods } from "../../src/products";
 
 import "./Product.css";
-import Reviews from "../components/Reviews";
+import { Reviews } from "../components/Reviews";
 
 export const Product = () => {
   return (

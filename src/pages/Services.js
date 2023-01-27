@@ -7,7 +7,7 @@ import { FaLaptop } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
 import { SlLayers } from "react-icons/sl";
 import { BsTrophy } from "react-icons/bs";
-import Reviews from "../components/Reviews";
+import { Reviews } from "../components/Reviews";
 
 export const Services = () => {
   return (
@@ -125,13 +125,11 @@ export const Services = () => {
 
       <section className="strategic-section">
         <div className="strategic-bg">
-
           <div className="strategic-desc">
             <h2>Strategic Digital Solutions</h2>
 
             <button>START A PROJECT</button>
           </div>
-
         </div>
       </section>
 
@@ -139,5 +137,3 @@ export const Services = () => {
     </>
   );
 };
-
-export default Services;
