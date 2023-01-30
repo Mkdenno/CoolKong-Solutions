@@ -11,9 +11,6 @@ import { TbCapture } from "react-icons/tb";
 
 import "./Home.css";
 
-import { Autoplay, Pagination, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

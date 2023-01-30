@@ -2,6 +2,8 @@ import React from "react";
 import "./Partnership.css"
 
 import { Reviews } from "../components/Reviews";
+import { PartnerImg } from "../components/PartnerImg";
+
 
 export const Partnership = () => {
   return (
@@ -184,6 +186,20 @@ export const Partnership = () => {
         <div className="partners-left">
           <h1>Our Partners</h1>
           <h3>Passion for people</h3>
+
+          <div
+            style={{
+              margin: "0 5rem",
+            }}
+          >
+            <PartnerImg
+              slides={1}
+              isDotsVisible={false}
+              padding="2rem"
+              width="400px"
+              imgWidth="200px"
+            />
+          </div>
         </div>
         <div className="partners-right">
           <img src="./images/hand.jpg" alt="hands" />
