@@ -25,8 +25,7 @@ export const Reviews = () => {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination]}
           className="review-swiper"
         >
           <SwiperSlide>

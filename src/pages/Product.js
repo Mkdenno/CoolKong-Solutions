@@ -4,6 +4,7 @@ import { prods } from "../../src/products";
 
 import "./Product.css";
 import { Reviews } from "../components/Reviews";
+import { PartnerImg } from "../components/PartnerImg";
 
 export const Product = () => {
   return (
@@ -29,6 +30,13 @@ export const Product = () => {
         </div>
       </section>
 
+      <PartnerImg
+        slides={6}
+        isDotsVisible={false}
+        padding="2rem 8rem"
+        width="100%"
+        imgWidth="100px"
+      />
       <Reviews />
     </>
   );

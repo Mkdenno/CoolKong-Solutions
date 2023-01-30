@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PartnerImg } from "../components/PartnerImg";
 import { Reviews } from "../components/Reviews";
 import "./Career.css";
 
@@ -23,7 +24,6 @@ export const Career = () => {
             <h2>Current Openings</h2>
 
             <div className="jobs">
-
               <div className="job">
                 <h5>UI/UX Designer</h5>
                 <div className="job-btn">
@@ -44,7 +44,6 @@ export const Career = () => {
                   <Link>APPLY JOB</Link>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -54,6 +53,13 @@ export const Career = () => {
         </div>
       </section>
 
+      <PartnerImg
+        slides={6}
+        isDotsVisible={false}
+        padding="7rem 8rem"
+        width="100%"
+        imgWidth="100px"
+      />
     </>
   );
 };

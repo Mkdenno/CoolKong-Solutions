@@ -18,6 +18,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Reviews } from "../components/Reviews";
+import { PartnerImg } from "../components/PartnerImg";
 
 export const Home = () => {
   const [prod, setProd] = useState([]);
@@ -246,36 +247,17 @@ export const Home = () => {
           <h1>Our Partners</h1>
           <h3>Passion for people</h3>
 
-          {/* <Swiper
-              spaceBetween={10}
-              centeredSlides={true}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <img src="./images/partner-1.png" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="./images/partner-2.png" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="./images/partner-3.png" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="./images/partner-4.png" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="./images/partner-5.png" />
-              </SwiperSlide>
-            </Swiper> */}
+          <div style={{
+            margin: "0 5rem"
+          }}>
+            <PartnerImg
+              slides={1}
+              isDotsVisible={false}
+              padding="2rem"
+              width="400px"
+              imgWidth="200px"
+            />
+          </div>
         </div>
         <div className="partners-right">
           <img src="./images/hand.jpg" alt="hands" />

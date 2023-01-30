@@ -1,7 +1,7 @@
 .card-do-item {
   width: 250px;
   background-color: var(--white-color);
-  margin-top: 1rem;
+  margin: .55rem;
 }
 
 .card-img {

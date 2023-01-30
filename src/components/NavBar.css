@@ -1,54 +1,129 @@
-nav{
+nav {
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100vw;
+  z-index: 11;
+  background: transparent;
+  transition: var(--transition);
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.links,
+.scroll-nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  transition: var(--transition);
+}
+
+.scroll-nav-links a {
+  font-size: 12px;
+  padding: 3px 15px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.scroll-nav-links a:hover {
+  color: var(--black-color);
+}
+
+.links a {
+  font-size: 12px;
+  padding: 30px 15px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--white-color);
+}
+
+.nav-socials {
+  margin-top: -0.5rem;
+}
+
+.nav-socials a {
+  padding: 0.7rem;
+}
+
+.nav-bars {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-bars {
+    display: block;
+  }
+
+  nav {
+    background-color: var(--white-color);
     position: fixed;
     top: 0;
     height: 4rem;
     width: 100vw;
     z-index: 11;
-    background: transparent;
     transition: var(--transition);
-}
+  }
 
-.nav-section {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   position: relative;
-}
+  .nav-section {
+    padding-top: 1rem;
+  }
 
-.links, .scroll-nav-links{
+  .nav-section img {
+    margin-left: 30%;
+  }
+
+  .links,
+  .scroll-nav-links {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 2rem 1rem 0 1rem;
+    display: none;
+    transition: var(--transition);
+    z-index: -1;
+    top: 10px;
+  }
+
+  .links a,
+  .scroll-nav-links a {
+    padding: 0.5rem;
+    border-bottom: 1px solid #cecece;
+    width: 100%;
+    color: var(--black-color);
+  }
+
+  .links.active {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
+    flex-direction: column;
     transition: var(--transition);
-}
-
-.scroll-nav-links a {
-    font-size: 12px;
-    padding: 3px 15px;
+    animation: animateLinks 2s ease;
     color: var(--black-color);
-    text-decoration: none;
-}
+  }
 
-.scroll-nav-links a:hover {
-    color: var(--black-color);
-}
-
-.links a  {
-    font-size: 12px;
-    padding: 30px 15px;
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.links a:hover {
-    color: var(--white-color);
-}
-
-.nav-socials {
-    margin-top: -.5rem;
-}
-
-.nav-socials a {
-    padding: .7rem;
+  @keyframes animateLinks {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
