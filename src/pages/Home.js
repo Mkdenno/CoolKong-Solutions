@@ -5,7 +5,7 @@ import { Service } from "../components/home/Service";
 import { products } from "../../src/products";
 import { Blog } from "../components/home/Blog";
 
-import { AiOutlineCamera } from "react-icons/ai";
+import { AiOutlineCamera, AiFillMessage } from "react-icons/ai";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { TbCapture } from "react-icons/tb";
 
@@ -244,9 +244,11 @@ export const Home = () => {
           <h1>Our Partners</h1>
           <h3>Passion for people</h3>
 
-          <div style={{
-            margin: "0 5rem"
-          }}>
+          <div
+            style={{
+              margin: "0 5rem",
+            }}
+          >
             <PartnerImg
               slides={1}
               isDotsVisible={false}
