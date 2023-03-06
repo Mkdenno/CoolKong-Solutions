@@ -47,7 +47,7 @@ const NavBar = () => {
         </div>
         <div className="container">
           <div className="nav-section">
-            <img src="./images/logo.png" alt="logo" width={50} />
+            <img src="./images/Logo.png" alt="logo" width={100} />
 
             <div>
               <ul
@@ -60,45 +60,31 @@ const NavBar = () => {
                 }
               >
                 <Link to="/" onClick={handleClick}>
-                  HOME
+                  Home
                 </Link>
                 <Link to="/about-us" onClick={handleClick}>
-                  ABOUT
-                </Link>
-                <Link to="/our-products" onClick={handleClick}>
-                  OUR PRODUCTS
+                  About us
                 </Link>
                 <Link to="/our-services" onClick={handleClick}>
-                  OUR SERVICES
+                  Services
                 </Link>
-                <Link to="/blogs" onClick={handleClick}>
-                  BLOG
+                <Link to="/solutions" onClick={handleClick}>
+                  Solutions
+                </Link>
+                <Link to="/news" onClick={handleClick}>
+                  News
                 </Link>
                 <Link to="/partnership" onClick={handleClick}>
-                  PARTNERSHIP PROGRAM
+                  Partnership
                 </Link>
                 <Link to="/careers" onClick={handleClick}>
-                  CAREER
-                </Link>
-                <Link to="/contact-us" onClick={handleClick}>
-                  CONTACT US
+                  Career
                 </Link>
               </ul>
             </div>
 
-            <div className="nav-socials">
-              <a>
-                <FaFacebookF
-                  fontSize={10}
-                  color={scroll >= 1 ? "black" : "white"}
-                />
-              </a>
-              <a>
-                <FaLinkedin
-                  fontSize={10}
-                  color={scroll >= 1 ? "black" : "white"}
-                />
-              </a>
+            <div className="contact-btn">
+              <button>Contact Us</button>
             </div>
           </div>
         </div>

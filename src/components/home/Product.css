@@ -1,56 +1,37 @@
 
-.product-card {
-  height: 380px;
-  width: 320px;
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
+.product-home-card {
+  height: 350px;
+  width: 300px;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
-.product-card:hover {
-  transform: scale(1.1);
-  transition: var(--transition);
+.product-home-img{
+  height: 200px;
 }
 
-.product-img img {
+.product-home-img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.product-desc {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
+.product-home-desc {
+  padding: 1rem;
 }
 
-.product-desc h3 {
-  color: var(--white-color);
-  font-size: 18px;
-  text-align: center;
+.product-home-desc h5{
+  font-size: 15px;
+  display: block;
+  width: 40%;
 }
 
-.product-desc button {
-  font-size: 11px;
-  border: 1px solid var(--white-color);
-  margin: 10px;
-  padding: 13px 35px;
-  border-radius: 2px;
-  transition: var(--transition);
+.product-home-desc button {
   background-color: transparent;
-  color: var(--white-color);
-}
-
-.product-desc button:hover {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    transition: var(--transition);
+  outline: none;
+  border: none;
+  border-radius: .2rem;
+  color: var(--main-color);
+  padding: .5rem .5rem  .5rem 0;
+  margin: 1.5rem 0 0 0;
 }

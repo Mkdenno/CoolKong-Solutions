@@ -1,44 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { BriefItem } from "../components/home/BriefItem";
-import { Product } from "../components/home/Product";
-import { Service } from "../components/home/Service";
+import React from "react";
 import { products } from "../../src/products";
 import { Blog } from "../components/home/Blog";
-
-import { AiOutlineCamera, AiFillMessage } from "react-icons/ai";
-import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { TbCapture } from "react-icons/tb";
 
 import "./Home.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Reviews } from "../components/Reviews";
 import { PartnerImg } from "../components/PartnerImg";
+import { Product } from "../components/home/Product";
 
 export const Home = () => {
-  const [prod, setProd] = useState([]);
-
-  useEffect(() => {
-    setBackgroundColor();
-  }, []);
-
-  const setBackgroundColor = () => {
-    const colors = ["#EF473ACC", "#5E35B1CC", "#1DE9B6CC"];
-
-    let prods = [];
-
-    for (let i = 0; i < products.length; i++) {
-      prods.push({
-        title: products[i].title,
-        image: products[i].image,
-        bgColor: colors[i % 3],
-      });
-      setProd(prods);
-    }
-  };
-
   return (
     <>
       <section className="home-section">
@@ -46,171 +18,217 @@ export const Home = () => {
           <div className="container">
             <div className="home-section-left">
               <h3>
-                No. 1 Mobile Application Development Company In West Africa.
+                No. 1 Agile Software development and Tech Consultation Company
               </h3>
 
               <p>
-                LampNet provides SAAS, PAAS, IAAS services for African
-                businesses of all sizes
+                LampNet Solutions is the leading provider of comprehensive ICT
+                services like SAAS, PAAS, IAAS services for all African
+                businesses in West Africa.
               </p>
 
-              <div className="prod-btn">
-                <a>LEARN MORE</a>
+              <div className="hero-btn">
+                <button>Learn More</button>
+                <button>Contact Us</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="about-section">
-        <div className="about-section-left">
-          <p>ABOUT LAMPNETS</p>
-          <h2>Who We Are</h2>
+      <PartnerImg
+        slides={6}
+        isDotsVisible={false}
+        padding="4rem 8rem"
+        width="100%"
+        imgWidth="100px"
+      />
+
+      <section className="services-home-section">
+        <div className="service-home-header">
+          <h5>Our services</h5>
+          <h3>What We Offer</h3>
+
           <p>
-            Lampnet Solutions is a customer-centric cutting-edge technology
-            service provider of World-Class Solutions for high business growth
-            and transformation with experience in Mobile Application
-            development, Security and Cloud based technologies. LampNet
-            Solutions is an agile software development and consulting company.
-            We bring our expertise and competences to bear in the implementation
-            and customization of integrated Cloud Solutions, ERP, CRM and other
-            business software optimized to exceed customers’ expectations. We
-            offer a suite of secure & compliant solutions that meets and exceeds
-            requirements for small to medium-sized businesses, also offering
-            transparent solutions. Our activities are geared around three
-            business support pillars namely: Digital Transformation, Operational
-            Excellence and Protection Assurance.
+            Our African Technology company strives to provide top-tier IT
+            solutions to businesses of all sizes and locations within the
+            continent, utilizing African talent
           </p>
-          <a>READ MORE</a>
         </div>
-        <div className="about-section-right">
-          <img src="./images/about-right.jpg" width="100%" />
+
+        <div className="service-items">
+          <div className="service-item">
+            <img src="./images/cloud-server.svg" alt="cloud" />
+
+            <h5>Cloud Strategy</h5>
+            <p>
+              We provide strategies and processes such as cloud infrastructure
+              and software for managing and maximizing technology performance
+            </p>
+          </div>
+
+          <div className="service-item">
+            <img src="./images/award-star.svg" alt="award" />
+
+            <h5>Training and Consultation</h5>
+            <p>
+              We provide expert advice, data analytics, and business educational
+              services to individuals and organizations seeking improvement.
+            </p>
+          </div>
+
+          <div className="service-item">
+            <img src="./images/mobile-settings.svg" alt="mobile" />
+
+            <h5>Mobile App Development</h5>
+            <p>
+              We design and build cross-platform software applications for
+              various industries from food, pharmacy, transport etc
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="brief-section">
+      <section className="about-home-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <BriefItem
-                title="World-Class Solution Delivery"
-                description="We are partners with the world leading Technology Vendors, which
-                    includes Google, Microsoft, IBM, HP, Oracle and Eccouncil. We are
-                    that African technology company that believes every African business
-                    despite its size or location deserves a world-class IT solution
-                    developed by Africans for Africans."
-              />
-
-              <BriefItem
-                title="Clear Communication"
-                description="Our development team is friendly. They make sure that your queries get resolved as soon you escalate. we are commited to support and hail your branding and business objectives in the most efficient manner possible."
-              />
-
-              <BriefItem
-                title="Transformational Business Support"
-                description="Our activities are geared around three business support pillars namely Digital Transformation, operational Excellence and Protection Assurance."
-              />
-
-              <BriefItem
-                title="Secure and Scalable Products"
-                description="Web applications that we build are easy to manage and scale. Our team utilized MVC framework to segregated design and data from actual business logic"
-              />
+              <img src="./images/about-home-img.png" alt="about" width="400" />
             </div>
-            <div className="col-md-6">
-              <BriefItem
-                title="100% CLIENT SATISFACTION"
-                description="Till date, we have developed and deployed projects of varying sizes for our esteemed clients across diverse industry vercals. We manage to have 97.96% client retention RATE"
-              />
+            <div className="col-md-6 about-home-right">
+              <h5>About us</h5>
+              <h3>
+                We are experts in Digital transformation and Protection
+                Assurance
+              </h3>
 
-              <BriefItem
-                title="SAAS MODEL OF DEVELOPMENT"
-                description="We are one of the few technology firm working on a Saas development framework. It helps small businesses who can’t afford investment to get their app developed"
-              />
+              <p style={{ paddingTop: "1rem" }}>
+                Lampnet Solutions is a customer-centric cutting-edge technology
+                service provider of World-Class Solutions for high business
+                growth and transformation with experience in Mobile Application
+                development, Security and Cloud based technologies.
+              </p>
 
-              <BriefItem
-                title="24/7 Customer Support"
-                description="Our 24/7 award-winning support team is available to handle any requests you may have. Whatever youmay need, we are just a click away"
-              />
+              <p>
+                We are an agile software development and consulting company. We
+                bring our expertise and competences to bear in the
+                implementation and customization of integrated Cloud Solutions,
+                ERP, CRM and other business software optimized to exceed
+                customers’ expectations.
+              </p>
 
-              <BriefItem
-                title="CUSTOMER CENTRIC APPROACH"
-                description="Lampnet Soluons extensively uses a consultave approach to locate customers’ journey and help them reimagine their businesses for unmatched success"
-              />
+              <button>Learn More</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="wedo-section">
-        <h1 className="text-center">WHAT WE DO</h1>
-        <div className="we-do-items">
-          <Service
-            image="./images/service-img-1.jpg"
-            title="TECHNOLOGY MANAGEMENT AND OPTIMIZATION PROCESSES"
-            description="Cloud readiness assessment, deployment & migration services,
-            Migration planning, Transition Management, Cloud infrastructure,
-            Lift & Shiftservices"
-          />
+      <section className="choose-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 choose-left">
+              <h5>Why Choose Us</h5>
+              <h3>We Have The Best Team of Development Experts</h3>
 
-          <Service
-            image="./images/service-img-2.jpg"
-            title="CLOUD STRATEGY AND BUSINESS MIGRATION"
-            description="Cloud Readiness Assessment, Deployment & Migration Services, Migration Planning,Transition Management,Cloud Infrastructure,Lift & Shift Services"
-          />
+              <div className="apeture-wrapper">
+                <div className="apeture">
+                  <h1>100%</h1>
+                  <h5>Customer satisfaction</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6 choose-right">
+              <div className="choose-item">
+                <div>
+                  <img src="./images/communication.svg" alt="" />
+                </div>
 
-          <Service
-            image="./images/service-img-3.jpg"
-            title="TRAINING, ADVISORY AND CONSULTING SERVICES"
-            description="Data Experts, Business Continuity, Software Licensing, Training, Special Projects"
-          />
+                <div>
+                  <h6>Clear Communication</h6>
+                  <p>
+                    Our dedicated development team prioritizes your needs to
+                    ensure prompt query resolution and effective support for
+                    your business and branding objectives.
+                  </p>
+                </div>
+              </div>
 
-          <Service
-            image="./images/service-img-4.jpg"
-            title="MOBILE APPLICATION DEVELOPMENT"
-            description="Mobile Applications for business of various industries from food, pharmacy, transport and logistics, account and financing, home services delivery, schools, general ecommerce, etc. all customisable to a customer’s business"
-          />
+              <div className="choose-item">
+                <div>
+                  <img src="./images/framework.svg" alt="" />
+                </div>
+
+                <div>
+                  <h6>SaaS Development Framework</h6>
+                  <p>
+                    With our affordable SaaS development framework and expert
+                    app development services, our diverse team members help
+                    revolutionize business of any size.
+                  </p>
+                </div>
+              </div>
+
+              <div className="choose-item">
+                <div>
+                  <img src="./images/shield.svg" alt="" />
+                </div>
+
+                <div>
+                  <h6>Secure and Scalable Products</h6>
+                  <p>
+                    We develop scalable web apps using MVC to separate design,
+                    data and business logic for improved maintenance,
+                    reliability and efficiency.
+                  </p>
+                </div>
+              </div>
+
+              <div className="choose-item">
+                <div>
+                  <img src="./images/shake.svg" alt="" />
+                </div>
+
+                <div>
+                  <h6>Customer Centric Approach</h6>
+                  <p>
+                    At Lampnet Solutions, we employ a consultative approach to
+                    discover our clients' journeys and assist in reimagining
+                    their businesses for unparalleled success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="products-section">
-        <div>
-          <h1 className="prod-header">Our Products</h1>
+      <section className="portfolio-section">
+        <div className="portfolio-home-header">
+          <h5>Our portfolio</h5>
+          <h3>What We Offer</h3>
+
+          <p>
+            Our African Technology company strives to provide top-tier IT
+            solutions to businesses of all sizes and locations within the
+            continent, utilizing African talent
+          </p>
         </div>
 
-        <div className="products">
-          {prod.map((product) => (
-            <Product
-              title={product.title}
-              image={product.image}
-              bgColor={product.bgColor}
-            />
-          ))}
-        </div>
-      </section>
-
-      <section className="categories-section">
-        <div>
-          <h1 className="prod-header">Our Categories</h1>
-        </div>
-
-        <div className="categories">
-          <div className="food-cat">
-            <div className="food-bg">
-              <TbCapture style={{ fontSize: "40px" }} />
-              <p>FOOD</p>
-            </div>
+        <div className="container">
+          <div className="product-home-header">
+            <p>All portfolio</p>
+            <p>Food</p>
+            <p>Transportation</p>
+            <p>Fintech</p>
+            <p>Education</p>
+            <p>Health & Lifestyle</p>
+            <p>Crypto</p>
           </div>
-          <div className="transportation-cat">
-            <div className="trans-bg">
-              <HiOutlineSpeakerphone style={{ fontSize: "40px" }} />
-              <p>TRANSPORTATION</p>
-            </div>
-          </div>
-          <div className="accounting-cat">
-            <div className="acc-bg">
-              <AiOutlineCamera style={{ fontSize: "40px" }} />
-              <p>ACCOUNTING</p>
-            </div>
+
+          <div className="product-home-list">
+            {products.map((product) => {
+              return <Product title={product.title} image={product.image} />;
+            })}
           </div>
         </div>
       </section>
@@ -238,32 +256,6 @@ export const Home = () => {
           />
         </div>
       </section>
-
-      <section className="partners-section">
-        <div className="partners-left">
-          <h1>Our Partners</h1>
-          <h3>Passion for people</h3>
-
-          <div
-            style={{
-              margin: "0 5rem",
-            }}
-          >
-            <PartnerImg
-              slides={1}
-              isDotsVisible={false}
-              padding="2rem"
-              width="400px"
-              imgWidth="200px"
-            />
-          </div>
-        </div>
-        <div className="partners-right">
-          <img src="./images/hand.jpg" alt="hands" />
-        </div>
-      </section>
-
-      <Reviews />
     </>
   );
 };

@@ -1,17 +1,22 @@
 import React from "react";
 import "./Product.css";
 
-export const Product = ({ image, title, bgColor }) => {
+import { BsArrowRight } from "react-icons/bs";
+
+
+export const Product = ({ image, title, description }) => {
   return (
-    <div className="product-card">
-      <div className="product-img">
+    <div className="product-home-card">
+      <div className="product-home-img">
         <img src={image} alt="product" />
       </div>
 
-      <div className="product-desc" style={{background: bgColor}}>
-        <h3>{title}</h3>
+      <div className="product-home-desc">
+        <h5>{title}</h5>
 
-        <button>READ MORE</button>
+        <p>{description}</p>
+
+        <button>Learn more <span> <BsArrowRight style={{fontWeight: "bold"}} /></span> </button>
       </div>
     </div>
   );
