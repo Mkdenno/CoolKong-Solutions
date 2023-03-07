@@ -1,16 +1,17 @@
-
 .product-home-card {
   height: 350px;
   width: 300px;
-  display: inline-block;
-  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1rem 0;
 }
 
-.product-home-img{
+.product-home-img {
   height: 200px;
+
 }
 
-.product-home-img img{
+.product-home-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -20,18 +21,24 @@
   padding: 1rem;
 }
 
-.product-home-desc h5{
+.product-home-desc h5 {
   font-size: 15px;
-  display: block;
-  width: 40%;
+  white-space: pre-wrap;
+}
+
+.product-home-desc p {
+  font-size: 14px;
+  width: max-content;
+  color: var(--ash-color);
+  padding: 1rem 0 0 0;
 }
 
 .product-home-desc button {
   background-color: transparent;
   outline: none;
   border: none;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   color: var(--main-color);
-  padding: .5rem .5rem  .5rem 0;
-  margin: 1.5rem 0 0 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin: 1rem 0 0 0;
 }

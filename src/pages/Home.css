@@ -33,23 +33,21 @@
 }
 
 .hero-btn button:nth-child(1) {
-
   background-color: var(--main-color);
   outline: none;
   border: none;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   color: var(--white-color);
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
 .hero-btn button:nth-child(2) {
-
   background-color: transparent;
   outline: none;
   border: 1px solid var(--main-color);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   color: var(--main-color);
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   margin-left: 2rem;
 }
 
@@ -57,7 +55,8 @@
   padding: 5rem 0;
 }
 
-.service-home-header, .portfolio-home-header {
+.service-home-header,
+.portfolio-home-header {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -66,17 +65,24 @@
   margin: 0 18rem;
 }
 
-.service-home-header h5, .portfolio-home-header h5 {
+.service-home-header h5,
+.portfolio-home-header h5 {
   color: var(--main-color);
 }
 
-.service-home-header p, .portfolio-home-header p {
+.service-home-header h3,
+.portfolio-home-header h3 {
+  padding: .5rem 0;
+}
+
+.service-home-header p,
+.portfolio-home-header p {
   color: var(--ash-color);
 }
 
 .service-items {
   display: flex;
-  margin: 5rem  5rem 0;
+  margin: 5rem 5rem 0;
 }
 
 .service-item {
@@ -88,7 +94,7 @@
   padding-top: 3rem;
 }
 
-.service-item p  {
+.service-item p {
   font-size: 16px;
   color: var(--ash-color);
 }
@@ -104,7 +110,7 @@
 .about-home-right h3 {
   font-size: 30px;
   width: 70%;
-  word-spacing: .5rem;
+  word-spacing: 0.5rem;
 }
 
 .about-home-right p {
@@ -116,12 +122,11 @@
   background-color: var(--main-color);
   outline: none;
   border: none;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   color: var(--white-color);
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   margin: 1.5rem 0 0 0;
 }
-
 
 .choose-section {
   padding: 5rem 0;
@@ -133,15 +138,24 @@
 
 .choose-left h3 {
   width: 70%;
-  word-spacing: .2rem;
+  word-spacing: 0.2rem;
 }
 
 .apeture-wrapper {
-  text-align: center;
+  margin: 5rem 0;
 }
 
 .apeture {
 
+  width: 45%;
+  border: 8px solid var(--main-color);
+  padding: 4rem;
+  border-radius: 50%;
+}
+
+.apeture p {
+  font-size: 10px;
+  color: var(--ash-color);
 }
 
 .choose-item {
@@ -170,14 +184,23 @@
   padding: 4rem 0 2rem 0;
 }
 
+.product-home-header p {
+  cursor: pointer;
+}
+
+.product-home-header p:active,
+.product-home-header p:visited {
+  color: var(--main-color);
+}
+
 .product-home-list {
-  display: block;
+  display: flex;
   overflow-x: scroll;
   white-space: nowrap;
 }
 
 .product-home-list::-webkit-scrollbar {
-  height: 10px;
+  height: 4px;
 }
 
 .product-home-list::-webkit-scrollbar-thumb {
@@ -189,6 +212,54 @@
   background-color: transparent;
 }
 
+.product-home-button {
+  text-align: center;
+  padding: 4rem 0 0 0;
+}
+
+.product-home-button button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 0.2rem;
+  color: var(--main-color);
+  padding: 0.5rem 3rem;
+  margin-left: 2rem;
+}
+
+
+.testimonial-section {
+  padding: 5rem 0;
+}
+
+.partners-section {
+  padding: 5rem 0;
+}
+
+
+.partner-home-left h5 {
+  color: var(--main-color);
+}
+
+.partner-home-left p {
+  color: var(--ash-color);
+  width: 90%;
+}
+
+.partner-home-left button{
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  color: var(--white-color);
+  padding: 0.5rem 2rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.partner-home-right img {
+  width: 400px;
+}
+
 .blogs {
   display: flex;
   justify-content: space-around;
@@ -196,14 +267,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .about-section-left {
-    padding: 3rem 4rem 3rem 4rem;
-  }
-
-  .we-do-items {
-    margin: 2rem 3rem;
-    flex-wrap: wrap;
-  }
 
   .products {
     margin: 4rem 2rem;
@@ -214,15 +277,7 @@
     margin: 0 0.5rem;
   }
 
-  .blogs {
-    margin: 4rem 2rem;
-    flex-wrap: wrap;
-  }
 
-  .blog-card {
-    width: 300px;
-    margin: 0 0.5rem;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -236,31 +291,6 @@
     margin: 0.5rem 0.5rem;
   }
 
-  .blogs {
-    margin: 4rem 2rem;
-    flex-wrap: wrap;
-  }
-
-  .blog-card {
-    width: 90%;
-    margin: 0.5rem 1rem;
-  }
-
-  .blog-card-img {
-    height: 360px;
-  }
-
-  .blog-card-img img {
-    height: 100%;
-  }
-
-  .card-do-item {
-    width: 100%;
-  }
-
-  .we-do-items {
-    margin: 2rem 2rem;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -277,25 +307,4 @@
     width: 90%;
   }
 
-  .about-section-right {
-    display: none;
-  }
-
-  .about-section {
-    display: block;
-  }
-
-  .about-section-left {
-    width: 100%;
-    padding: 3rem 4rem 3rem 2rem;
-    height: 100%;
-  }
-
-  .categories {
-    flex-direction: column;
-  }
-
-  .partners-right {
-    display: none;
-  }
 }

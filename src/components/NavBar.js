@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import { FaFacebookF, FaLinkedin, FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const navBarStyle = {
@@ -10,6 +10,7 @@ const navBarStyle = {
   fontSize: "1.5rem",
   transition: "all 400ms ease-in-out",
 };
+
 const NavBar = () => {
   const [scroll, setScroll] = useState(0);
   const [click, setClick] = useState(false);
@@ -28,6 +29,7 @@ const NavBar = () => {
       <nav
         style={{
           backgroundColor: scroll >= 1 ? "white" : "transparent",
+          boxShadow: scroll >= 1 ? "rgba(0, 0, 0, 0.08) 0px 4px 12px" : "none",
         }}
       >
         <div className="nav-bars">
@@ -47,7 +49,11 @@ const NavBar = () => {
         </div>
         <div className="container">
           <div className="nav-section">
-            <img src="./images/Logo.png" alt="logo" width={100} />
+            <img
+              src={scroll >= 1 ? "./images/Logo-red.svg" : "./images/Logo.png"}
+              alt="logo"
+              width={100}
+            />
 
             <div>
               <ul

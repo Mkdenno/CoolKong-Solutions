@@ -1,38 +1,28 @@
-import React from 'react';
-import { TiMessages } from "react-icons/ti";
-import { BiTimeFive } from "react-icons/bi";
+import React from "react";
 
-import "./Blog.css"
+import "./Blog.css";
+import { BsArrowRight } from "react-icons/bs";
 
-export const Blog = ({title, image, date}) => {
-    return (
-      <div className="blog-card">
-        <div className="blog-card-img">
-          <img src={image} alt="blog" />
-        </div>
-
-        <div className="blog-card-desc">
-          <p>{title}</p>
-          <h6>{date}</h6>
-
-          <div className="horizontal-line"></div>
-          <div className="blog-extra">
-            <div className="blog-message">
-              <TiMessages
-                style={{ fontSize: "12px", paddingRight: "0.2rem" }}
-              />
-              <span>5 Comments</span>
-            </div>
-            <div>
-              <BiTimeFive
-                style={{ fontSize: "12px", paddingRight: "0.2rem" }}
-              />
-              <span>5 Minutes</span>
-            </div>
-          </div>
-
-          <a>READ MORE</a>
-        </div>
+export const Blog = ({ title, image, description, category }) => {
+  return (
+    <div className="blog-card">
+      <div className="blog-card-img">
+        <img src={image} alt="blog" />
       </div>
-    );
-}
+
+      <div className="blog-card-desc">
+        <h6>{category}</h6>
+        <h5>{title}</h5>
+
+        <p>{description}</p>
+
+        <button>
+          Find out more
+          <span>
+            <BsArrowRight style={{ fontWeight: "bold", marginLeft: ".5rem" }} />
+          </span>
+        </button>
+      </div>
+    </div>
+  );
+};

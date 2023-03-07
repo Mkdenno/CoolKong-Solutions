@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { products } from "../../src/products";
 import { Blog } from "../components/home/Blog";
 
@@ -9,8 +9,21 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { PartnerImg } from "../components/PartnerImg";
 import { Product } from "../components/home/Product";
+import Testimonial from "../components/home/Testimonial";
 
 export const Home = () => {
+
+  const [data, setData] = useState(products)
+
+  const filterCategories = (item) => {
+    const result = products.filter( (curr) => {
+      return curr.category === item
+    })
+
+    if(item === "") setData(products); else setData(result)
+  }
+
+
   return (
     <>
       <section className="home-section">
@@ -133,7 +146,7 @@ export const Home = () => {
               <div className="apeture-wrapper">
                 <div className="apeture">
                   <h1>100%</h1>
-                  <h5>Customer satisfaction</h5>
+                  <p>Customer satisfaction</p>
                 </div>
               </div>
             </div>
@@ -216,43 +229,115 @@ export const Home = () => {
 
         <div className="container">
           <div className="product-home-header">
-            <p>All portfolio</p>
-            <p>Food</p>
-            <p>Transportation</p>
-            <p>Fintech</p>
-            <p>Education</p>
-            <p>Health & Lifestyle</p>
-            <p>Crypto</p>
+            <p onClick={() => filterCategories("")}>All portfolio</p>
+            <p onClick={() => filterCategories("Food")}>Food</p>
+            <p onClick={() => filterCategories("Transportation")}>
+              Transportation
+            </p>
+            <p onClick={() => filterCategories("Fintech")}>Fintech</p>
+            <p onClick={() => filterCategories("Education")}>Education</p>
+            <p onClick={() => filterCategories("Health & Lifestyle")}>
+              Health & Lifestyle
+            </p>
+            <p onClick={() => filterCategories("Crypto")}>Crypto</p>
           </div>
 
           <div className="product-home-list">
-            {products.map((product) => {
-              return <Product title={product.title} image={product.image} />;
+            {data.map((product) => {
+              return (
+                <Product
+                  title={product.title}
+                  image={product.image}
+                  description={product.description}
+                />
+              );
             })}
+          </div>
+
+          <div className="product-home-button">
+            <button>View all</button>
+          </div>
+        </div>
+      </section>
+
+      <section className="testimonial-section">
+        <div className="container">
+          <div className="portfolio-home-header">
+            <h5>Testimonials</h5>
+            <h3>Hear from Our Customers and Partners</h3>
+
+            <p>
+              Our African Technology company strives to provide top-tier IT
+              solutions to businesses of all sizes and locations within the
+              continent, utilizing African talent
+            </p>
+          </div>
+
+          <div>
+            <Testimonial />
+          </div>
+        </div>
+      </section>
+
+      <section className="partners-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 partner-home-left">
+              <h5>Call for Partners</h5>
+              <h3>We believe in today’s rapidly evolving digital landscape</h3>
+
+              <p style={{ padding: "1rem 0 0 0" }}>
+                We are constantly seeking out new partnerships with innovative
+                companies and individuals who share our vision and values, and
+                who are committed to delivering exceptional solutions to our
+                clients.
+              </p>
+
+              <p>
+                Our team of experts is ready to discuss more about our
+                partnerships programs and explore how we can collaborate to
+                achieve growth and success for our clients.
+              </p>
+
+              <button>Partner with us</button>
+            </div>
+            <div className="col-md-6 partner-home-right">
+              <img src="./images/partner-home-img.png" alt="partner" />
+            </div>
           </div>
         </div>
       </section>
 
       <section className="blogs-section">
-        <div>
-          <h1 className="prod-header">Our Blogs</h1>
+        <div className="service-home-header">
+          <h5>Our Blog</h5>
+          <h3>Resources and Insights</h3>
+
+          <p>
+            Our African Technology company strives to provide top-tier IT
+            solutions to businesses of all sizes and locations within the
+            continent, utilizing African talent
+          </p>
         </div>
 
         <div className="blogs">
           <Blog
-            title="Quality never goes out of style"
-            image="./images/blog.jpg"
-            date="April 28, 2017"
+            title="Building your API Stack"
+            image="./images/Imageblog-1.png"
+            category="Software Engineering"
+            description="The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them."
           />
           <Blog
-            title="Maths is easy design is hard"
-            image="./images/blog.jpg"
-            date="May 9, 2015"
+            title="Our JS frameworks to use"
+            image="./images/Imageblog-2.png"
+            category="Product"
+            description="JavaScript frameworks make development easy with extensive features and functionalities."
           />
           <Blog
-            title="We Are good. Just ask our moms"
-            image="./images/blog.jpg"
-            date="November 18, 2016"
+            title="What is Wireframing?"
+            image="./images/Imageblog-3.png"
+            category="Design"
+            description="Introduction to Wireframing and its Principles. Learn from the best in the industry."
           />
         </div>
       </section>
