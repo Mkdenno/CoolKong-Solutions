@@ -1,24 +1,34 @@
 .testimony-card {
-    text-align: center;
-    padding: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .testimony-desc {
-    padding: 2rem 9rem;
+  padding: 2rem 9rem;
 }
 
 .testimony-desc p {
-    color: var(--ash-color);
-    font-size: 15px;
+  color: var(--ash-color);
+  font-size: 15px;
 }
 
 .testimony-desc h6 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .img-wrapper img {
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-    padding: .5rem;
-    margin: 1rem 43%;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 1rem 43%;
+}
+
+@media screen and (max-width: 800px) {
+  .testimony-desc {
+    padding: 2rem 2rem;
+  }
+
+  .img-wrapper img {
+    margin: 1rem 33%;
+  }
 }

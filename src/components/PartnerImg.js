@@ -3,12 +3,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+
 export const PartnerImg = ({
   slides,
   isDotsVisible,
-  width,
-  padding,
-  imgWidth,
+  style,
+  imgWidth
 }) => {
   const imgBg = {
     height: "400px",
@@ -30,10 +30,7 @@ export const PartnerImg = ({
 
   return (
     <div
-      style={{
-        padding: padding,
-        width: width,
-      }}
+      style={style}
     >
       <Slider {...settings}>
         <div style={imgBg}>

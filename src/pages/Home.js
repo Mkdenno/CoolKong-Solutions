@@ -12,17 +12,19 @@ import { Product } from "../components/home/Product";
 import Testimonial from "../components/home/Testimonial";
 
 export const Home = () => {
-
-  const [data, setData] = useState(products)
+  const [data, setData] = useState(products);
+  const [color, setColor] = useState("black");
 
   const filterCategories = (item) => {
-    const result = products.filter( (curr) => {
-      return curr.category === item
-    })
+    const result = products.filter((curr) => {
+      return curr.category === item;
+    });
 
-    if(item === "") setData(products); else setData(result)
-  }
+    if (item === "") setData(products);
+    else setData(result);
+  };
 
+  const onChangeClick = (item) => {};
 
   return (
     <>
@@ -52,9 +54,11 @@ export const Home = () => {
       <PartnerImg
         slides={6}
         isDotsVisible={false}
-        padding="4rem 8rem"
-        width="100%"
         imgWidth="100px"
+        style={{
+          padding: "4rem 8rem",
+          width: "100%",
+        }}
       />
 
       <section className="services-home-section">
@@ -69,7 +73,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="service-items">
+        <div className="container service-items">
           <div className="service-item">
             <img src="./images/cloud-server.svg" alt="cloud" />
 
@@ -105,8 +109,8 @@ export const Home = () => {
       <section className="about-home-section">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <img src="./images/about-home-img.png" alt="about" width="400" />
+            <div className="col-md-6 about-home-left">
+              <img src="./images/about-home-img.png" alt="about" />
             </div>
             <div className="col-md-6 about-home-right">
               <h5>About us</h5>
@@ -139,18 +143,15 @@ export const Home = () => {
       <section className="choose-section">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 choose-left">
+            <div className="col-md-6 choose-left">
               <h5>Why Choose Us</h5>
               <h3>We Have The Best Team of Development Experts</h3>
 
               <div className="apeture-wrapper">
-                <div className="apeture">
-                  <h1>100%</h1>
-                  <p>Customer satisfaction</p>
-                </div>
+                <img src="./images/arc.svg" alt="arc" />
               </div>
             </div>
-            <div className="col-sm-6 choose-right">
+            <div className="col-md-6 choose-right">
               <div className="choose-item">
                 <div>
                   <img src="./images/communication.svg" alt="" />
@@ -229,17 +230,45 @@ export const Home = () => {
 
         <div className="container">
           <div className="product-home-header">
-            <p onClick={() => filterCategories("")}>All portfolio</p>
-            <p onClick={() => filterCategories("Food")}>Food</p>
-            <p onClick={() => filterCategories("Transportation")}>
+            <p onClick={() => filterCategories("")} style={{ color: color }}>
+              All portfolio
+            </p>
+            <p
+              onClick={() => filterCategories("Food")}
+              style={{ color: color }}
+            >
+              Food
+            </p>
+            <p
+              onClick={() => filterCategories("Transportation")}
+              style={{ color: color }}
+            >
               Transportation
             </p>
-            <p onClick={() => filterCategories("Fintech")}>Fintech</p>
-            <p onClick={() => filterCategories("Education")}>Education</p>
-            <p onClick={() => filterCategories("Health & Lifestyle")}>
+            <p
+              onClick={() => filterCategories("Fintech")}
+              style={{ color: color }}
+            >
+              Fintech
+            </p>
+            <p
+              onClick={() => filterCategories("Education")}
+              style={{ color: color }}
+            >
+              Education
+            </p>
+            <p
+              onClick={() => filterCategories("Health & Lifestyle")}
+              style={{ color: color }}
+            >
               Health & Lifestyle
             </p>
-            <p onClick={() => filterCategories("Crypto")}>Crypto</p>
+            <p
+              onClick={() => filterCategories("Crypto")}
+              style={{ color: color }}
+            >
+              Crypto
+            </p>
           </div>
 
           <div className="product-home-list">

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const navBarStyle = {
   position: "absolute",
-  left: "1rem",
-  top: "1.5rem",
-  fontSize: "1.5rem",
+  fontSize: "2rem",
+  padding: '.5rem',
   transition: "all 400ms ease-in-out",
+  marginTop: '-.8rem'
 };
 
 const NavBar = () => {
@@ -33,20 +33,21 @@ const NavBar = () => {
         }}
       >
         <div className="nav-bars">
-          {click ? (
-            <FaTimes
-              style={navBarStyle}
-              onClick={handleClick}
-              color={scroll >= 1 ? "black" : "white"}
-            />
-          ) : (
-            <FaBars
-              style={navBarStyle}
-              onClick={handleClick}
-              color={scroll >= 1 ? "black" : "white"}
-            />
-          )}
+          <button style={{ padding: "2rem" }} onClick={handleClick}>
+            {click ? (
+              <FaTimes
+                style={navBarStyle}
+                color={scroll >= 1 ? "black" : "white"}
+              />
+            ) : (
+              <FaBars
+                style={navBarStyle}
+                color={scroll >= 1 ? "black" : "white"}
+              />
+            )}
+          </button>
         </div>
+
         <div className="container">
           <div className="nav-section">
             <img

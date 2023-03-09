@@ -1,11 +1,13 @@
 nav {
   position: fixed;
   top: 0;
-  height: 4rem;
+  height: 5rem;
   width: 100vw;
   z-index: 11;
   background: transparent;
   transition: var(--transition);
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-section {
@@ -13,6 +15,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: relative;
+  padding: 1.5rem 0 2rem 0;
 }
 
 .links,
@@ -60,27 +63,25 @@ nav {
   display: none;
 }
 
+.nav-bars button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
 @media screen and (max-width: 1024px) {
   .nav-bars {
     display: block;
   }
 
+
   nav {
     background-color: var(--white-color);
-    position: fixed;
+    position: fixed !important;
     top: 0;
-    height: 4rem;
+    height: 5rem;
     width: 100vw;
-    z-index: 11;
     transition: var(--transition);
-  }
-
-  .nav-section {
-    padding-top: 1rem;
-  }
-
-  .nav-section img {
-    margin-left: 30%;
   }
 
   .links,
@@ -88,30 +89,29 @@ nav {
     flex-direction: column;
     position: absolute;
     left: 0;
-    right: 0;
+    top: 3rem;
     background-color: var(--white-color);
-    width: 100%;
-    padding: 2rem 1rem 0 1rem;
-    display: none;
     transition: var(--transition);
-    z-index: -1;
-    top: 10px;
-  }
-
-  .links a,
-  .scroll-nav-links a {
-    padding: 0.5rem;
-    border-bottom: 1px solid #cecece;
     width: 100%;
-    color: var(--black-color);
+    display: none;
   }
 
   .links.active {
     display: flex;
-    flex-direction: column;
-    transition: var(--transition);
-    animation: animateLinks 2s ease;
+  }
+
+  .links a, .scroll-nav-links a {
     color: var(--black-color);
+    font-size: 12px;
+    padding: 2rem 1;
+  }
+
+  .links a:active, .scroll-nav-links a:active {
+      color: var(--main-color);
+  }
+
+  .links a:hover, .scroll-nav-links a:hover {
+      color: var(--main-color);
   }
 
   @keyframes animateLinks {

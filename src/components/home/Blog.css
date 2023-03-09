@@ -45,3 +45,9 @@
 .blogs-section {
   padding: 5rem 0;
 }
+
+@media screen and (max-width: 800px) {
+  .blog-card {
+    width: 100%;
+  }
+}
