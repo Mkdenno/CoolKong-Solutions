@@ -59,14 +59,26 @@ export const Footer = () => {
             <p className="footer-header">Contact</p>
             <div className="footer-item">
               <div className="footer-1-item">
-                <ImLocation2 style={{ margin: "0.2rem 0.5rem 0 0" }} />
+                <img
+                  src="./images/location.svg"
+                  style={{ margin: "-1rem 0.5rem 0 0" }}
+                />
                 <p>128 Itire Rd, Lawanson Surulere Lagos, Nigeria</p>
               </div>
               <div className="footer-1-item">
-                <BiMobileAlt style={{ margin: "0.2rem 0.5rem 0 0" }} />
+                <img
+                  src="./images/call.svg"
+                  style={{ margin: "-1rem 0.5rem 0 0" }}
+                />
                 <p>+234 816 663 7303</p>
               </div>
-              <p>support@lampnets.com</p>
+              <div className="footer-1-item">
+                <img
+                  src="./images/sms.svg"
+                  style={{ margin: "-1rem 0.5rem 0 0" }}
+                />
+                <p>support@lampnets.com</p>
+              </div>
             </div>
           </div>
         </div>

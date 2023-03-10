@@ -23,9 +23,9 @@ const Testimonial = () => {
         <div>
           <div className="testimony-card">
             <div className= "testimony-img">
-              <div className="img-wrapper">
-                <img src="./images/testimonial-img.png" alt="person" />
-              </div>
+              
+                <img src="./images/testimonial-img.png" alt="person" width={100} />
+              
             </div>
 
             <div className="testimony-desc">
@@ -44,10 +44,9 @@ const Testimonial = () => {
 
         <div>
           <div className="testimony-card">
-            <div testimony-img>
-              <div className="img-wrapper">
-                <img src="./images/testimonial-img.png" alt="person" />
-              </div>
+            <div className="testimony-img">
+                <img src="./images/testimonial-img.png" alt="person" width={100} />
+              
             </div>
 
             <div className="testimony-desc">

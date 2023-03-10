@@ -261,18 +261,18 @@ export const prods = [
 
 export const partnerImages = [
   {
-    img_url: "./images/partner-1.png",
+    img_url: "./images/google.svg",
   },
   {
-    img_url: "./images/partner-2.png",
+    img_url: "./images/HP.svg",
   },
   {
-    img_url: "./images/partner-3.png",
+    img_url: "./images/ibm.svg",
   },
   {
-    img_url: "./images/partner-4.png",
+    img_url: "./images/microsoft.svg",
   },
   {
-    img_url: "./images/partner-5.png",
+    img_url: "./images/oracle.svg",
   },
 ];

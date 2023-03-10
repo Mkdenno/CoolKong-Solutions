@@ -30,6 +30,7 @@ const NavBar = () => {
         style={{
           backgroundColor: scroll >= 1 ? "white" : "transparent",
           boxShadow: scroll >= 1 ? "rgba(0, 0, 0, 0.08) 0px 4px 12px" : "none",
+          transition: "all 400ms ease-in-out",
         }}
       >
         <div className="nav-bars">
@@ -59,11 +60,8 @@ const NavBar = () => {
             <div>
               <ul
                 className={
-                  click
-                    ? "links active"
-                    : scroll >= 1
-                    ? "scroll-nav-links"
-                    : "links"
+                   scroll === 0
+                    ? "links": "links scroll"
                 }
               >
                 <Link to="/" onClick={handleClick}>

@@ -20,7 +20,7 @@ export const Home = () => {
       return curr.category === item;
     });
 
-    if (item === "") setData(products);
+    if (item === "All") setData(products);
     else setData(result);
   };
 
@@ -44,22 +44,25 @@ export const Home = () => {
 
               <div className="hero-btn">
                 <button>Learn More</button>
-                <button>Contact Us</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <PartnerImg
-        slides={6}
-        isDotsVisible={false}
-        imgWidth="100px"
-        style={{
-          padding: "4rem 8rem",
-          width: "100%",
-        }}
-      />
+      <div className="partner-home-section">
+        <div className="container">
+          <PartnerImg
+            slides={5}
+            isDotsVisible={false}
+            imgWidth="100px"
+            style={{
+              width: "100%",
+              padding: "0 2rem",
+            }}
+          />
+        </div>
+      </div>
 
       <section className="services-home-section">
         <div className="service-home-header">
@@ -110,6 +113,7 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-home-left">
+              <div className="about-img-bg"></div>
               <img src="./images/about-home-img.png" alt="about" />
             </div>
             <div className="col-md-6 about-home-right">
@@ -230,7 +234,7 @@ export const Home = () => {
 
         <div className="container">
           <div className="product-home-header">
-            <p onClick={() => filterCategories("")} style={{ color: color }}>
+            <p onClick={() => filterCategories("All")} style={{ color: color }}>
               All portfolio
             </p>
             <p
@@ -291,7 +295,7 @@ export const Home = () => {
 
       <section className="testimonial-section">
         <div className="container">
-          <div className="portfolio-home-header">
+          <div className="testimonial-home-header">
             <h5>Testimonials</h5>
             <h3>Hear from Our Customers and Partners</h3>
 
@@ -331,6 +335,7 @@ export const Home = () => {
               <button>Partner with us</button>
             </div>
             <div className="col-md-6 partner-home-right">
+              <div className="partner-home-img-bg"></div>
               <img src="./images/partner-home-img.png" alt="partner" />
             </div>
           </div>

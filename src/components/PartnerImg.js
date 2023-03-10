@@ -3,20 +3,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-
-export const PartnerImg = ({
-  slides,
-  isDotsVisible,
-  style,
-  imgWidth
-}) => {
+export const PartnerImg = ({ slides, isDotsVisible, style, imgWidth }) => {
   const imgBg = {
-    height: "400px",
+    height: "500px",
     width: "500px",
   };
 
   const imgSty = {
     width: imgWidth,
+    paddingTop: "1rem",
   };
 
   var settings = {
@@ -26,17 +21,38 @@ export const PartnerImg = ({
     slidesToShow: slides,
     slidesToScroll: 1,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div
-      style={style}
-    >
+    <div style={style}>
       <Slider {...settings}>
         <div style={imgBg}>
           <img
             style={imgSty}
-            src="./images/partner-1.png"
+            src="./images/google.svg"
             className="image"
             alt="partner"
           />
@@ -45,7 +61,7 @@ export const PartnerImg = ({
         <div style={imgBg}>
           <img
             style={imgSty}
-            src="./images/partner-2.png"
+            src="./images/HP.svg"
             className="image"
             alt="partner"
           />
@@ -54,7 +70,7 @@ export const PartnerImg = ({
         <div style={imgBg}>
           <img
             style={imgSty}
-            src="./images/partner-3.png"
+            src="./images/ibm.svg"
             className="image"
             alt="partner"
           />
@@ -63,7 +79,7 @@ export const PartnerImg = ({
         <div style={imgBg}>
           <img
             style={imgSty}
-            src="./images/partner-4.png"
+            src="./images/microsoft.svg"
             className="image"
             alt="partner"
           />
@@ -72,70 +88,7 @@ export const PartnerImg = ({
         <div style={imgBg}>
           <img
             style={imgSty}
-            src="./images/partner-5.png"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-6.jpeg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-7.jpeg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-8.png"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-9.png"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-10.jpeg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-11.jpeg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/partner-12.jpeg"
+            src="./images/oracle.svg"
             className="image"
             alt="partner"
           />

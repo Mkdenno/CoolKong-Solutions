@@ -32,7 +32,7 @@
   display: flex;
 }
 
-.hero-btn button:nth-child(1) {
+.hero-btn button {
   background-color: var(--main-color);
   outline: none;
   border: none;
@@ -41,14 +41,9 @@
   padding: 0.5rem 3rem;
 }
 
-.hero-btn button:nth-child(2) {
-  background-color: transparent;
-  outline: none;
-  border: 1px solid var(--main-color);
-  border-radius: 0.2rem;
-  color: var(--main-color);
-  padding: 0.5rem 3rem;
-  margin-left: 2rem;
+.partner-home-section {
+  padding: 2rem 0;
+  background-color: #f2f2f2;
 }
 
 .services-home-section {
@@ -63,6 +58,19 @@
   align-items: center;
   text-align: center;
   margin: 0 18rem;
+}
+
+.testimonial-home-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 12rem;
+}
+
+.testimonial-home-header {
+  color: var(--white-color);
 }
 
 .service-home-header h5,
@@ -104,6 +112,26 @@
   padding: 5rem 0;
 }
 
+.about-home-left {
+  position: relative;
+}
+
+.about-img-bg {
+  position: absolute;
+  background: var(--main-color);
+  width: 350px;
+  height: 350px;
+  top: 0;
+  left: 0;
+}
+
+.about-home-left img {
+  position: absolute;
+  width: 350px;
+  top: 2.5rem;
+  left: 3rem;
+}
+
 .about-home-right h5 {
   color: var(--main-color);
 }
@@ -131,6 +159,7 @@
 
 .choose-section {
   padding: 5rem 0;
+  background-color: #f2f2f2;
 }
 
 .choose-left h5 {
@@ -144,7 +173,7 @@
 
 .apeture-wrapper {
   text-align: center;
-  padding:  4rem 0 0 0;
+  padding: 4rem 0 0 0;
 }
 
 .apeture p {
@@ -223,7 +252,7 @@
 
 .testimonial-section {
   padding: 5rem 0;
-  background-color: var(--light-color);
+  background-color: #071529;
 }
 
 .partners-section {
@@ -249,8 +278,25 @@
   margin: 1.5rem 0 0 0;
 }
 
+.partner-home-right {
+  position: relative;
+  text-align: center;
+}
+
+.partner-home-img-bg {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 0;
+  right: 0;
+  background: var(--main-color);
+}
+
 .partner-home-right img {
-  width: 400px;
+  position: absolute;
+  width: 350px;
+  top: 2.5rem;
+  right: 3rem;
 }
 
 .blogs {
@@ -285,6 +331,13 @@
   .choose-right {
     padding: 4rem 0 0 0;
   }
+
+  .testimonial-home-header {
+   margin: 0 7rem;
+  }
+  .partner-home-img-bg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -296,6 +349,19 @@
     width: 90%;
     height: 450px;
     margin: 0.5rem 0.5rem;
+  }
+
+  .about-img-bg {
+    left: 2rem;
+  }
+
+  .about-home-left img {
+    position: relative;
+    left: 3rem;
+  }
+
+  .about-home-right {
+    padding: 8rem 0 0 0;
   }
 
   .partnerSection {
@@ -315,21 +381,9 @@
   }
 
   .service-home-header,
-  .portfolio-home-header {
+  .portfolio-home-header,
+  .testimonial-home-header {
     margin: 0 5rem;
-  }
-
-  .about-home-right {
-    padding: 3rem 0 0 0;
-  }
-
-
-  .about-home-left {
-    text-align: center;
-  }
-
-  .about-home-left img {
-    width: 80%;
   }
 
   .product-home-header {
@@ -339,10 +393,13 @@
   .partner-home-right img {
     display: none;
   }
+
+  .choose-left img {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   .home-section-left h3 {
     font-size: 40px;
     width: 100%;
@@ -353,6 +410,19 @@
   .home-section-left p {
     width: 90%;
     text-align: center;
+  }
+
+  .about-home-left img {
+    left: 3rem;
+    width: 70%;
+  }
+
+  .about-img-bg {
+    width: 60%;
+  }
+
+  .about-home-right {
+    padding: 8rem 0 0 0;
   }
 
   .about-home-right h3 {
@@ -384,7 +454,8 @@
   }
 
   .service-home-header,
-  .portfolio-home-header {
+  .portfolio-home-header,
+  .testimonial-home-header {
     margin: 0 3rem;
   }
 
@@ -395,12 +466,11 @@
 }
 
 @media screen and (max-width: 400px) {
-
   .hero-btn {
     flex-direction: column;
   }
 
-  .hero-btn button:nth-child(2) {
-      margin: 2rem 0 0 0;
+  .about-img-bg {
+    display: none;
   }
 }

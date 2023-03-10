@@ -18,8 +18,7 @@ nav {
   padding: 1.5rem 0 2rem 0;
 }
 
-.links,
-.scroll-nav-links {
+.links {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,14 +27,8 @@ nav {
   padding: 0 8rem;
 }
 
-.scroll-nav-links a {
-  font-size: 12px;
+.links.scroll a {
   padding: 3px 15px;
-  color: var(--black-color);
-  text-decoration: none;
-}
-
-.scroll-nav-links a:hover {
   color: var(--black-color);
 }
 
@@ -44,19 +37,21 @@ nav {
   padding: 30px 15px;
   color: var(--white-color);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .links a:hover {
-  color: var(--white-color);
+  color: var(--main-color);
+  transition: var(--transition);
 }
 
 .contact-btn button {
-  background-color: #AB0E12;
+  background-color: #ab0e12;
   outline: none;
-  border: 1px solid black;
-  border-radius: .2rem;
+  border: none;
+  border-radius: 0.2rem;
   color: var(--white-color);
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .nav-bars {
@@ -69,11 +64,14 @@ nav {
   border: none;
 }
 
+.links a:active {
+  color: var(--main-color);
+}
+
 @media screen and (max-width: 1024px) {
   .nav-bars {
     display: block;
   }
-
 
   nav {
     background-color: var(--white-color);
@@ -84,13 +82,12 @@ nav {
     transition: var(--transition);
   }
 
-  .links,
-  .scroll-nav-links {
+  .links {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 3rem;
-    background-color: var(--white-color);
+    top: 2rem;
+    background-color: var(--main-color);
     transition: var(--transition);
     width: 100%;
     display: none;
@@ -100,18 +97,10 @@ nav {
     display: flex;
   }
 
-  .links a, .scroll-nav-links a {
-    color: var(--black-color);
+  .links a {
+    color: var(--white-color);
     font-size: 12px;
     padding: 2rem 1;
-  }
-
-  .links a:active, .scroll-nav-links a:active {
-      color: var(--main-color);
-  }
-
-  .links a:hover, .scroll-nav-links a:hover {
-      color: var(--main-color);
   }
 
   @keyframes animateLinks {
