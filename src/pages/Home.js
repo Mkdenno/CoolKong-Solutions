@@ -16,7 +16,7 @@ export const Home = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filterCategories = (item) => {
-    handleCategoryClick(item)
+    handleCategoryClick(item);
 
     const result = products.filter((curr) => {
       return curr.category === item;
@@ -80,35 +80,38 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="container service-items">
-          <div className="service-item">
-            <img src="./images/cloud-server.svg" alt="cloud" />
+        <div className="container">
+          <div className="service-items">
+            <div className="service-item">
+              <img src="./images/cloud-server.svg" alt="cloud" />
 
-            <h5>Cloud Strategy</h5>
-            <p>
-              We provide strategies and processes such as cloud infrastructure
-              and software for managing and maximizing technology performance
-            </p>
-          </div>
+              <h5>Cloud Strategy</h5>
+              <p>
+                We provide strategies and processes such as cloud infrastructure
+                and software for managing and maximizing technology performance
+              </p>
+            </div>
 
-          <div className="service-item">
-            <img src="./images/award-star.svg" alt="award" />
+            <div className="service-item">
+              <img src="./images/award-star.svg" alt="award" />
 
-            <h5>Training and Consultation</h5>
-            <p>
-              We provide expert advice, data analytics, and business educational
-              services to individuals and organizations seeking improvement.
-            </p>
-          </div>
+              <h5>Training and Consultation</h5>
+              <p>
+                We provide expert advice, data analytics, and business
+                educational services to individuals and organizations seeking
+                improvement.
+              </p>
+            </div>
 
-          <div className="service-item">
-            <img src="./images/mobile-settings.svg" alt="mobile" />
+            <div className="service-item">
+              <img src="./images/mobile-settings.svg" alt="mobile" />
 
-            <h5>Mobile App Development</h5>
-            <p>
-              We design and build cross-platform software applications for
-              various industries from food, pharmacy, transport etc
-            </p>
+              <h5>Mobile App Development</h5>
+              <p>
+                We design and build cross-platform software applications for
+                various industries from food, pharmacy, transport etc
+              </p>
+            </div>
           </div>
         </div>
       </section>

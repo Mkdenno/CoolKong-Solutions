@@ -1,233 +1,309 @@
 import React from "react";
-import { BsFillPlayFill } from "react-icons/bs";
-import { GiWorld } from "react-icons/gi";
-import { FiTrendingUp } from "react-icons/fi";
-import { FaReact } from "react-icons/fa";
-import { BiBulb } from "react-icons/bi";
-import { AiOutlineChrome } from "react-icons/ai";
 
 import "./About.css";
+import { PartnerImg } from "../components/PartnerImg";
 
 export const About = () => {
   return (
     <>
-      <section className="about-header">
-        <div className="header-bg"> </div>
-        <div className="header-content">
-          <h1>About Us</h1>
-          <h4>DIGITAL CREATIVE AGENCY</h4>
-        </div>
-      </section>
+      <section className="about-section">
+        <div className="main-header">
+          <div className="container">
+            <div className="about-section-left">
+              <h3>
+                Empowering <br /> innovation through cutting-edge solutions
+              </h3>
 
-      <section className="us-section">
-        <div className="us-left">
-          <img src="./images/about-right.jpg" width="100%" />
-        </div>
-        <div className="us-right">
-          <h1>About Us</h1>
-          <p>
-            LampNet Solutions is an agile software development and consulting
-            company. We bring our expertise and competences to bear in the
-            implementation and customization of integrated Cloud Solutions, ERP,
-            CRM and other business software optimized to exceed customers’
-            expectations. We offer a suite of secure & compliant solutions that
-            meets and exceeds requirements for small to medium-sized businesses,
-            also offering transparent solutions. Our activities are geared
-            around three business support pillars namely: Digital
-            Transformation, Operational Excellence and Protection Assurance.
-          </p>
-
-          <p>
-            LampNet Solutions is a private company registered in the Federal
-            republic of Nigeria under the Companies and Allied Matter Act 1990.
-            It was setup to provide business solutions to small, medium and
-            large sized organization. As an independent software vendor and
-            partners with the world leading Technology Vendors, we major in the
-            delivery of timely and innovative IT solutions and provide IT
-            trainings for corporate organizations, institutions, members of
-            professional bodies and others. LampNet Solutions is one of the few
-            IT solution providers in Africa with a trademark of providing
-            world-class solutions in Africa for Africans. We pride in providing
-            world class solutions to every African business in Africa.
-          </p>
-
-          <div className="play-btn">
-            <a>
-              <BsFillPlayFill />
-            </a>
-            <p>WATCH OUR VIDEO</p>
+              <p>
+                LampNet Solutions is the leading provider of comprehensive ICT
+                services like SAAS, PAAS, IAAS services for all African
+                businesses in West Africa.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="brand-section">
-        <h4>BRAND, DESIGN AND DIGITAL EXPERTISE</h4>
+      <div className="partner-home-section">
+        <div className="container">
+          <PartnerImg
+            slides={5}
+            isDotsVisible={false}
+            imgWidth="100px"
+            style={{
+              width: "100%",
+              padding: "0 2rem",
+            }}
+          />
+        </div>
+      </div>
 
-        <h2>About Lampnet</h2>
+      <section className="our-story-section">
+        <div className="container">
+          <div className="our-story">
+            <h5>Our Story</h5>
+            <h3>
+              We Craft Exceptional Experiences with our Brand, Design, and
+              Digital Expertise
+            </h3>
 
-        <div className="brands">
-          <div className="brand">
-            <GiWorld style={{ fontSize: "2rem" }} />
-
-            <h4>Vision</h4>
             <p>
-              To be Africa’ s pride in digital business transformation through
-              technologyadvancement. Lampnet envisions to be Africa technologies
-              for Africans-byAfricans
+              Lampnet Solutions is a customer-centric cutting-edge technology
+              service provider of World-Class Solutions for high business growth
+              and transformation with experience in Mobile Application
+              development, Security and Cloud based technologies. We are an
+              agile software development and consulting company. We bring our
+              expertise and competences to bear in the implementation and
+              customization of integrated Cloud Solutions, ERP, CRM and other
+              business software optimized to exceed customers’ expectations.
             </p>
-          </div>
-          <div className="brand">
-            <FiTrendingUp style={{ fontSize: "2rem" }} />
 
-            <h4>Mission</h4>
             <p>
-              To provide every African business and people with world-class
-              technology solutions to help get the best from technology while
-              giving them the ability to do more.
+              LampNet Solutions is a privately owned Nigerian company registered
+              under the Companies and Allied Matters Act of 1990. The company
+              was established to provide business solutions to small, medium,
+              and large organizations. As an independent software vendor,
+              LampNet Solutions partners with leading technology vendors to
+              provide innovative and timely IT solutions, as well as IT training
+              for corporate organizations, institutions, and professional
+              bodies. The company is committed to delivering world-class
+              solutions that are optimized for African businesses and prides
+              itself on providing exceptional services to every African
+              business.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="partner-section">
-        <h2>WHY PARTNER</h2>
-        <h2>WITH US</h2>
-
-        <div className="partners">
-          <div className="partner-col">
-            <div className="partner">
-              <div className="partner-img">
-                <FaReact style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>SPEAK TO A REAL PERSON!</h4>
-                <p>
-                  No one wants to call a machine about problems with their
-                  machines! At Lampnet Solutions, we’ll make sure you speak with
-                  a real person to get things figured out as quickly as
-                  possible. 98% of all calls from 7:00 AM to 6:00 PM Mondays -
-                  Fridays.
-                </p>
-              </div>
-            </div>
-
-            <div className="partner">
-              <div className="partner-img">
-                <AiOutlineChrome style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>WE PROVIDE BEST /360 DEGREE SUPPORT EXPERIENCE</h4>
-                <p>
-                  We base our recommendations on what is best for you. Our job
-                  is to layout your options, educate you on the pros and cons of
-                  each and guide you to make the best, most cost-effective
-                  solution for you.
-                </p>
-              </div>
-            </div>
-
-            <div className="partner">
-              <div className="partner-img">
-                <BiBulb style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>WE PROVIDE ROBUST TECHNOLOGY SOLUTIONS</h4>
-                <p>
-                  We streamline your business using automation at every point we
-                  can. Our goal is complete automation of your technology
-                  processes, so we can maximize IT efficiency and minimize
-                  problems.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="partner-col">
-            <div className="partner">
-              <div className="partner-img">
-                <FaReact style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>
-                  WE ARE A ONE-STOP SHOP FOR ALL YOUR BUSINESS TECHNOLOGY NEEDS
-                </h4>
-                <p>
-                   Unlike many value-added resellers who only specialize in one
-                  or two products, we have the expertise to help you manage all
-                  of your business technology. This makes us a great fit for
-                  businesses who don’t have the resources to hire their own IT
-                  staff, or who want to add a little extra muscle to their team.
-                </p>
-              </div>
-            </div>
-
-            <div className="partner">
-              <div className="partner-img">
-                <AiOutlineChrome style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>WE HAVE DEEP INDUSTRY EXPERTISE</h4>
-                <p>
-                  While we can apply the knowledge we’ve gained over time to any
-                  industry, there are a few we’ve worked in more than others.
-                  These include professional services, manufacturing,
-                  distribution and logistics, financial services,
-                  pharmaceuticals/medical technology and hospitality,
-                  particularly franchises.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="partner-col">
-            <div className="partner">
-              <div className="partner-img">
-                <BiBulb style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>ALL-ROUND SOLUTIONS PROVIDER</h4>
-                <p>
-                  No matter what your technology challenge is, be it cumbersome
-                  software that doesn’t work how you hoped, security concerns,
-                  boosting efficiency, eliminating errors, or something else
-                  entirely, we have the skills and expertise to help you find
-                  the solution.
-                </p>
-              </div>
-            </div>
-
-            <div className="partner">
-              <div className="partner-img">
-                <BiBulb style={{ fontSize: "2.5rem" }} />
-              </div>
-              <div className="partner-desc">
-                <h4>
-                  THE LAMPNET TEAM ADOPTS A 100% CUSTOMER-CENTRIC APPROACH.
-                </h4>
-                <p>We are about what is best for you and your business!</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="working-section">
-        <div className="working">
-          <div className="work">
-            <p>884+</p>
-            <p>Working Hours</p>
+        <div className="work-bg">
+          <div className="container">
+            <div className="working">
+              <div className="work">
+                <h3>884+</h3>
+                <p>Working Hours</p>
+              </div>
+              <div className="work">
+                <h3>170+</h3>
+                <p>Happy Clients</p>
+              </div>
+              <div className="work">
+                <h3>247+</h3>
+                <p>Projects a Year</p>
+              </div>
+            </div>
           </div>
-          <div className="work">
-            <p>170+</p>
-            <p>Happy Clients</p>
+        </div>
+      </section>
+
+      <section className="mission-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 mission-about-left">
+              <div className="mission-img-bg"></div>
+              <img src="./images/about-home-img.png" alt="about" />
+            </div>
+            <div className="col-md-6 mission-about-right">
+              <h5>Our Mission</h5>
+              <h3>
+                We believe in Empowering African Businesses with World-Class
+                Technology Solutions
+              </h3>
+
+              <p style={{ paddingTop: "1rem" }}>
+                Our software company is committed to empowering African
+                businesses and people with innovative technology solutions. We
+                provide customized solutions that drive growth, efficiency, and
+                success, and offer comprehensive support services to simplify
+                technology adoption and utilization, ensuring user-friendliness,
+                security, and scalability.
+              </p>
+
+              <p>
+                Our success is dependent on our clients' success. Therefore, we
+                prioritize exceptional customer service, building long-lasting
+                partnerships with clients, and delivering solutions that exceed
+                expectations. Our goal is to be the leading provider of
+                world-class technology solutions for African businesses, driving
+                innovation and success across the continent.
+              </p>
+            </div>
           </div>
-          <div className="work">
-            <p>20+</p>
-            <p>project</p>
+        </div>
+      </section>
+
+      <section className="vision-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 vision-about-left">
+              <h5>Our Vision</h5>
+              <h3>
+                We Transforming African Businesses with Innovative Technology
+                Solutions
+              </h3>
+
+              <p style={{ padding: "1rem 0 0 0" }}>
+                At Lampnet Solutions, our vision is to become the leading
+                digital transformation partner for African businesses. We are
+                committed to empowering organizations across the continent with
+                cutting-edge technology solutions that drive growth and success.
+                Our goal is to be Africa's pride in digital business
+                transformation through technology advancement.
+              </p>
+
+              <p>
+                We believe in developing solutions that are tailored to the
+                unique needs and challenges of African businesses, and in doing
+                so, we strive to be Africa technologies for Africans-by
+                Africans. Our team of experienced professionals are dedicated to
+                providing world-class software solutions that are secure,
+                reliable, and user-friendly.
+              </p>
+            </div>
+            <div className="col-md-6 vision-about-right">
+              <div className="vision-about-img-bg"></div>
+              <img src="./images/partner-home-img.png" alt="partner" />
+            </div>
           </div>
-          <div className="work">
-            <p>247+</p>
-            <p>Projects a Year</p>
+        </div>
+      </section>
+
+      <section className="approach-section">
+        <div className="container">
+          <div className="approach-about-header">
+            <h5>Our Approach</h5>
+            <h3>We believe in effective communication and collaboration</h3>
+
+            <p>
+              Our African Technology company strives to provide top-tier IT
+              solutions to businesses of all sizes and locations within the
+              continent, utilizing African talent
+            </p>
+          </div>
+        </div>
+
+        <div className="approach-items">
+          <div className="approach-item">
+            <img src="./images/search.svg" alt="cloud" />
+
+            <h5>Assess</h5>
+            <p>
+              We collaborate with our clients to thoroughly assess their unique
+              business needs and goals before embarking on any project.
+            </p>
+
+            <div className="desc-wrapper">
+              <div className="numbered-hr"></div>
+              <div className="numbered">1</div>
+            </div>
+          </div>
+
+          <div className="approach-item">
+            <img src="./images/award-star.svg" alt="award" />
+
+            <h5>Ensure Quality</h5>
+            <p>
+              We have a robust quality assurance process to ensure that our
+              solutions meet the highest standards.
+            </p>
+            <div className="desc-wrapper">
+              <div className="numbered-hr"></div>
+              <div className="numbered">3</div>
+            </div>
+          </div>
+
+          <div className="approach-item">
+            <img src="./images/progress.svg" alt="mobile" />
+
+            <h5>Continuously Improve</h5>
+            <p>
+              We are committed to continuous improvement to ensure that we
+              provide cutting-edge solutions that exceed our clients'
+              expectations.
+            </p>
+
+            <div className="desc-wrapper">
+              <div className="numbered-hr"></div>
+              <div className="numbered">5</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="approach-items-bottom">
+          <div
+            className="approach-item-bottom"
+            style={{ marginRight: "-20rem" }}
+          >
+            <img src="./images/search.svg" alt="cloud" />
+
+            <h5>Assess</h5>
+            <p>
+              We collaborate with our clients to thoroughly assess their unique
+              business needs and goals before embarking on any project.
+            </p>
+
+            <div className="desc-wrapper-bottom">
+              <div className="numbered-hr-bottom"></div>
+              <div className="numbered-bottom">2</div>
+            </div>
+          </div>
+
+          <div className="approach-item-bottom">
+            <img src="./images/award-star.svg" alt="award" />
+
+            <h5>Ensure Quality</h5>
+            <p>
+              We have a robust quality assurance process to ensure that our
+              solutions meet the highest standards.
+            </p>
+            <div className="desc-wrapper-bottom">
+              <div className="numbered-hr-bottom"></div>
+              <div className="numbered-bottom">4</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact-about-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 contact-about-left">
+              <h5>Contact Us</h5>
+              <h3>
+                Let's start the conversation about your upcoming product launch,
+                and we'll assist you in brainstorming ideas and execution
+                process.
+              </h3>
+            </div>
+            <div className="col-md-6 contact-about-right">
+              <form>
+                <div className="top-form-section">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    style={{
+                      margin: "0 1rem 0 0",
+                    }}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone number"
+                    style={{
+                      margin: "0 1rem 0 0",
+                    }}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                  />
+                </div>
+                <div className="bottom-form-section">
+                  <textarea type="text" placeholder="Message" />
+                </div>
+
+                <button type="submit">Send us a message</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
