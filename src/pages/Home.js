@@ -13,9 +13,11 @@ import Testimonial from "../components/home/Testimonial";
 
 export const Home = () => {
   const [data, setData] = useState(products);
-  const [color, setColor] = useState("black");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const filterCategories = (item) => {
+    handleCategoryClick(item)
+
     const result = products.filter((curr) => {
       return curr.category === item;
     });
@@ -24,7 +26,9 @@ export const Home = () => {
     else setData(result);
   };
 
-  const onChangeClick = (item) => {};
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+  };
 
   return (
     <>
@@ -234,42 +238,47 @@ export const Home = () => {
 
         <div className="container">
           <div className="product-home-header">
-            <p onClick={() => filterCategories("All")} style={{ color: color }}>
+            <p
+              onClick={() => filterCategories("All")}
+              className={activeCategory === "All" ? "active" : ""}
+            >
               All portfolio
             </p>
             <p
               onClick={() => filterCategories("Food")}
-              style={{ color: color }}
+              className={activeCategory === "Food" ? "active" : ""}
             >
               Food
             </p>
             <p
               onClick={() => filterCategories("Transportation")}
-              style={{ color: color }}
+              className={activeCategory === "Transportation" ? "active" : ""}
             >
               Transportation
             </p>
             <p
               onClick={() => filterCategories("Fintech")}
-              style={{ color: color }}
+              className={activeCategory === "Fintech" ? "active" : ""}
             >
               Fintech
             </p>
             <p
               onClick={() => filterCategories("Education")}
-              style={{ color: color }}
+              className={activeCategory === "Education" ? "active" : ""}
             >
               Education
             </p>
             <p
               onClick={() => filterCategories("Health & Lifestyle")}
-              style={{ color: color }}
+              className={
+                activeCategory === "Health & Lifestyle" ? "active" : ""
+              }
             >
               Health & Lifestyle
             </p>
             <p
               onClick={() => filterCategories("Crypto")}
-              style={{ color: color }}
+              className={activeCategory === "Crypto" ? "active" : ""}
             >
               Crypto
             </p>

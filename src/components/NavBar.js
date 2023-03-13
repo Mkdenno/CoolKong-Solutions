@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navBarStyle = {
   position: "absolute",
@@ -58,33 +58,52 @@ const NavBar = () => {
             />
 
             <div>
-              <ul
-                className={
-                   scroll === 0
-                    ? "links": "links scroll"
-                }
-              >
-                <Link to="/" onClick={handleClick}>
+              <ul className={scroll === 0 ? "links" : "links scroll"}>
+                <NavLink to="/" onClick={handleClick} activeClassName="active">
                   Home
-                </Link>
-                <Link to="/about-us" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/about-us"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   About us
-                </Link>
-                <Link to="/our-services" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/our-services"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   Services
-                </Link>
-                <Link to="/solutions" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/solutions"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   Solutions
-                </Link>
-                <Link to="/news" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/news"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   News
-                </Link>
-                <Link to="/partnership" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/partnership"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   Partnership
-                </Link>
-                <Link to="/careers" onClick={handleClick}>
+                </NavLink>
+                <NavLink
+                  to="/careers"
+                  onClick={handleClick}
+                  activeClassName="active"
+                >
                   Career
-                </Link>
+                </NavLink>
               </ul>
             </div>
 
