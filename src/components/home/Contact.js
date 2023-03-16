@@ -4,54 +4,38 @@ import "./Contact.css"
 export const Contact = () => {
     return (
       <section className="contact-section">
-        <div>
-          <h1 className="prod-header">CONTACT US</h1>
-        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 contact-about-left">
+              <h5>Contact Us</h5>
+              <h3>
+                Do you have a project in mind or you want to start a
+                conversation with us?
+              </h3>
 
-        <div className="form-section">
-          <form>
-            <div
-              style={{
-                display: "flex",
-              }}
-            >
-              <input
-                type="text"
-                placeholder="Your Name"
-                style={{
-                  margin: "1rem 0 0",
-                }}
-              />
-              <input
-                type="text"
-                placeholder="Your Email"
-                style={{
-                  margin: "1rem 0 0 1rem",
-                }}
-              />
+              <p>
+                Let's start the conversation about your upcoming product launch,
+                and we'll assist you in brainstorming ideas and execution
+                process.
+              </p>
             </div>
+            <div className="col-md-6 contact-about-right">
+              <form>
+                <div className="top-form-section">
+                  <input type="text" placeholder="Your full name" />
 
-            <input
-              type="text"
-              placeholder="Your Subject"
-              style={{
-                margin: "1rem 2rem 0 0",
-              }}
-            />
-            <textarea
-              type="text"
-              placeholder="Your Message"
-              style={{
-                margin: "1rem 0 0 0",
-                height: "13rem",
-                padding: "1rem",
-              }}
-            />
+                  <input type="text" placeholder="Your email address" />
 
-            <div>
-              <button>SEND MESSAGE</button>
+                  <input type="text" placeholder="Your phone number" />
+                </div>
+                <div className="bottom-form-section">
+                  <textarea type="text" placeholder="Your message" />
+                </div>
+
+                <button type="submit">Talk to Us</button>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </section>
     );

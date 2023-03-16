@@ -2,6 +2,7 @@ import React from "react";
 
 import "./About.css";
 import { PartnerImg } from "../components/PartnerImg";
+import { Contact } from "../components/home/Contact";
 
 export const About = () => {
   return (
@@ -264,49 +265,7 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="contact-about-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 contact-about-left">
-              <h5>Contact Us</h5>
-              <h3>
-                Let's start the conversation about your upcoming product launch,
-                and we'll assist you in brainstorming ideas and execution
-                process.
-              </h3>
-            </div>
-            <div className="col-md-6 contact-about-right">
-              <form>
-                <div className="top-form-section">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    style={{
-                      margin: "0 1rem 0 0",
-                    }}
-                  />
-                  <input
-                    type="text"
-                    placeholder="Phone number"
-                    style={{
-                      margin: "0 1rem 0 0",
-                    }}
-                  />
-                  <input
-                    type="text"
-                    placeholder="Email address"
-                  />
-                </div>
-                <div className="bottom-form-section">
-                  <textarea type="text" placeholder="Message" />
-                </div>
-
-                <button type="submit">Send us a message</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Contact />
     </>
   );
 };

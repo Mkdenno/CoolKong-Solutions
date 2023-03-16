@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer";
 import { About } from "./pages/About";
 import { Product } from "./pages/Product";
 import { Services } from "./pages/Services";
-import { Blog } from "./pages/Blog";
+import { Blogs } from "./pages/Blogs";
 import { ContactUs } from "./pages/ContactUs";
 import { Partnership } from "./pages/Partnership";
 import { Career } from "./pages/Career";
@@ -20,7 +20,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/our-products" element={<Product />} />
         <Route path="/our-services" element={<Services />} />
-        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/partnership" element={<Partnership />} />
         <Route path="/careers" element={<Career />} />

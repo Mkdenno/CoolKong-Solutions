@@ -1,52 +1,64 @@
 .contact-section {
-  font-family: var(--source-font);
-  padding: 5rem 0;
+  background: var(--dark-blue);
+  padding: 4rem 0;
+  color: var(--white-color);
 }
 
-.form-section {
-  margin: 2rem 25rem;
+.contact-about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.form-section button {
-  background-color: transparent;
-  border: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
-  border-radius: 100px;
-  padding: 10px 33px;
-  font-family: var(--poppins-font);
-  font-size: 10px;
-  margin: 2rem 0;
+.contact-about-left h3 {
+  word-spacing: 0.3rem;
+  line-height: 2.5rem;
+  width: 70%;
+}
+
+.contact-about-left p {
+  width: 80%;
+  font-size: 14px;
 }
 
 form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-input {
-  width: 100%;
-  padding: 1rem;
+  background: var(--white-color);
+  padding: 2rem;
+  border-radius: 0.3rem;
 }
 
 input,
 textarea {
-  border: 1px solid #d6d6d6;
+  width: 100%;
+  border: 1px solid #bbbbbb;
+  border-radius: 2px;
+  margin: 0.8rem 0;
+  outline: none;
+  color: #5f5d5d;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #d6d6d6;
+  color: #bbbbbb;
+  font-size: 14px;
 }
 
-@media screen and (max-width: 1024px) {
-  .form-section {
-    margin: 2rem 10rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .form-section {
-    margin: 2rem 2rem;
-  }
+form button {
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  color: var(--white-color);
+  padding: 0.5rem 2rem;
+  margin: 1rem 0 0 0;
 }

@@ -77,18 +77,18 @@ const NavBar = () => {
                   Services
                 </NavLink>
                 <NavLink
-                  to="/solutions"
+                  to="/products"
                   onClick={handleClick}
                   activeClassName="active"
                 >
-                  Solutions
+                  Products
                 </NavLink>
                 <NavLink
-                  to="/news"
+                  to="/blogs"
                   onClick={handleClick}
                   activeClassName="active"
                 >
-                  News
+                  Blogs
                 </NavLink>
                 <NavLink
                   to="/partnership"
