@@ -3,6 +3,7 @@ import React from "react";
 import "./About.css";
 import { PartnerImg } from "../components/PartnerImg";
 import { Contact } from "../components/home/Contact";
+import { Product } from "../components/home/Product";
 
 export const About = () => {
   return (
@@ -28,9 +29,8 @@ export const About = () => {
       <div className="partner-home-section">
         <div className="container">
           <PartnerImg
-            slides={5}
+            slides={7}
             isDotsVisible={false}
-            imgWidth="100px"
             style={{
               width: "100%",
               padding: "0 2rem",
@@ -40,58 +40,49 @@ export const About = () => {
       </div>
 
       <section className="our-story-section">
-        <div className="container">
-          <div className="our-story">
-            <h5>Our Story</h5>
+        <div className="container weare-wrap">
+          <div className="weare-section">
+            <h5>Who we are</h5>
+
             <h3>
               We Craft Exceptional Experiences with our Brand, Design, and
               Digital Expertise
             </h3>
 
             <p>
-              Lampnet Solutions is a customer-centric cutting-edge technology
-              service provider of World-Class Solutions for high business growth
-              and transformation with experience in Mobile Application
-              development, Security and Cloud based technologies. We are an
-              agile software development and consulting company. We bring our
-              expertise and competences to bear in the implementation and
-              customization of integrated Cloud Solutions, ERP, CRM and other
-              business software optimized to exceed customers’ expectations.
-            </p>
-
-            <p>
-              LampNet Solutions is a privately owned Nigerian company registered
-              under the Companies and Allied Matters Act of 1990. The company
-              was established to provide business solutions to small, medium,
-              and large organizations. As an independent software vendor,
-              LampNet Solutions partners with leading technology vendors to
-              provide innovative and timely IT solutions, as well as IT training
-              for corporate organizations, institutions, and professional
-              bodies. The company is committed to delivering world-class
-              solutions that are optimized for African businesses and prides
-              itself on providing exceptional services to every African
-              business.
+              LampNet is a team of innovative and world-class professionals
+              relentlessly obsessed with the consistent delivery of
+              trail-blazing solutions that guarantee your optimum productivity.
+              We provide customized solutions that drive growth, efficiency, and
+              success, and offer comprehensive support services to simplify
+              technology adoption and utilization, ensuring user-friendliness,
+              security, and scalability.
             </p>
           </div>
-        </div>
-      </section>
 
-      <section className="working-section">
-        <div className="work-bg">
-          <div className="container">
-            <div className="working">
-              <div className="work">
-                <h3>884+</h3>
-                <p>Working Hours</p>
-              </div>
-              <div className="work">
-                <h3>170+</h3>
-                <p>Happy Clients</p>
-              </div>
-              <div className="work">
-                <h3>247+</h3>
-                <p>Projects a Year</p>
-              </div>
+          <div className="icon-section">
+            <div className="icon-item">
+              <img src="./images/w-ic-1.svg" alt="icon" />
+              <h3>884+</h3>
+              <p>Working hours</p>
+            </div>
+
+            <div className="icon-item">
+              <img src="./images/w-ic-2.svg" alt="icon" />
+              <h3>170+</h3>
+              <p>Happy clients</p>
+            </div>
+
+            <div className="icon-item">
+              <img src="./images/w-ic-3.svg" alt="icon" />
+              <h3>247+</h3>
+              <p>Projects a year</p>
+            </div>
+
+            <div className="icon-item">
+              <img src="./images/w-ic-4.svg" alt="icon" />
+              <h3>100+</h3>
+              <p>Team members</p>
             </div>
           </div>
         </div>
@@ -101,32 +92,25 @@ export const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 mission-about-left">
-              <div className="mission-img-bg"></div>
+              <div className="mission-img-top-bg"></div>
+              <div className="mission-img-bottom-bg"></div>
               <img src="./images/about-home-img.png" alt="about" />
             </div>
             <div className="col-md-6 mission-about-right">
               <h5>Our Mission</h5>
               <h3>
-                We believe in Empowering African Businesses with World-Class
-                Technology Solutions
+                We Prioritize Exceptional Customer Service and Long-lasting
+                Partnership
               </h3>
 
               <p style={{ paddingTop: "1rem" }}>
-                Our software company is committed to empowering African
-                businesses and people with innovative technology solutions. We
-                provide customized solutions that drive growth, efficiency, and
-                success, and offer comprehensive support services to simplify
-                technology adoption and utilization, ensuring user-friendliness,
-                security, and scalability.
-              </p>
-
-              <p>
-                Our success is dependent on our clients' success. Therefore, we
-                prioritize exceptional customer service, building long-lasting
-                partnerships with clients, and delivering solutions that exceed
-                expectations. Our goal is to be the leading provider of
-                world-class technology solutions for African businesses, driving
-                innovation and success across the continent.
+                As a progressive and pioneering company, we prioritize our
+                people above all else. Our culture is defined by diversity,
+                inclusion, and an unwavering commitment to continuous learning
+                and growth. We offer comprehensive support services to simplify
+                technology adoption and utilization, ensuring usability,
+                security, scalability and deliver solutions that exceed
+                expectations.
               </p>
             </div>
           </div>
@@ -139,8 +123,8 @@ export const About = () => {
             <div className="col-md-6 vision-about-left">
               <h5>Our Vision</h5>
               <h3>
-                We Transforming African Businesses with Innovative Technology
-                Solutions
+                We believe in Empowering African Businesses with World-Class
+                Technology Solutions
               </h3>
 
               <p style={{ padding: "1rem 0 0 0" }}>
@@ -151,18 +135,10 @@ export const About = () => {
                 Our goal is to be Africa's pride in digital business
                 transformation through technology advancement.
               </p>
-
-              <p>
-                We believe in developing solutions that are tailored to the
-                unique needs and challenges of African businesses, and in doing
-                so, we strive to be Africa technologies for Africans-by
-                Africans. Our team of experienced professionals are dedicated to
-                providing world-class software solutions that are secure,
-                reliable, and user-friendly.
-              </p>
             </div>
             <div className="col-md-6 vision-about-right">
-              <div className="vision-about-img-bg"></div>
+              <div className="vision-about-img-top-bg"></div>
+              <div className="vision-about-img-bottom-bg"></div>
               <img src="./images/partner-home-img.png" alt="partner" />
             </div>
           </div>
@@ -173,7 +149,7 @@ export const About = () => {
         <div className="container">
           <div className="approach-about-header">
             <h5>Our Approach</h5>
-            <h3>We believe in effective communication and collaboration</h3>
+            <h3>We believe in effective collaboration</h3>
 
             <p>
               Our African Technology company strives to provide top-tier IT
@@ -185,9 +161,9 @@ export const About = () => {
 
         <div className="approach-items">
           <div className="approach-item">
-            <img src="./images/search.svg" alt="cloud" />
+            <img src="./images/collabo.svg" alt="cloud" />
 
-            <h5>Assess</h5>
+            <h5>Collaboration</h5>
             <p>
               We collaborate with our clients to thoroughly assess their unique
               business needs and goals before embarking on any project.
@@ -200,7 +176,7 @@ export const About = () => {
           </div>
 
           <div className="approach-item">
-            <img src="./images/award-star.svg" alt="award" />
+            <img src="./images/quality.svg" alt="award" />
 
             <h5>Ensure Quality</h5>
             <p>
@@ -214,7 +190,7 @@ export const About = () => {
           </div>
 
           <div className="approach-item">
-            <img src="./images/progress.svg" alt="mobile" />
+            <img src="./images/continu.svg" alt="mobile" />
 
             <h5>Continuously Improve</h5>
             <p>
@@ -235,12 +211,12 @@ export const About = () => {
             className="approach-item-bottom"
             style={{ marginRight: "-20rem" }}
           >
-            <img src="./images/search.svg" alt="cloud" />
+            <img src="./images/develop.svg" alt="cloud" />
 
-            <h5>Assess</h5>
+            <h5>Develop Solutions</h5>
             <p>
-              We collaborate with our clients to thoroughly assess their unique
-              business needs and goals before embarking on any project.
+              Our agile methodology approach to ensures tailored solutions that
+              meet clients' specific needs.
             </p>
 
             <div className="desc-wrapper-bottom">
@@ -250,12 +226,12 @@ export const About = () => {
           </div>
 
           <div className="approach-item-bottom">
-            <img src="./images/award-star.svg" alt="award" />
+            <img src="./images/Support.svg" alt="award" />
 
-            <h5>Ensure Quality</h5>
+            <h5>Provide Support</h5>
             <p>
-              We have a robust quality assurance process to ensure that our
-              solutions meet the highest standards.
+              We provide ongoing support and maintenance to ensure that our
+              solutions continue to meet our clients' needs.
             </p>
             <div className="desc-wrapper-bottom">
               <div className="numbered-hr-bottom"></div>
@@ -263,6 +239,21 @@ export const About = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="portfolio-section">
+        <div className="portfolio-home-header">
+          <h5>Our products</h5>
+          <h3>The Best Technological Solutions</h3>
+
+          <p>
+            Our African Technology company strives to provide top-tier IT
+            solutions to businesses of all sizes and locations within the
+            continent, utilizing African talent
+          </p>
+        </div>
+
+        <Product />
       </section>
 
       <Contact />

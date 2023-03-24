@@ -1,0 +1,156 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides-items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.pagination-wrapper {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pag {
+  background: var(--white-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.1rem;
+  padding: 0.15rem;
+  transition: var(--transition);
+}
+
+.pag.show {
+  padding: 0.32rem;
+  transition: var(--transition);
+}
+
+.pagination button {
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  font-weight: bold;
+}
+
+.nav span {
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-prev {
+  left: 0.5rem;
+}
+
+.slider-next {
+  right: 0.5rem;
+}
+
+
+.testimony-card {
+  padding: 2rem 0;
+  margin: 3rem 8rem;
+  display: flex;
+  color: var(--white-color);
+}
+
+
+
+.testimony-desc {
+  padding: 1rem 4rem 2rem 4rem;
+  position: relative;
+}
+
+.testimony-desc::before {
+  content: "";
+  position: absolute;
+  background: var(--main-color);
+  width: 20%;
+  height: 2px;
+  top: 0;
+  left: 2.5rem;
+}
+
+
+.testimony-desc::after {
+  content: "";
+  position: absolute;
+  background: var(--main-color);
+  width: 2px;
+  height: 45%;
+  top: 0;
+  left: 2.5rem;
+}
+
+.testimony-desc p {
+  font-size: 15px;
+}
+
+.testimony-desc h5 {
+  padding: 2rem 0 0 0;
+
+}
+
+.testimony-desc h6 {
+  color: var(--main-color);
+}
+
+
+@media screen and (max-width: 800px) {
+  .testimony-card {
+    padding: 2rem 0;
+    margin: 3rem 2rem;
+  }
+
+  .testimony-desc {
+    padding: 2rem 2rem;
+  }
+}

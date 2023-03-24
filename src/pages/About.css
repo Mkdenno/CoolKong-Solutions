@@ -32,72 +32,85 @@
   padding: 5rem 0;
 }
 
-.our-story {
+.weare-wrap {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 18rem;
 }
 
-.our-story h5 {
+.weare-section {
+  width: 60%;
+}
+.weare-section h5 {
   color: var(--main-color);
 }
 
-.our-story h3 {
-  padding: 0.5rem 0 1.5rem 0;
+.weare-section h3 {
+  width: 60%;
 }
 
-.our-story p {
-  color: var(--ash-color);
+.weare-section p {
   font-size: 15px;
+  color: var(--ash-color);
+  padding: 1rem 0 0 0;
+  width: 80%;
 }
 
-.working-section {
-  background-image: url("../../public/images/counter-about.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+.icon-section {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.work-bg {
-  background: rgba(11, 37, 57, 0.7);
+.icon-item {
+  background: #FFF9E2;
+  padding: 1rem;
+  margin: 1rem;
 }
 
-.working {
-  display: flex;
-  justify-content: space-between;
-  padding: 4.5rem 0;
+.icon-item h3 {
+  color: var(--main-color);
 }
 
-.work {
-  text-align: center;
-  color: var(--white-color);
-}
-.work h3 {
-  font-size: 2.5rem;
+.icon-item p {
+  font-size: 14px;
 }
 
 .mission-section {
-  padding: 5rem 0;
+  padding: 5rem 0 8rem 0;
 }
 
 .mission-about-left {
   position: relative;
 }
 
-.mission-img-bg {
+.mission-img-top-bg {
   position: absolute;
   border: 2px solid var(--main-color);
   width: 350px;
-  height: 350px;
-  top: 0;
+  height: 300px;
+  top: -2rem;
   left: 0;
+}
+
+.mission-img-bottom-bg {
+  position: absolute;
+  border: 2px solid var(--main-color);
+  width: 350px;
+  height: 300px;
+  bottom: -7rem;
+  right: 8rem;
 }
 
 .mission-about-left img {
   position: absolute;
   width: 350px;
-  top: 2.5rem;
   left: 3rem;
+}
+.mission-about-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
 }
 
 .mission-about-right h5 {
@@ -116,7 +129,11 @@
 }
 
 .vision-section {
-  padding: 5rem 0;
+  padding: 8rem 0 5rem 0;
+}
+
+.vision-about-left {
+  padding: 3rem 0 0 0;
 }
 
 .vision-about-left h5 {
@@ -124,7 +141,7 @@
 }
 
 .vision-about-left h3 {
-  width: 70%;
+  width: 80%;
   word-spacing: 0.5rem;
 }
 
@@ -138,24 +155,33 @@
   text-align: left;
 }
 
-.vision-about-img-bg {
+.vision-about-img-top-bg {
   position: absolute;
   width: 350px;
-  height: 350px;
-  top: 0;
+  height: 300px;
+  top: -2rem;
   right: 0;
+  border: 2px solid var(--main-color);
+}
+
+.vision-about-img-bottom-bg {
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  bottom: -6rem;
+  left: 7.5rem;
   border: 2px solid var(--main-color);
 }
 
 .vision-about-right img {
   position: absolute;
   width: 350px;
-  top: 2.5rem;
+  top: 0;
   right: 3rem;
 }
 
 .approach-section {
-  padding: 5rem 0;
+  padding: 7rem 0 1rem 0;
 }
 
 .approach-about-header {

@@ -22,13 +22,23 @@ export const Contact = () => {
             <div className="col-md-6 contact-about-right">
               <form>
                 <div className="top-form-section">
-                  <input type="text" placeholder="Your full name" />
+                  <input
+                    type="text"
+                    placeholder="Your full name"
+                  />
 
-                  <input type="text" placeholder="Your email address" />
+                  <input
+                    type="text"
+                    placeholder="Your email address"
+                    style={{ margin: "1rem 0" }}
+                  />
 
-                  <input type="text" placeholder="Your phone number" />
+                  <input
+                    type="text"
+                    placeholder="Your phone number"
+                  />
                 </div>
-                <div className="bottom-form-section">
+                <div className="bottom-form-section" style={{paddingTop: "1rem"}}>
                   <textarea type="text" placeholder="Your message" />
                 </div>
 

@@ -11,28 +11,21 @@
   --ash-color: #7D7C7C;
   --light-color: #FCFCFC;
   --dark-blue: #071529;
-  --primary-color: #4e4343;
-  --secondary-color: #e86257;
+  --card-bg: #09244B;
   --white-color: #ffffff;
-  --black-color: #212121;
-  --background-color: #121725;
-  --onBackground-color: #4e4343;
-  --blue-color: #3949ab;
-  --poppins-font: "Poppins", sans-serif;
-  --source-font: "Source Sans Pro", sans-serif;
+  --black-color: #000000;
   --transition: all 400ms ease-in-out;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
   text-decoration: none;
   color: var(--black-color);
+  outline: none;
 }
 
 li {

@@ -1,44 +1,65 @@
-.product-home-card {
-  height: 350px;
-  width: 300px;
+
+.product-home-header {
   display: flex;
-  flex-direction: column;
-  margin: 0 1rem 1rem 0;
+  justify-content: space-between;
+  padding: 4rem 0 2rem 0;
 }
 
-.product-home-img {
-  height: 200px;
-
+.product-home-header p {
+  cursor: pointer;
 }
 
-.product-home-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.product-home-header p:active,
+.product-home-header p:visited {
+  color: var(--main-color);
 }
 
-.product-home-desc {
-  padding: 1rem;
+.product-home-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 
-.product-home-desc h5 {
-  font-size: 15px;
-  white-space: pre-wrap;
+.product-home-list a{
+  text-decoration: none;
 }
 
-.product-home-desc p {
-  font-size: 14px;
-  width: max-content;
-  color: var(--ash-color);
-  padding: 1rem 0 0 0;
+.prod-home-card {
+  background: var(--card-bg);
+  color: var(--white-color);
+  position: relative;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.product-home-desc button {
+.prod-home-card:hover {
+  background: var(--main-color);
+  transition: var(--transition);
+}
+
+.prod-home-card:hover .icon-direction {
+  transform: rotate(-90deg);
+  transition: var(--transition);
+}
+
+.product-home-button {
+  text-align: center;
+  padding: 4rem 0 0 0;
+}
+
+.product-home-button button {
   background-color: transparent;
   outline: none;
-  border: none;
+  border: 1px solid var(--main-color);
   border-radius: 0.2rem;
   color: var(--main-color);
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  margin: 1rem 0 0 0;
+  padding: 0.5rem 3rem;
+  margin-left: 2rem;
 }

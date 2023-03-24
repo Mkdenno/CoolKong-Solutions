@@ -2,17 +2,9 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { partnerImages } from "../products";
 
-export const PartnerImg = ({ slides, isDotsVisible, style, imgWidth }) => {
-  const imgBg = {
-    height: "500px",
-    width: "500px",
-  };
-
-  const imgSty = {
-    width: imgWidth,
-    paddingTop: "1rem",
-  };
+export const PartnerImg = ({ slides, isDotsVisible, style }) => {
 
   var settings = {
     dots: isDotsVisible,
@@ -44,55 +36,29 @@ export const PartnerImg = ({ slides, isDotsVisible, style, imgWidth }) => {
         },
       },
     ],
+  
   };
 
   return (
     <div style={style}>
       <Slider {...settings}>
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/google.svg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/HP.svg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/ibm.svg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/microsoft.svg"
-            className="image"
-            alt="partner"
-          />
-        </div>
-
-        <div style={imgBg}>
-          <img
-            style={imgSty}
-            src="./images/oracle.svg"
-            className="image"
-            alt="partner"
-          />
-        </div>
+        {partnerImages.map((img) => {
+          return (
+            <div key={img.img_url}>
+              <a href={img.url} target="_blank" style={{outline: "none"}}>
+                <img
+                  style={{
+                    width: img.width,
+                    height: "100px",
+                  }}
+                  src={img.img_url}
+                  className="image"
+                  alt="partner"
+                />
+              </a>
+            </div>
+          );
+        })}
       </Slider>
     </div>
   );

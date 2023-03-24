@@ -1,33 +1,28 @@
 import React, { useState } from "react";
-import { products } from "../../src/products";
+import { serviceDesc, services } from "../../src/products";
 import { Blog } from "../components/home/Blog";
 
 import "./Home.css";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { PartnerImg } from "../components/PartnerImg";
+import { BsArrowRight } from "react-icons/bs";
+import { SliderLayout } from "../components/SliderLayout";
 import { Product } from "../components/home/Product";
-import Testimonial from "../components/home/Testimonial";
 
 export const Home = () => {
-  const [data, setData] = useState(products);
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [serviceData, setServiceData] = useState(serviceDesc[0]);
+  const [activeServiceL, setActiveServiceL] = useState(services[0]);
 
-  const filterCategories = (item) => {
-    handleCategoryClick(item);
-
-    const result = products.filter((curr) => {
-      return curr.category === item;
-    });
-
-    if (item === "All") setData(products);
-    else setData(result);
+  const handleServiceClick = (id) => {
+    for (let i = 0; i < serviceDesc.length; i++) {
+      if (serviceDesc[i].id === id) {
+        setServiceData(serviceDesc[i]);
+      }
+    }
   };
 
-  const handleCategoryClick = (category) => {
-    setActiveCategory(category);
+  const handleActiveService = (service) => {
+    setActiveServiceL(service);
   };
 
   return (
@@ -57,9 +52,8 @@ export const Home = () => {
       <div className="partner-home-section">
         <div className="container">
           <PartnerImg
-            slides={5}
+            slides={7}
             isDotsVisible={false}
-            imgWidth="100px"
             style={{
               width: "100%",
               padding: "0 2rem",
@@ -79,73 +73,99 @@ export const Home = () => {
             continent, utilizing African talent
           </p>
         </div>
+      </section>
 
+      <section className="service-scrolls-section">
         <div className="container">
+          <div className="items-wrapper">
+            {services.map((service) => {
+              return (
+                <div
+                  className="service-card"
+                  style={{
+                    background:
+                      activeServiceL.id === service.id ? "#AB0E12" : "#09244B",
+                  }}
+                  key={service.id}
+                  onClick={() => {
+                    handleServiceClick(service.id);
+                    handleActiveService(service);
+                  }}
+                >
+                  <img src={service.icon} alt="icon" />
+                  <p>{service.title}</p>
+                  <img
+                    src="./images/vuesax.svg"
+                    className="icon-direction"
+                    alt="icon"
+                    style={{
+                      transform:
+                        activeServiceL.id === service.id
+                          ? "rotate(-90deg)"
+                          : "rotate(0deg)",
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
           <div className="service-items">
-            <div className="service-item">
-              <img src="./images/cloud-server.svg" alt="cloud" />
+            <div className="items-left" style={{ width: "35%" }}></div>
 
-              <h5>Cloud Strategy</h5>
-              <p>
-                We provide strategies and processes such as cloud infrastructure
-                and software for managing and maximizing technology performance
-              </p>
-            </div>
+            <div style={{ width: "65%" }}>
+              <div className="service-cd-desc">
+                <h3>{serviceData.title}</h3>
+                <p>{serviceData.description}</p>
 
-            <div className="service-item">
-              <img src="./images/award-star.svg" alt="award" />
+                <div className="service-ls-desc">
+                  <div className="service-ls">
+                    {serviceData.icons.map((icon) => {
+                      return (
+                        <span className="service-cd">
+                          <div>
+                            <img src={icon.icon} alt="cloud" />{" "}
+                          </div>
 
-              <h5>Training and Consultation</h5>
-              <p>
-                We provide expert advice, data analytics, and business
-                educational services to individuals and organizations seeking
-                improvement.
-              </p>
-            </div>
+                          <p>{icon.title}</p>
+                        </span>
+                      );
+                    })}
+                  </div>
 
-            <div className="service-item">
-              <img src="./images/mobile-settings.svg" alt="mobile" />
-
-              <h5>Mobile App Development</h5>
-              <p>
-                We design and build cross-platform software applications for
-                various industries from food, pharmacy, transport etc
-              </p>
+                  <button>
+                    Learn more <BsArrowRight />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <section className="about-home-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-home-left">
-              <div className="about-img-bg"></div>
-              <img src="./images/about-home-img.png" alt="about" />
-            </div>
-            <div className="col-md-6 about-home-right">
               <h5>About us</h5>
               <h3>
-                We are experts in Digital transformation and Protection
-                Assurance
+                We are a one-stop technology solution provider for startups and
+                businesses
               </h3>
 
               <p style={{ paddingTop: "1rem" }}>
-                Lampnet Solutions is a customer-centric cutting-edge technology
-                service provider of World-Class Solutions for high business
-                growth and transformation with experience in Mobile Application
-                development, Security and Cloud based technologies.
-              </p>
-
-              <p>
-                We are an agile software development and consulting company. We
-                bring our expertise and competences to bear in the
-                implementation and customization of integrated Cloud Solutions,
-                ERP, CRM and other business software optimized to exceed
-                customers’ expectations.
+                LampNet Solutions is a remote-based agile IT Consulting & Mobile
+                Technology Development company in West Africa, who are service
+                providers of world-class solutions and mobile technologies for
+                high business growth and transformation with vast experience in
+                Mobile Application Development, Enterprise solutions, Security
+                and Cloud based technologies.
               </p>
 
               <button>Learn More</button>
+            </div>
+            <div className="col-md-6 about-home-right">
+              <div className="about-img-top-bg"></div>
+              <div className="about-img-bottom-bg"></div>
+              <img src="./images/about-home-img.png" alt="about" />
             </div>
           </div>
         </div>
@@ -159,7 +179,7 @@ export const Home = () => {
               <h3>We Have The Best Team of Development Experts</h3>
 
               <div className="apeture-wrapper">
-                <img src="./images/arc.svg" alt="arc" />
+                <img src="./images/Circle.svg" alt="arc" />
               </div>
             </div>
             <div className="col-md-6 choose-right">
@@ -229,8 +249,8 @@ export const Home = () => {
 
       <section className="portfolio-section">
         <div className="portfolio-home-header">
-          <h5>Our portfolio</h5>
-          <h3>What We Offer</h3>
+          <h5>Our products</h5>
+          <h3>The Best Technological Solutions</h3>
 
           <p>
             Our African Technology company strives to provide top-tier IT
@@ -239,95 +259,18 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="container">
-          <div className="product-home-header">
-            <p
-              onClick={() => filterCategories("All")}
-              className={activeCategory === "All" ? "active" : ""}
-            >
-              All portfolio
-            </p>
-            <p
-              onClick={() => filterCategories("Food")}
-              className={activeCategory === "Food" ? "active" : ""}
-            >
-              Food
-            </p>
-            <p
-              onClick={() => filterCategories("Transportation")}
-              className={activeCategory === "Transportation" ? "active" : ""}
-            >
-              Transportation
-            </p>
-            <p
-              onClick={() => filterCategories("Fintech")}
-              className={activeCategory === "Fintech" ? "active" : ""}
-            >
-              Fintech
-            </p>
-            <p
-              onClick={() => filterCategories("Education")}
-              className={activeCategory === "Education" ? "active" : ""}
-            >
-              Education
-            </p>
-            <p
-              onClick={() => filterCategories("Health & Lifestyle")}
-              className={
-                activeCategory === "Health & Lifestyle" ? "active" : ""
-              }
-            >
-              Health & Lifestyle
-            </p>
-            <p
-              onClick={() => filterCategories("Crypto")}
-              className={activeCategory === "Crypto" ? "active" : ""}
-            >
-              Crypto
-            </p>
-          </div>
-
-          <div className="product-home-list">
-            {data.map((product) => {
-              return (
-                <Product
-                  title={product.title}
-                  image={product.image}
-                  description={product.description}
-                />
-              );
-            })}
-          </div>
-
-          <div className="product-home-button">
-            <button>View all</button>
-          </div>
-        </div>
-      </section>
-
-      <section className="testimonial-section">
-        <div className="container">
-          <div className="testimonial-home-header">
-            <h5>Testimonials</h5>
-            <h3>Hear from Our Customers and Partners</h3>
-
-            <p>
-              Our African Technology company strives to provide top-tier IT
-              solutions to businesses of all sizes and locations within the
-              continent, utilizing African talent
-            </p>
-          </div>
-
-          <div>
-            <Testimonial />
-          </div>
-        </div>
+        <Product />
       </section>
 
       <section className="partners-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 partner-home-left">
+              <div className="partner-home-img-top-bg"></div>
+              <div className="partner-home-img-bottom-bg"></div>
+              <img src="./images/partner-home-img.png" alt="partner" />
+            </div>
+            <div className="col-md-6 partner-home-right">
               <h5>Call for Partners</h5>
               <h3>We believe in today’s rapidly evolving digital landscape</h3>
 
@@ -346,15 +289,32 @@ export const Home = () => {
 
               <button>Partner with us</button>
             </div>
-            <div className="col-md-6 partner-home-right">
-              <div className="partner-home-img-bg"></div>
-              <img src="./images/partner-home-img.png" alt="partner" />
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="blogs-section">
+      <section className="testimonial-section">
+        <div className="container">
+          <div className="testimonial-home-header">
+            <h5>Testimonials</h5>
+            <h3>Hear from Our Customers and Partners</h3>
+
+            <p>
+              Our African Technology company strives to provide top-tier IT
+              solutions to businesses of all sizes and locations within the
+              continent, utilizing African talent
+            </p>
+          </div>
+
+          <section className="testimony-section">
+            <div className="container">
+              <SliderLayout />
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section className="blogs-home-section">
         <div className="service-home-header">
           <h5>Our Blog</h5>
           <h3>Resources and Insights</h3>
