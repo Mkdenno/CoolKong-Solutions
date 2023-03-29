@@ -20,11 +20,10 @@
 }
 
 .blog-card-desc {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .blog-card-desc p {
-  color: var(--ash-color);
   font-size: 15px;
 }
 

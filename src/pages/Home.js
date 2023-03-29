@@ -65,7 +65,7 @@ export const Home = () => {
       <section className="services-home-section">
         <div className="service-home-header">
           <h5>Our services</h5>
-          <h3>What We Offer</h3>
+          <h3>LampNets Solutions Provides Flexible IT Services</h3>
 
           <p>
             Our African Technology company strives to provide top-tier IT
@@ -141,10 +141,16 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="about-home-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 about-home-left">
+              <div className="about-img-top-bg"></div>
+              <div className="about-img-bottom-bg"></div>
+              <img src="./images/about-home-img.png" alt="about" />
+            </div>
+            <div className="col-md-6 about-home-right">
               <h5>About us</h5>
               <h3>
                 We are a one-stop technology solution provider for startups and
@@ -162,13 +168,22 @@ export const Home = () => {
 
               <button>Learn More</button>
             </div>
-            <div className="col-md-6 about-home-right">
-              <div className="about-img-top-bg"></div>
-              <div className="about-img-bottom-bg"></div>
-              <img src="./images/about-home-img.png" alt="about" />
-            </div>
           </div>
         </div>
+      </section>
+
+      <section className="portfolio-section">
+        <div className="portfolio-home-header">
+          <h5>Our Solutions</h5>
+          <h3>The Best Solutions From Industry Experts</h3>
+
+          <p>
+            LampNets Solutions strives to provide top-tier IT solutions to
+            businesses of all sizes and locations from industry experts
+          </p>
+        </div>
+
+        <Product />
       </section>
 
       <section className="choose-section">
@@ -247,30 +262,10 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="portfolio-section">
-        <div className="portfolio-home-header">
-          <h5>Our products</h5>
-          <h3>The Best Technological Solutions</h3>
-
-          <p>
-            Our African Technology company strives to provide top-tier IT
-            solutions to businesses of all sizes and locations within the
-            continent, utilizing African talent
-          </p>
-        </div>
-
-        <Product />
-      </section>
-
       <section className="partners-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 partner-home-left">
-              <div className="partner-home-img-top-bg"></div>
-              <div className="partner-home-img-bottom-bg"></div>
-              <img src="./images/partner-home-img.png" alt="partner" />
-            </div>
-            <div className="col-md-6 partner-home-right">
               <h5>Call for Partners</h5>
               <h3>We believe in today’s rapidly evolving digital landscape</h3>
 
@@ -289,6 +284,11 @@ export const Home = () => {
 
               <button>Partner with us</button>
             </div>
+            <div className="col-md-6 partner-home-right">
+              <div className="partner-home-img-top-bg"></div>
+              <div className="partner-home-img-bottom-bg"></div>
+              <img src="./images/partner-home-img.png" alt="partner" />
+            </div>
           </div>
         </div>
       </section>
@@ -297,12 +297,12 @@ export const Home = () => {
         <div className="container">
           <div className="testimonial-home-header">
             <h5>Testimonials</h5>
-            <h3>Hear from Our Customers and Partners</h3>
+            <h3>We Care About Our Customers Too</h3>
 
             <p>
-              Our African Technology company strives to provide top-tier IT
-              solutions to businesses of all sizes and locations within the
-              continent, utilizing African talent
+              We are proud to share some of the positive feedbacks we have
+              received from our satisfied customers who have benefited from our
+              services.
             </p>
           </div>
 
@@ -314,9 +314,26 @@ export const Home = () => {
         </div>
       </section>
 
+      <section className="collaborate-section">
+        <div className="collaborate-home-header">
+          <h5>Let’s Collaborate</h5>
+          <h3>Do You Have a Project Idea in Mind?</h3>
+
+          <p>
+            Our team of experts is ready to discuss more about our partnerships
+            programs and explore how we can collaborate to achieve growth and
+            success for our clients.
+          </p>
+        </div>
+
+        <div className="collaborate-home-button">
+          <button>Discuss with us</button>
+        </div>
+      </section>
+
       <section className="blogs-home-section">
         <div className="service-home-header">
-          <h5>Our Blog</h5>
+          <h5>Recent News</h5>
           <h3>Resources and Insights</h3>
 
           <p>
@@ -326,25 +343,31 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="blogs">
-          <Blog
-            title="Building your API Stack"
-            image="./images/Imageblog-1.png"
-            category="Software Engineering"
-            description="The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them."
-          />
-          <Blog
-            title="Our JS frameworks to use"
-            image="./images/Imageblog-2.png"
-            category="Product"
-            description="JavaScript frameworks make development easy with extensive features and functionalities."
-          />
-          <Blog
-            title="What is Wireframing?"
-            image="./images/Imageblog-3.png"
-            category="Design"
-            description="Introduction to Wireframing and its Principles. Learn from the best in the industry."
-          />
+        <div className="container">
+          <div className="blogs">
+            <Blog
+              title="Building your API Stack"
+              image="./images/Imageblog-1.png"
+              category="Software Engineering"
+              description="The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them."
+            />
+            <Blog
+              title="Our JS frameworks to use"
+              image="./images/Imageblog-2.png"
+              category="Product"
+              description="JavaScript frameworks make development easy with extensive features and functionalities."
+            />
+            <Blog
+              title="What is Wireframing?"
+              image="./images/Imageblog-3.png"
+              category="Design"
+              description="Introduction to Wireframing and its Principles. Learn from the best in the industry."
+            />
+          </div>
+
+          <div className="product-home-button">
+            <button>Read all</button>
+          </div>
         </div>
       </section>
     </>

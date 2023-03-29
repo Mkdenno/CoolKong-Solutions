@@ -15,6 +15,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --transition: all 400ms ease-in-out;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 body {
@@ -30,4 +31,8 @@ a {
 
 li {
   list-style: none;
+}
+
+h3 {
+  font-weight: 600;
 }

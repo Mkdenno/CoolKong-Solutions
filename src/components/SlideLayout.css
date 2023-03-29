@@ -36,7 +36,7 @@
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .pag {
@@ -51,6 +51,7 @@
 .pag.show {
   padding: 0.32rem;
   transition: var(--transition);
+  background: var(--main-color);
 }
 
 .pagination button {
@@ -67,8 +68,8 @@
 }
 
 .nav span {
-    background: var(--white-color);
-    border-radius: 50%;
+  background: var(--white-color);
+  border-radius: 50%;
 }
 
 .slider-prev,
@@ -76,10 +77,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: none;
-  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  padding: 0.1rem 0.3rem;
   color: white;
-  font-size: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -94,55 +95,29 @@
   right: 0.5rem;
 }
 
-
 .testimony-card {
-  padding: 2rem 0;
-  margin: 3rem 8rem;
-  display: flex;
-  color: var(--white-color);
+  padding: 1rem 0;
+  margin: 3rem 12rem;
+  background: var(--white-color);
+  color: var(--black-color);
+  border-radius: 0.5rem;
 }
-
-
 
 .testimony-desc {
-  padding: 1rem 4rem 2rem 4rem;
-  position: relative;
+  padding: 1rem 3rem 2rem 3rem;
 }
 
-.testimony-desc::before {
-  content: "";
-  position: absolute;
-  background: var(--main-color);
-  width: 20%;
-  height: 2px;
-  top: 0;
-  left: 2.5rem;
+.testimony-img-wrapper {
+  display: flex;
+  padding: 1rem 0 0 0;
 }
 
-
-.testimony-desc::after {
-  content: "";
-  position: absolute;
-  background: var(--main-color);
-  width: 2px;
-  height: 45%;
-  top: 0;
-  left: 2.5rem;
+.testimony-img-wrapper div:nth-child(2) {
+  padding: 0 0 0 1rem;
 }
-
-.testimony-desc p {
-  font-size: 15px;
-}
-
-.testimony-desc h5 {
-  padding: 2rem 0 0 0;
-
-}
-
-.testimony-desc h6 {
+.testimony-img-wrapper div:nth-child(2) h6 {
   color: var(--main-color);
 }
-
 
 @media screen and (max-width: 800px) {
   .testimony-card {

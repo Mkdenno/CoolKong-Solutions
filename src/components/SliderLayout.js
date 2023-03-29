@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SlideLayout.css";
 
-import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
-
 export const SliderLayout = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const autoSlideInterval = 4000;
@@ -28,7 +26,7 @@ export const SliderLayout = () => {
     );
   };
 
-  const nextSlide = (index) => setCurrentSlide(index)
+  const nextSlide = (index) => setCurrentSlide(index);
 
   return (
     <div className="slider-container">
@@ -43,16 +41,17 @@ export const SliderLayout = () => {
               <div className="testimony-desc">
                 <h2>"</h2>
                 <p>{slide.desc}</p>
-                <h5>{slide.name}</h5>
-                <h6>{slide.company}</h6>
-              </div>
 
-              <div className="testimony-img">
-                <img
-                  src="./images/testimony-img.png"
-                  alt="person"
-                  width={300}
-                />
+                <div className="testimony-img-wrapper">
+                  <div className="testimony-img">
+                    <img src="./images/t-pic.png" alt="person" />
+                  </div>
+
+                  <div>
+                    <h5>{slide.name}</h5>
+                    <h6>{slide.company}</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -78,16 +77,12 @@ export const SliderLayout = () => {
       <div className="nav">
         <button className="slider-prev" onClick={handlePrevClick}>
           <span>
-            {" "}
-            <IoIosArrowRoundBack style={navStyle} />
+            <img src="./images/arrow-left.svg" alt="ic" />
           </span>
         </button>
         <button className="slider-next" onClick={handleNextClick}>
           <span>
-            {" "}
-            <IoIosArrowRoundForward
-              style={navStyle}
-            />{" "}
+            <img src="./images/arrow-right.svg" alt="ic" />
           </span>
         </button>
       </div>
@@ -95,7 +90,6 @@ export const SliderLayout = () => {
   );
 };
 
-const navStyle = { color: "#212121", fontSize: "1.5rem" }
 
 export const slides = [
   {
@@ -105,7 +99,7 @@ export const slides = [
   },
   {
     desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Doro",
+    name: "Bukola .E. Oluwolero",
     company: "Doxapedia",
   },
   {
@@ -115,7 +109,7 @@ export const slides = [
   },
   {
     desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Doro",
+    name: "Bukola .E. Oluwoleoro",
     company: "Doxapedia",
   },
 ];

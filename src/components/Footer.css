@@ -1,6 +1,7 @@
 footer {
   background-color: #212121;
   color: var(--white-color);
+  font-family: var(--font-montserrat);
 }
 
 footer p,
@@ -22,7 +23,7 @@ li {
 }
 
 .footer-1 {
-  width: 30%;
+  width: 28%;
 }
 
 .footer-1 p {
@@ -34,17 +35,10 @@ li {
   align-items: center;
 }
 
-.footer-2 {
-  width: 10%;
-}
 
 .footer-2 li:hover {
   color: var(--white-color);
   transition: var(--transition);
-}
-
-.footer-3 {
-  width: 15%;
 }
 
 .footer-header {
@@ -52,12 +46,8 @@ li {
   font-size: 16px;
 }
 
-.footer-4 {
-  width: 30%;
-}
-
 .bottom-footer {
-  background-color: var(--main-color);
+  border-top: 1px solid var(--white-color);
   padding: .5rem 0;
 }
 

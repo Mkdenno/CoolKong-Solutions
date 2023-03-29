@@ -94,7 +94,7 @@ export const Product = () => {
 
         <div className="product-home-button">
           {!allBtnClicked && (
-            <button onClick={() => handleAllClicked()}>See all Products</button>
+            <button onClick={() => handleAllClicked()}>See all Solutions</button>
           )}
         </div>
       </div>
