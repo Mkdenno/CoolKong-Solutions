@@ -11,7 +11,8 @@ nav {
   font-family: var(--font-montserrat);
 }
 
-.links.scroll a.active, nav a.active {
+.links.scroll a.active,
+nav a.active {
   color: var(--main-color);
 }
 
@@ -20,7 +21,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  padding: .8rem 0 2rem 0;
+  padding: 0.8rem 0 2rem 0;
 }
 
 .links {
@@ -45,13 +46,14 @@ nav {
   transition: var(--transition);
 }
 
-.links a:hover, .links img:hover {
+.links a:hover,
+.links img:hover {
   color: var(--main-color);
   transition: var(--transition);
 }
 
 .links img {
-  padding: 0 0 0 .2rem;
+  padding: 0 0 0 0.2rem;
 }
 
 .contact-btn button {
@@ -73,12 +75,12 @@ nav {
   border: none;
 }
 
-.service-nav-section{
+.service-nav-section {
   position: absolute;
   background: var(--white-color);
   display: flex;
   padding: 1rem 1rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   top: 5rem;
 }
 
@@ -92,7 +94,8 @@ nav {
   right: 18%;
 }
 
-.service-nav-section a, .service-nav-section.scroll a{
+.service-nav-section a,
+.service-nav-section.scroll a {
   padding: 3px 1rem;
   color: var(--black-color);
 }
@@ -107,7 +110,7 @@ nav {
 }
 
 .sv-nav-item img {
-  margin: -.8rem .5rem 0 0;
+  margin: -0.8rem 0.5rem 0 0;
 }
 
 @media screen and (max-width: 1024px) {

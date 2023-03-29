@@ -22,7 +22,7 @@ const NavBar = () => {
   const [hideProducts, setHideProducts] = useState(false);
   const [hideCompany, setHideCompany] = useState(false);
   const [hidePartnership, setHidePartnership] = useState(false);
-
+  
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
       setScroll(1);
@@ -71,7 +71,10 @@ const NavBar = () => {
             </NavLink>
 
             <div>
-              <ul className={scroll === 0 ? "links" : "links scroll"}>
+              <ul
+                className={scroll === 0 ? "links" : "links scroll"}
+              
+              >
                 <Link
                   onClick={handleClick}
                   className="service-a"
@@ -276,7 +279,7 @@ const NavBar = () => {
                   onClick={handleClick}
                   onMouseOver={() => setHideCompany(!hideCompany)}
                   onMouseEnter={() => {
-                    setHidePartnership(false)
+                    setHidePartnership(false);
                     setHideProducts(false);
                   }}
                 >

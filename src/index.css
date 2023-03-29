@@ -13,7 +13,7 @@
   --dark-blue: #071529;
   --card-bg: #09244B;
   --white-color: #ffffff;
-  --black-color: #000000;
+  --black-color: #222222;
   --transition: all 400ms ease-in-out;
   --font-montserrat: 'Montserrat', sans-serif;
 }
@@ -21,6 +21,7 @@
 body {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
+  color: var(--black-color);
 }
 
 a {

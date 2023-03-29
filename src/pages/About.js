@@ -3,25 +3,16 @@ import React from "react";
 import "./About.css";
 import { PartnerImg } from "../components/PartnerImg";
 import { Contact } from "../components/home/Contact";
-import { Product } from "../components/home/Product";
+import { SliderLayout } from "../components/SliderLayout";
 
 export const About = () => {
   return (
     <>
       <section className="about-section">
-        <div className="main-header">
-          <div className="container">
-            <div className="about-section-left">
-              <h3>
-                Empowering <br /> innovation through cutting-edge solutions
-              </h3>
-
-              <p>
-                LampNet Solutions is the leading provider of comprehensive ICT
-                services like SAAS, PAAS, IAAS services for all African
-                businesses in West Africa.
-              </p>
-            </div>
+        <img src="./images/lamp-logo.png" alt="logo" />
+        <div className="container">
+          <div className="about-section-left">
+            <h3>About us</h3>
           </div>
         </div>
       </section>
@@ -40,27 +31,35 @@ export const About = () => {
       </div>
 
       <section className="our-story-section">
-        <div className="container weare-wrap">
-          <div className="weare-section">
-            <h5>Who we are</h5>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 weare-section-left">
+              <h5>Who we are</h5>
 
-            <h3>
-              We Craft Exceptional Experiences with our Brand, Design, and
-              Digital Expertise
-            </h3>
+              <h3>
+                We Craft Exceptional Experiences with our Brand, Design, and
+                Digital Expertise
+              </h3>
+            </div>
 
-            <p>
-              LampNet is a team of innovative and world-class professionals
-              relentlessly obsessed with the consistent delivery of
-              trail-blazing solutions that guarantee your optimum productivity.
-              We provide customized solutions that drive growth, efficiency, and
-              success, and offer comprehensive support services to simplify
-              technology adoption and utilization, ensuring user-friendliness,
-              security, and scalability.
-            </p>
+            <div className="col-md-6 weare-section-right">
+              <p>
+                LampNet is a team of innovative and world-class professionals
+                relentlessly obsessed with the consistent delivery of
+                trail-blazing solutions that guarantee your optimum
+                productivity. We provide customized solutions that drive growth,
+                efficiency, and success, and offer comprehensive support
+                services to simplify technology adoption and utilization,
+                ensuring user-friendliness, security, and scalability.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="icon-section">
+      <section className="working-section">
+        <div className="container">
+          <div className="working-items">
             <div className="icon-item">
               <img src="./images/w-ic-1.svg" alt="icon" />
               <h3>884+</h3>
@@ -142,6 +141,23 @@ export const About = () => {
               <img src="./images/partner-home-img.png" alt="partner" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="collaborate-section">
+        <div className="collaborate-home-header">
+          <h5>Let’s Collaborate</h5>
+          <h3>Do You Have a Project Idea in Mind?</h3>
+
+          <p>
+            Our team of experts is ready to discuss more about our partnerships
+            programs and explore how we can collaborate to achieve growth and
+            success for our clients.
+          </p>
+        </div>
+
+        <div className="collaborate-home-button">
+          <button>Check Out Our Solutions</button>
         </div>
       </section>
 
@@ -241,19 +257,56 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="portfolio-section">
-        <div className="portfolio-home-header">
-          <h5>Our products</h5>
-          <h3>The Best Technological Solutions</h3>
+      <section className="partners-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 partner-home-left">
+              <h5>Call for Partners</h5>
+              <h3>We believe in today’s rapidly evolving digital landscape</h3>
 
-          <p>
-            Our African Technology company strives to provide top-tier IT
-            solutions to businesses of all sizes and locations within the
-            continent, utilizing African talent
-          </p>
+              <p style={{ padding: "1rem 0 0 0" }}>
+                We are constantly seeking out new partnerships with innovative
+                companies and individuals who share our vision and values, and
+                who are committed to delivering exceptional solutions to our
+                clients.
+              </p>
+
+              <p>
+                Our team of experts is ready to discuss more about our
+                partnerships programs and explore how we can collaborate to
+                achieve growth and success for our clients.
+              </p>
+
+              <button>Partner with us</button>
+            </div>
+            <div className="col-md-6 partner-home-right">
+              <div className="partner-home-img-top-bg"></div>
+              <div className="partner-home-img-bottom-bg"></div>
+              <img src="./images/partner-home-img.png" alt="partner" />
+            </div>
+          </div>
         </div>
+      </section>
 
-        <Product />
+      <section className="testimonial-section">
+        <div className="container">
+          <div className="testimonial-home-header">
+            <h5>Testimonials</h5>
+            <h3>We Care About Our Customers Too</h3>
+
+            <p>
+              We are proud to share some of the positive feedbacks we have
+              received from our satisfied customers who have benefited from our
+              services.
+            </p>
+          </div>
+
+          <section className="testimony-section">
+            <div className="container">
+              <SliderLayout />
+            </div>
+          </section>
+        </div>
       </section>
 
       <Contact />

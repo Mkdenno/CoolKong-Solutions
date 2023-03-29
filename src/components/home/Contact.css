@@ -1,5 +1,7 @@
 .contact-section {
   padding: 1rem 0 4rem 0;
+  font-family: var(--font-montserrat);
+
 }
 
 .contact-about-left {
