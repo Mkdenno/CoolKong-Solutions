@@ -1,9 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import { ImLocation2 } from "react-icons/im";
-import { BiMobileAlt } from "react-icons/bi";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -21,7 +20,7 @@ export const Footer = () => {
               </p>
 
               <div className="footer-socials">
-                <FaLinkedin style={{ margin: ".5rem" }} />
+                <FaLinkedin style={{ margin: "0 .5rem 0 0" }} />
                 <FaFacebookSquare style={{ margin: ".5rem" }} />
                 <AiFillInstagram style={{ margin: ".5rem" }} />
               </div>
@@ -32,16 +31,16 @@ export const Footer = () => {
 
             <div className="footer-item">
               <li>
-                <a>About Us</a>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <a>Our Services</a>
+                <Link href="/">Our Services</Link>
               </li>
               <li>
-                <a>Blog</a>
+                <Link href="/blogs">Blog</Link>
               </li>
               <li>
-                <a>Partnership</a>
+                <Link href="/">Partnership</Link>
               </li>
             </div>
           </div>
@@ -49,10 +48,18 @@ export const Footer = () => {
             <p className="footer-header">Support</p>
 
             <div className="footer-item">
-              <li>Support</li>
-              <li>Terms of service</li>
-              <li>Privacy Policy</li>
-              <li>Career</li>
+              <li>
+                <Link href="/">Support</Link>
+              </li>
+              <li>
+                <Link href="/">Terms of service</Link>
+              </li>
+              <li>
+                <Link href="/">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link href="/">Career</Link>
+              </li>
             </div>
           </div>
           <div className="footer-4">
@@ -62,6 +69,7 @@ export const Footer = () => {
                 <img
                   src="./images/location.svg"
                   style={{ margin: "-1rem 0.5rem 0 0" }}
+                  alt="ic"
                 />
                 <p>128 Itire Rd, Lawanson Surulere Lagos, Nigeria</p>
               </div>
@@ -69,6 +77,7 @@ export const Footer = () => {
                 <img
                   src="./images/call.svg"
                   style={{ margin: "-1rem 0.5rem 0 0" }}
+                  alt="ic"
                 />
                 <p>+234 816 663 7303</p>
               </div>
@@ -76,6 +85,7 @@ export const Footer = () => {
                 <img
                   src="./images/sms.svg"
                   style={{ margin: "-1rem 0.5rem 0 0" }}
+                  alt="ic"
                 />
                 <p>support@lampnets.com</p>
               </div>

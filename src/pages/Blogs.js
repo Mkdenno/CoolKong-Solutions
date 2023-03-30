@@ -1,6 +1,6 @@
 import React from "react";
 import { blogsCategory } from "../BlogsCategory";
-import { Blog } from "../components/home/Blog";
+import { Blog } from "../components/Blog";
 
 import "./Blog.css";
 

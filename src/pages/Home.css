@@ -431,6 +431,9 @@
   margin-left: 2rem;
 }
 
+.blog-home-button a:hover {
+  color: var(--main-color);
+}
 
 @media screen and (max-width: 1024px) {
   .products {

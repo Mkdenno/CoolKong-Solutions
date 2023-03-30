@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { serviceDesc, services } from "../../src/products";
-import { Blog } from "../components/home/Blog";
+import { Blog } from "../components/Blog";
 
 import "./Home.css";
 

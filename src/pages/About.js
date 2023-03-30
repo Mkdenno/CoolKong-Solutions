@@ -2,7 +2,7 @@ import React from "react";
 
 import "./About.css";
 import { PartnerImg } from "../components/PartnerImg";
-import { Contact } from "../components/home/Contact";
+import { Contact } from "../components/Contact";
 import { SliderLayout } from "../components/SliderLayout";
 
 export const About = () => {

@@ -29,7 +29,9 @@ a {
   color: var(--black-color);
   outline: none;
 }
-
+a:hover {
+  color: var(--main-color);
+}
 li {
   list-style: none;
 }
