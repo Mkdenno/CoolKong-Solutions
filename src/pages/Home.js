@@ -8,6 +8,8 @@ import { PartnerImg } from "../components/PartnerImg";
 import { BsArrowRight } from "react-icons/bs";
 import { SliderLayout } from "../components/SliderLayout";
 import { Product } from "../components/home/Product";
+import { HeroSlider } from "../components/home/HeroSlider";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const [serviceData, setServiceData] = useState(serviceDesc[0]);
@@ -28,6 +30,7 @@ export const Home = () => {
   return (
     <>
       <section className="home-section">
+        <HeroSlider />
         <div className="main-header">
           <div className="container">
             <div className="home-section-left">
@@ -365,8 +368,10 @@ export const Home = () => {
             />
           </div>
 
-          <div className="product-home-button">
-            <button>Read all</button>
+          <div className="blog-home-button">
+            <Link to="/blogs">
+              Read all
+            </Link>
           </div>
         </div>
       </section>

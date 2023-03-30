@@ -1,11 +1,11 @@
 .blogs-header-section {
-  background: var(--dark-blue);
-  color: var(--white-color);
   padding: 12rem 0 4rem 0;
+  font-family: var(--font-montserrat);
 }
 
 .tags-section {
   padding: 3rem 0;
+  font-family: var(--font-montserrat);
 }
 
 .tags {
@@ -25,4 +25,5 @@
 
 .blogs-section {
   padding: 1rem 0;
+  font-family: var(--font-montserrat);
 }

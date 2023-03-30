@@ -1,7 +1,6 @@
 import React from "react";
 import { blogsCategory } from "../BlogsCategory";
 import { Blog } from "../components/home/Blog";
-import { Contact } from "../components/home/Contact";
 
 import "./Blog.css";
 
@@ -11,7 +10,6 @@ export const Blogs = () => {
     <>
       <section className="blogs-header-section">
         <div className="container">
-          <h5>Our Blog</h5>
           <h2>Resources and Insights</h2>
         </div>
       </section>
@@ -70,8 +68,21 @@ export const Blogs = () => {
         </div>
       </section>
 
-      <section>
-        <Contact />
+      <section className="collaborate-section">
+        <div className="collaborate-home-header">
+          <h5>Let’s Collaborate</h5>
+          <h3>Do You Have a Project Idea in Mind?</h3>
+
+          <p>
+            Our team of experts is ready to discuss more about our partnerships
+            programs and explore how we can collaborate to achieve growth and
+            success for our clients.
+          </p>
+        </div>
+
+        <div className="collaborate-home-button">
+          <button>Discuss with us</button>
+        </div>
       </section>
     </>
   );

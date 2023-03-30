@@ -1,22 +1,23 @@
 .home-section {
-  background-image: url("../../public/images/hero-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   color: var(--white-color);
   font-family: var(--font-montserrat);
-
+  position: relative;
 }
 
 .main-header {
   background: rgba(0, 0, 0, 0.7);
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .home-section-left {
   width: 50%;
-  padding-top: 12rem;
+  padding-top: 9rem;
 }
 
 .home-section-left h3 {
@@ -413,6 +414,21 @@
 .testimony-section {
   color: #212121;
   font-family: var(--font-montserrat);
+}
+
+.blog-home-button {
+  text-align: center;
+}
+
+.blog-home-button a {
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 0.2rem;
+  color: var(--main-color);
+  padding: 0.5rem 3rem;
+  margin-left: 2rem;
 }
 
 
