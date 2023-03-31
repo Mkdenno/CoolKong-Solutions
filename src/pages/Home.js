@@ -35,7 +35,7 @@ export const Home = () => {
           <div className="container">
             <div className="home-section-left">
               <h3>
-                No. 1 Agile Software development and Tech Consultation Company
+                No. 1 Pre-built Solution Development Company In West Africa
               </h3>
 
               <p>
@@ -369,9 +369,7 @@ export const Home = () => {
           </div>
 
           <div className="blog-home-button">
-            <Link to="/blogs">
-              Read all
-            </Link>
+            <Link to="/blogs">Read all</Link>
           </div>
         </div>
       </section>

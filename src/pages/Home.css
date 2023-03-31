@@ -16,18 +16,18 @@
 }
 
 .home-section-left {
-  width: 50%;
+  width: 55%;
   padding-top: 9rem;
 }
 
 .home-section-left h3 {
-  font-size: 50px;
+  font-size: 48px;
   margin: 20px 0 10px;
 }
 
 .home-section-left p {
-  font-size: 19px;
-  margin: 20px 0;
+  font-weight: 400;
+  margin: 2rem 0;
 }
 
 .hero-btn {
@@ -260,13 +260,14 @@
 
 .about-home-right h3 {
   font-size: 30px;
-  width: 80%;
+  width: 90%;
   word-spacing: 0.5rem;
 }
 
 .about-home-right p {
   color: var(--black-color);
-  font-size: 16px;
+  font-size: 15px;
+  font-style: normal;
 }
 
 .about-home-right button {
@@ -320,7 +321,7 @@
 }
 
 .choose-item p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2rem;
 }
 

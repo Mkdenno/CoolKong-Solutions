@@ -71,10 +71,7 @@ const NavBar = () => {
             </NavLink>
 
             <div>
-              <ul
-                className={scroll === 0 ? "links" : "links scroll"}
-              
-              >
+              <ul className={scroll === 0 ? "links" : "links scroll"}>
                 <Link
                   onClick={handleClick}
                   className="service-a"
@@ -98,33 +95,33 @@ const NavBar = () => {
                     onMouseLeave={() => setHideService(!hideService)}
                   >
                     <div>
-                      <Link className="sv-nav-item">
+                      <Link to="/cloud" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>Cloud Solution & Manangement</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to="/start-up" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>Startup Scale Up & MVP Development</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to="/software-product" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>Software Product Devlopment</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to= "/api" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>API Development & Integration</p>
                       </Link>
                     </div>
                     <div style={{ margin: "0 0 0 2rem" }}>
-                      <Link className="sv-nav-item">
+                      <Link to="/white-label" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>White Label App Customization</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to="/training" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>Training & IT Consultation</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to="/design" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>UI/UX Design</p>
                       </Link>
