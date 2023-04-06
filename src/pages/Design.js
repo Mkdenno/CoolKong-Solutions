@@ -260,24 +260,22 @@ export const Design = () => {
 
         <section className="serv-sec-6">
           <div className="container">
-            <div className="sec-6">
-              <div className="sec-6-l">
-                <img src="./images/stacks.png" alt="stack" />
-              </div>
-              <div className="sec-6-r">
-                <h5>Our Tech Stacks</h5>
-                <h3>
-                  We are a one-stop technology solution provider for startups
-                  and businesses
-                </h3>
-                <p>
-                  We employ the latest languages, frameworks and technologies to
-                  ensure security, scalability and speed. We are well-equipped
-                  to deliver cross-that are convenient for all users and work
-                  for all devices.
-                </p>
+            <div className="sec-6-tools">
+              <h5>Tools</h5>
+              <h3>Our Most Used Design Tools</h3>
+              <p>
+                We understand your idea is unique, and so should be your
+                product, hence we combine our resources to accelerate the growth
+                of your startup from ideation to execution
+              </p>
 
-                <Link>View Our Services</Link>
+              <div className="tool-items">
+                {tools.map((tool) => (
+                  <div className='tool'>
+                    <img src={tool.image} alt='tool' />
+                    <h5>{tool.name}</h5>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -287,6 +285,34 @@ export const Design = () => {
       </>
     );
 }
+
+
+const tools = [
+  {
+    image: "./images/figma.svg",
+    name: "Figma",
+  },
+  {
+    image: "./images/sketch.svg",
+    name: "Sketch",
+  },
+  {
+    image: "./images/invision.svg",
+    name: "Invision",
+  },
+  {
+    image: "./images/photoshop.svg",
+    name: "Photoshop",
+  },
+  {
+    image: "./images/illustrator.svg",
+    name: "Illustrator",
+  },
+  {
+    image: "./images/after-effects.svg",
+    name: "Aftereffects",
+  },
+];
 
 const benefits = [
   {

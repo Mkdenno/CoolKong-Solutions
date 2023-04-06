@@ -125,7 +125,7 @@ const NavBar = () => {
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>UI/UX Design</p>
                       </Link>
-                      <Link className="sv-nav-item">
+                      <Link to="/staff" className="sv-nav-item">
                         <img src="./images/cloud-setting.svg" alt="ic" />
                         <p>Outsourcing & Team Augmentation</p>
                       </Link>

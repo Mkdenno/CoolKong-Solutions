@@ -1,45 +1,51 @@
 .contact-section {
-  padding: 1rem 0 4rem 0;
+  padding: 4rem 0;
   font-family: var(--font-montserrat);
 
-}
-
-.contact-about-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .contact-about-left h5 {
   color: var(--main-color);
 }
 
+.contact-about-left h2 {
+  width: 85%;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
 .contact-about-left h3 {
-  word-spacing: 0.2rem;
-  line-height: 2.5rem;
-  width: 70%;
+  width: 75%;
+  padding: .5rem 0;
 }
 
 .contact-about-left p {
-  width: 90%;
+  width: 70%;
   font-size: 15px;
-  color: var(--ash-color);
+}
+
+.cont-item {
+  display: flex;
 }
 
 form {
   background: var(--white-color);
   padding: 2rem;
   border-radius: 0.3rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
 input,
 textarea {
   width: 100%;
-  border: 1px solid #bbbbbb;
-  border-radius: 2px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
   margin: 0.8rem 0;
   outline: none;
   color: #5f5d5d;
+  padding: 1rem;
+  font-size: 14px;
 }
 
 input {
@@ -64,6 +70,6 @@ form button {
   border: none;
   border-radius: 0.2rem;
   color: var(--white-color);
-  padding: 0.5rem 2rem;
+  padding: .8rem 2rem;
   margin: 1rem 0 0 0;
 }

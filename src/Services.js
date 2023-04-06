@@ -159,7 +159,6 @@ export const softProdApproach = [
   },
 ];
 
-
 export const apiTitles = [
   {
     id: 1,
@@ -208,7 +207,7 @@ export const apiApproach = [
     title: "Maintenance",
     des_one:
       "We monitor the API's performance, apply updates and patches as necessary, and respond to any issues or bugs that arise. We also work with your business to implement any new features or functionality that may be required. Throughout this phase, we remain committed to ensuring that the API continues to meet your business's needs and objectives.",
-    des_two: ""
+    des_two: "",
   },
 ];
 
@@ -370,5 +369,56 @@ export const designApproach = [
       "In this final phase, we test the design with users to ensure that it meets their needs and expectations. We gather feedback and make any necessary adjustments to the design. Our team ensures that the final product is user-friendly, accessible, and meets your business goals.",
     des_two:
       "At the end of this phase, your business will have a fully validated design that provides a positive user experience and meets your objectives.",
+  },
+];
+
+export const staffTitles = [
+  {
+    id: 1,
+    title: "Consultation",
+  },
+  { id: 2, title: "Talent Choice" },
+  { id: 3, title: "Integration & Support" },
+  { id: 4, title: "Project Management" },
+  { id: 5, title: "Improvements" },
+];
+
+export const staffApproach = [
+  {
+    id: 1,
+    title: "Consultation",
+    des_one:
+      "In this phase, we work with your business to identify your specific needs and requirements for additional IT staff or expertise. Our team of experts will assess your current IT infrastructure and workforce to determine the best solution for your business.",
+    des_two: "",
+  },
+  {
+    id: 2,
+    title: "Talent Choice",
+    des_one:
+      "In this phase, we work with your business to identify your specific needs and requirements for additional IT staff or expertise. Our team of experts will assess your current IT infrastructure and workforce to determine the best solution for your business.",
+    des_two: "",
+  },
+  {
+    id: 3,
+    title: "Integration & Support",
+    des_one:
+      "Before the final interview with our customer, our HR team assesses candidates' backgrounds, technical skills, English proficiency, and soft skills to select the best-fit individual.",
+    des_two:
+      "Our team of experts will seamlessly integrate with your existing team or project to ensure a smooth transition. We provide ongoing support and assistance to ensure that our team works effectively with yours and that your business achieves its goals.",
+  },
+  {
+    id: 4,
+    title: "Project Management",
+    des_one:
+      "As soon as a specific specialist is chosen, we can start working on our customer’s project. Lampnet Solutions guarantees excellent specialists and the execution of your project’s tasks at the highest level.",
+    des_two:
+      "We handle all aspects of project management, from planning and development to implementation and maintenance. Our team of experts will work with you to understand your project requirements and deliver customized solutions that meet your business goals.",
+  },
+  {
+    id: 5,
+    title: "Improvements",
+    des_one:
+      "We provide ongoing monitoring and improvements to your IT systems or network infrastructure to ensure that they are always running at peak performance. Our team of experts is always available to provide support and assistance whenever you need it.",
+    des_two: "",
   },
 ];

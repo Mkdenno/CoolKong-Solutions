@@ -19,7 +19,7 @@
 .serv-sec-1,
 .serv-sec-2,
 .serv-sec-5 {
-  padding: 5rem 0;
+  padding: 3rem 0;
   font-family: var(--font-montserrat);
 }
 
@@ -85,13 +85,11 @@
 }
 
 .serv-sec-3 {
-  padding: 0 0 5rem 0;
+  padding: 3rem 0;
   font-family: var(--font-montserrat);
-}
-
-.serv-sec-3 h5 {
-  color: var(--main-color);
-}
+  background: var(--card-bg);
+  color: var(--white-color);
+}x
 
 .serv-sec-3 h3 {
   width: 40%;
@@ -107,11 +105,9 @@
 }
 
 .l-card {
-  background: var(--card-bg);
   color: var(--white-color);
   width: 80%;
   border-radius: 0.3rem;
-  padding: 2rem;
 }
 
 .l-card-item {
@@ -133,20 +129,20 @@
 }
 
 .l-card-item p {
-  padding: 0.8rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   color: #bbbbbb;
 }
 
 .sec-3-right {
-  flex: 1;
+  flex: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.sec-3-right h3 {
-  width: 100%;
+.sec-3-right h3, .sec-3-right p {
+  width: 80%;
 }
 
 .sec-5-top {
@@ -167,7 +163,7 @@
 
 .serve-sec-4 {
   background: var(--card-bg);
-  padding: 5rem 0;
+  padding: 3rem 0;
   color: var(--white-color);
   font-family: var(--font-montserrat);
 }
@@ -249,7 +245,7 @@
 }
 
 .serv-sec-6 {
-  padding: 5rem 0;
+  padding: 3rem 0;
   font-family: var(--font-montserrat);
 }
 
@@ -281,4 +277,27 @@
 .sec-6-r p {
   padding: 1rem 0;
   width: 80%;
+}
+
+.sec-6-tools h5 {
+ color: var(--main-color);
+}
+
+.sec-6-tools p {
+  width: 55%;
+}
+
+.tool-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.tool {
+  text-align: center;
+}
+
+.tool h5 {
+  padding: 1rem 0 0 0;
+  color: var(--black-color);
 }

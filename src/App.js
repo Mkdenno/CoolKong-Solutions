@@ -12,6 +12,7 @@ import { Api } from "./pages/Api";
 import { WhiteLabel } from "./pages/WhiteLabel";
 import { Training } from "./pages/Training";
 import { Design } from "./pages/Design";
+import { Staff } from "./pages/Staff";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/white-label" element={<WhiteLabel />} />
         <Route path="/training" element={<Training />} />
         <Route path="/design" element={<Design />} />
+        <Route path="/staff" element={<Staff />} />
       </Routes>
       <Footer />
     </>
