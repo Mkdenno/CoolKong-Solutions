@@ -5,14 +5,15 @@ import NavBar from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import { About } from "./pages/About";
 import { Blogs } from "./pages/Blogs";
-import { StartUp } from "./pages/StartUp";
-import { Cloud } from "./pages/Cloud";
-import { SoftwareProd } from "./pages/SoftwareProd";
-import { Api } from "./pages/Api";
-import { WhiteLabel } from "./pages/WhiteLabel";
-import { Training } from "./pages/Training";
-import { Design } from "./pages/Design";
-import { Staff } from "./pages/Staff";
+import { Courier } from "./pages/products/courriex";
+import { StartUp } from "./pages/services/StartUp";
+import { Cloud } from "./pages/services/Cloud";
+import { SoftwareProd } from "./pages/services/SoftwareProd";
+import { Api } from "./pages/services/Api";
+import { WhiteLabel } from "./pages/services/WhiteLabel";
+import { Training } from "./pages/services/Training";
+import { Design } from "./pages/services/Design";
+import { Staff } from "./pages/services/Staff";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/training" element={<Training />} />
         <Route path="/design" element={<Design />} />
         <Route path="/staff" element={<Staff />} />
+        <Route path="/courier" element={<Courier />} />
       </Routes>
       <Footer />
     </>

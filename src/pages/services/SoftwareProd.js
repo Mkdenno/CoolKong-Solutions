@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { Contact } from "../components/Contact";
-import { cloudApproach, cloudTitles } from '../Services';
+import { Contact } from "../../components/Contact";
+import { softProdApproach, softProdTitles } from '../../Services';
+import { Product } from '../../components/home/Product';
 
-export const Cloud = () => {
-
-    const [approachData, setApproachData] = useState(cloudApproach[0]);
-    const [activeApproach, setActiveApproach] = useState(cloudTitles[0]);
+export const SoftwareProd = () => {
+    const [approachData, setApproachData] = useState(softProdApproach[0]);
+    const [activeApproach, setActiveApproach] = useState(softProdTitles[0]);
 
     const handleApproachClick = (approachTitle) => {
-      for (let i = 0; i < cloudApproach.length; i++) {
-        if (cloudApproach[i].id === approachTitle.id) {
-          setApproachData(cloudApproach[i]);
+      for (let i = 0; i < softProdApproach.length; i++) {
+        if (softProdApproach[i].id === approachTitle.id) {
+          setApproachData(softProdApproach[i]);
         }
       }
     };
@@ -26,32 +26,32 @@ export const Cloud = () => {
           <img src="./images/lamp-logo.png" alt="logo" />
 
           <div className="container">
-            <h2>Cloud Solutions & Management</h2>
+            <h2>Software Product Development</h2>
           </div>
         </section>
 
         <section className="serv-sec-1">
           <div className="container">
             <div className="sec-1">
-              <h5>Cloud Solutions & Management</h5>
+              <h5>Software Product Development</h5>
               <h3>
-                We Ensure That Data Security and Performance Are Optimized
-                Across Cloud Environments
+                We Bring Your Business Vision to Life and Give Competitive Edge
+                to Your Software Products
               </h3>
               <p>
-                Cloud solution & Management refers to the processes & tools used
-                to manage the delivery of computing resources, including
-                servers, storage, databases, software, and analytics, over the
-                Internet.
+                Software product development is the process of designing,
+                creating, testing, and launching software products that are
+                intended with a focus on meeting the needs of a specific market
+                or audience.
               </p>
 
               <p>
-                Managing and protecting your data can be complex, but with
-                Lampnets’ cloud solution and management services, it doesn't
-                have to be. We offer comprehensive services to move your
-                enterprise infrastructure to cloud platforms such as Azure, and
-                Google, to help your business conquer the challenges of cloud
-                management and ensure the safety of your data
+                As a leading software product development company, we are
+                committed to delivering exceptional software products and
+                services that enable our clients to transform their business
+                operations and achieve sustainable growth in the digital age.
+                Our expertise spans across various industries, including
+                healthcare, finance, education, e-commerce, and more.
               </p>
             </div>
           </div>
@@ -61,14 +61,14 @@ export const Cloud = () => {
           <div className="container">
             <div className="sec-2">
               <h3 className="text-center">
-                Our Cloud Solutions & Management Services Includes
+                Our Software Product Development Services Includes{" "}
               </h3>
 
               <div className="serv-card-2-items">
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Cloud Mangement</h6>
+                  <h6>Software Quality Analysis</h6>
                   <p>
                     We implement security measures to protect cloud resources
                     from cyber threats, such as malware, hacking attempts, and
@@ -79,7 +79,7 @@ export const Cloud = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Managed Security </h6>
+                  <h6>Mobile App Development</h6>
                   <p>
                     We implement security measures to protect cloud resources
                     from cyber threats, such as malware, hacking attempts, and
@@ -90,7 +90,7 @@ export const Cloud = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Managed DevOps</h6>
+                  <h6>Web/Cloud Development</h6>
                   <p>
                     We integrate development and operations processes, to enable
                     a faster and more efficient software delivery in the cloud
@@ -101,7 +101,7 @@ export const Cloud = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Managed Support</h6>
+                  <h6>Software Architecture Design</h6>
                   <p>
                     We provide technical support and troubleshooting services to
                     ensure optimal functioning of cloud resources, with timely
@@ -125,7 +125,7 @@ export const Cloud = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Cloud Computing</h6>
+                  <h6>Enterprise Software Development</h6>
                   <p>
                     We provide on-demand access to computing resources, such as
                     servers, storage, and databases, as well as software and
@@ -140,11 +140,11 @@ export const Cloud = () => {
         <section className="serv-sec-3">
           <div className="container">
             <h5>Our Unique Approach</h5>
-            <h3>How we provide our Cloud Solutions & Management Services</h3>
+            <h3>How Do We Provide Software Product Development Services?</h3>
             <div className="sec-3">
               <div className="sec-3-left">
                 <div className="l-card">
-                  {cloudTitles.map((title) => (
+                  {softProdTitles.map((title) => (
                     <div
                       className={
                         activeApproach.id === title.id
@@ -176,6 +176,20 @@ export const Cloud = () => {
           </div>
         </section>
 
+        <section className="portfolio-section">
+          <div className="portfolio-home-header">
+            <h5>Our Solutions</h5>
+            <h3>The Best Solutions From Industry Experts</h3>
+
+            <p>
+              LampNets Solutions strives to provide top-tier IT solutions to
+              businesses of all sizes and locations from industry experts
+            </p>
+          </div>
+
+          <Product />
+        </section>
+
         <section className="serve-sec-4">
           <div className="container">
             <div className="sec-4">
@@ -183,7 +197,7 @@ export const Cloud = () => {
                 <div className="l">
                   <h5>Work With Us</h5>
                   <h3>
-                    Looking to Keep Your Data Fully Protected Across Platforms?
+                    Need High-quality, Usable and Sustainable Software Products?{" "}
                   </h3>
                   <p>
                     Let's start the conversation about your upcoming product
@@ -217,8 +231,8 @@ export const Cloud = () => {
             <div className="sec-5-top">
               <h5>The Benefits</h5>
               <h3>
-                Why Choose LampNets Solutions for your Cloud Solutions &
-                Mangement
+                Why Choose LampNets Solutions for your Software Product
+                Development
               </h3>
 
               <p>
@@ -273,7 +287,7 @@ export const Cloud = () => {
 
 const benefits = [
   {
-    title: "Reduced Cost of Ownership",
+    title: "Agile Methodology",
     desc: "We provide access to cloud resources on a pay-as-you-go basis, without having to invest in your own infrastructure and cut costs by eliminating redundant data.",
   },
   {

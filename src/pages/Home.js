@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { serviceDesc, services } from "../../src/products";
 import { Blog } from "../components/Blog";
 
@@ -10,11 +10,13 @@ import { SliderLayout } from "../components/SliderLayout";
 import { Product } from "../components/home/Product";
 import { HeroSlider } from "../components/home/HeroSlider";
 import { Link } from "react-router-dom";
+import { saveRoute } from "../constants/constants";
 
 export const Home = () => {
   const [serviceData, setServiceData] = useState(serviceDesc[0]);
   const [activeServiceL, setActiveServiceL] = useState(services[0]);
 
+  useEffect(() => saveRoute("home"),[])
   const handleServiceClick = (id) => {
     for (let i = 0; i < serviceDesc.length; i++) {
       if (serviceDesc[i].id === id) {

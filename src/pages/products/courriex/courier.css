@@ -1,0 +1,394 @@
+.cx-hero {
+  display: flex;
+  font-family: var(--font-montserrat);
+}
+
+.cx-hero-l {
+  margin: 0rem 0 0 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cx-hero-l h5 {
+  color: var(--cx-main-color);
+}
+
+.cx-hero-l p {
+  width: 60%;
+  padding: 1.5rem 0;
+}
+
+.cx-hero-l button,
+.plart-b-left button {
+  background-color: var(--cx-main-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.5rem;
+  margin: 0 1rem 0 0;
+  border-radius: 4px;
+}
+
+.cx-hero-l button:nth-child(2) {
+  background-color: transparent;
+  color: var(--cx-main-color);
+  border: 1px solid var(--cx-main-color);
+}
+
+.plart-sec {
+  padding: 3rem 0;
+  font-family: var(--font-montserrat);
+}
+
+.plart-t {
+  text-align: center;
+}
+
+.plart-t h5 {
+  color: var(--cx-main-color);
+}
+
+.plart-t p {
+  padding: 0 15rem;
+}
+
+.plarts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cx-solution-sec {
+  font-family: var(--font-montserrat);
+}
+
+.plart-b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plart-b-left {
+  padding: 0.5rem 0;
+}
+
+.plart-b-left h3 {
+  width: 60%;
+  padding: 0 0 0.5rem 0;
+}
+
+.plart-b-left button {
+  margin: 2rem 0 0 0;
+}
+
+.track-item input[type="radio"]:checked {
+  border-color: var(--ash-color);
+  background-color: var(--ash-color);
+}
+
+.track-item {
+  display: flex;
+  padding: 0.2rem 0;
+}
+
+.track-item p {
+  color: var(--ash-color);
+  width: 70%;
+}
+
+.track-item div:nth-child(1) {
+  margin: 0 1rem 0 0;
+}
+
+.cx-features-sec {
+  font-family: var(--font-montserrat);
+  padding: 3rem 0;
+  position: relative;
+}
+
+.feature-t {
+  width: 55%;
+}
+
+.feature-t h5 {
+  color: var(--cx-main-color);
+}
+
+.scroll-btns button {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin: 0 2rem 0 0;
+}
+
+.scroll-btns {
+  position: absolute;
+  top: 5rem;
+  right: 6rem;
+}
+
+.features {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  margin: 0 0 0 7rem;
+}
+
+.feature {
+  text-align: center;
+  background: var(--cx-black-color);
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  width: 320px;
+  margin: 0 1.5rem 0 0;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.feature h6 {
+  color: var(--white-color);
+  padding: 1rem 0 0 0;
+}
+
+.feature p {
+  color: var(--ash-color);
+}
+
+.cx-business-sec {
+  font-family: var(--font-montserrat);
+}
+
+.cx-businesses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem 0 2rem;
+}
+
+.cx-business {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cx-business img {
+  width: 20px;
+  margin: -1rem 0.5rem 0 0;
+}
+
+.cx-collaborate-sec {
+  font-family: var(--font-montserrat);
+  padding: 3rem 0;
+}
+
+.cx-collab {
+  background: var(--cx-main-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 22px;
+}
+
+.cx-collab h3 {
+  width: 70%;
+}
+
+.cx-collab-btns {
+  padding: 3rem 0 0 0;
+}
+
+.cx-collab-btns button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.cx-collab-btns button:nth-child(1) {
+  background: var(--white-color);
+  color: var(--cx-main-color);
+  margin: 0 1rem 0 0;
+}
+
+.cx-collab-btns button:nth-child(2) {
+  border: 1px solid var(--white-color);
+  margin: 0 0 0 1rem;
+}
+
+.cx-competition-sec {
+  padding: 3rem 0;
+  font-family: var(--font-montserrat);
+}
+
+.cx-needs {
+  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cx-sol-sec {
+  background: var(--cx-black-color);
+  font-family: var(--font-montserrat);
+  padding: 2rem 0;
+}
+
+.cx-sol {
+  display: flex;
+  padding: 2rem 0 0 0;
+}
+
+.cx-sol-left {
+  flex: 1;
+  color: var(--white-color);
+}
+
+.cx-l-card {
+  color: var(--white-color);
+  width: 80%;
+  border-radius: 0.3rem;
+  padding: 1rem 0 0 0;
+}
+
+.cx-l-card-item {
+  background: #2c2b2b;
+  margin: 1rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 3rem;
+}
+
+.cx-l-card-item img {
+  margin: 0 1rem 0 0;
+  width: 7%;
+}
+
+.cx-l-card-item p {
+  color: #bbbbbb;
+  margin: 0.2rem 0 0 0;
+}
+
+.cx-l-card-item.active {
+  border: 1px solid var(--cx-main-color);
+  background: var(--cx-light-color);
+  transition: var(--transition);
+}
+
+.cx-l-card-item.active p {
+  color: var(--cx-main-color);
+  transition: var(--transition);
+}
+
+.cx-sol-right {
+  flex: 1;
+  color: white;
+  padding: 6.5rem 0 0 0;
+}
+
+.cx-sol-right h3 {
+  padding: 1rem 0 0 0;
+}
+
+.cx-title-des {
+  color: var(--white-color);
+  display: flex;
+}
+
+.cx-title-des input[type="radio"] {
+  width: 3%;
+  background: #bbbbbb;
+  margin-top: -1rem;
+}
+
+.cx-title-des p {
+  padding: 0 0 0 1rem;
+  width: 80%;
+}
+
+.cx-studies-sec {
+  padding: 3rem 0;
+  font-family: var(--font-montserrat);
+}
+
+.cx-platform-bg {
+  background: #f5faff;
+  border-radius: 8px;
+  display: flex;
+  padding: 2rem;
+}
+
+.cx-platform-bg.orange {
+  background: #fff4f1;
+  margin: 2rem 0 0 0;
+}
+
+.cx-study-l {
+  flex: 1;
+}
+
+.cx-study-r {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cx-study-r p {
+  width: 70%;
+}
+
+.cx-platforms {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  padding: 1.5rem 0;
+}
+
+.cx-platform p:nth-child(2) {
+  font-weight: bold;
+  width: 100%;
+}
+
+.cx-platform-btns button {
+  background: transparent;
+  border: 1px solid var(--black-color);
+  outline: none;
+  padding: 0.68rem 2rem;
+  border-radius: 4px;
+  margin: 0.15rem 1rem 0 0;
+}
+
+.cx-platform-btns img {
+  margin: 0 1rem 0 0;
+}
+
+.sec-6-r.cloud h5 {
+  color: var(--cx-main-color);
+}
+
+.sec-6-r.cloud a {
+  color: var(--white-color);
+  background: var(--cx-main-color);
+}
+
+.cx-sell-sec {
+  font-family: var(--font-montserrat);
+  padding: 3rem 0;
+}

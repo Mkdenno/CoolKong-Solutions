@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { designApproach, designTitles } from '../Services';
+import { designApproach, designTitles } from '../../Services';
 import { Link } from 'react-router-dom';
-import { Contact } from '../components/Contact';
-import { Product } from '../components/home/Product';
+import { Contact } from '../../components/Contact';
+import { Product } from '../../components/home/Product';
 
 export const Design = () => {
     const [approachData, setApproachData] = useState(designApproach[0]);
@@ -178,6 +178,20 @@ export const Design = () => {
           </div>
         </section>
 
+        <section className="portfolio-section">
+          <div className="portfolio-home-header">
+            <h5>Our Solutions</h5>
+            <h3>The Best Solutions From Industry Experts</h3>
+
+            <p>
+              LampNets Solutions strives to provide top-tier IT solutions to
+              businesses of all sizes and locations from industry experts
+            </p>
+          </div>
+
+          <Product />
+        </section>
+
         <section className="serve-sec-4">
           <div className="container">
             <div className="sec-4">
@@ -213,20 +227,6 @@ export const Design = () => {
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="portfolio-section">
-          <div className="portfolio-home-header">
-            <h5>Our Solutions</h5>
-            <h3>The Best Solutions From Industry Experts</h3>
-
-            <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
-              businesses of all sizes and locations from industry experts
-            </p>
-          </div>
-
-          <Product />
         </section>
 
         <section className="serv-sec-5">
@@ -271,8 +271,8 @@ export const Design = () => {
 
               <div className="tool-items">
                 {tools.map((tool) => (
-                  <div className='tool'>
-                    <img src={tool.image} alt='tool' />
+                  <div className="tool">
+                    <img src={tool.image} alt="tool" />
                     <h5>{tool.name}</h5>
                   </div>
                 ))}

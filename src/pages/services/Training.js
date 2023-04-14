@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { apiApproach, apiTitles } from '../Services';
+import { trainingApproach, trainingTitles } from '../../Services';
+import { Contact } from '../../components/Contact';
 import { Link } from 'react-router-dom';
-import { Contact } from '../components/Contact';
+import { Product } from '../../components/home/Product';
 
-export const Api = () => {
-    const [approachData, setApproachData] = useState(apiApproach[0]);
-    const [activeApproach, setActiveApproach] = useState(apiTitles[0]);
+export const Training = () => {
+    const [approachData, setApproachData] = useState(trainingApproach[0]);
+    const [activeApproach, setActiveApproach] = useState(trainingTitles[0]);
 
     const handleApproachClick = (approachTitle) => {
-      for (let i = 0; i < apiApproach.length; i++) {
-        if (apiApproach[i].id === approachTitle.id) {
-          setApproachData(apiApproach[i]);
+      for (let i = 0; i < trainingApproach.length; i++) {
+        if (trainingApproach[i].id === approachTitle.id) {
+          setApproachData(trainingApproach[i]);
         }
       }
     };
@@ -25,32 +26,35 @@ export const Api = () => {
           <img src="./images/lamp-logo.png" alt="logo" />
 
           <div className="container">
-            <h2>API Development & Integration</h2>
+            <h2>Training & IT Consulting</h2>
           </div>
         </section>
 
         <section className="serv-sec-1">
           <div className="container">
             <div className="sec-1">
-              <h5>API Development & Integration</h5>
+              <h5>Training & IT Consulting</h5>
               <h3>
-                We Can Manage your system integration and bring disparate
-                systems together
+                We Empower Organizations to to achieve their full potential
+                through expert training and tailored consultancy solutions
               </h3>
               <p>
-                An API is an application programming interface. APIs are sets of
-                protocols that enable different software systems to connect and
-                share data.
+                Training & IT Consulting is a service that provides businesses
+                with expert guidance and support on all aspects of IT. This
+                service helps businesses to optimize their IT systems, increase
+                efficiency, and reduce costs. At Lampnets Solutions, we offer
+                Training & IT Consulting services to businesses of all sizes and
+                industries.
               </p>
 
               <p>
-                At Lampnets Solutions, we offer comprehensive API development
-                and integration services to help businesses streamline their
-                operations and improve efficiency. Our team of experts has
-                extensive experience in building custom APIs that fit your
-                business requirements, whether you need to integrate with
-                third-party systems, automate tasks, or enhance the customer
-                experience.
+                Our team of IT experts works with your business to evaluate your
+                current IT systems and identify areas for improvement. We
+                provide customized training and certification programs to help
+                your team acquire the skills and knowledge they need to maximize
+                the benefits of your IT systems. With our Training & IT
+                Consulting services, your business can stay ahead of the curve
+                with the latest IT technologies and trends.
               </p>
             </div>
           </div>
@@ -60,51 +64,51 @@ export const Api = () => {
           <div className="container">
             <div className="sec-2">
               <h3 className="text-center">
-                Our API Development & Integration Services Includes
+                Our Training & IT Consulting Services Includes
               </h3>
 
               <div className="serv-card-2-items">
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Custom API Development</h6>
+                  <h6>Training & Certification</h6>
                   <p>
-                    We develop custom APIs that securely extend application
-                    functionality, using clean code, top development tools, and
-                    achieving high performance.
+                    We offer a wide range of training courses, including
+                    technical skills training, leadership training, and
+                    certification programs.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Third Party API Integration </h6>
+                  <h6>IT System Evaluation</h6>
                   <p>
-                    We use Microsoft platforms like Azure for web functionality,
-                    system integration, REST API creation, documentation, and
-                    seamless integration with existing apps.
+                    We conduct a thorough assessment of your current IT system
+                    to identify any vulnerabilities or inefficiencies and give
+                    recommendations for improvement.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Cloud API Integration</h6>
+                  <h6>Project Management</h6>
                   <p>
-                    We provide secure API development, analysis, operation, and
-                    scalability, with on-premises, cloud, or hybrid
-                    on-premises/SaaS API management.
+                    Our IT project management team uses agile methodologies,
+                    collaboration, and feedback for successful project execution
+                    across industries.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Microservice Architecture</h6>
+                  <h6>Data Strategy</h6>
                   <p>
-                    We provide technical support and troubleshooting services to
-                    ensure optimal functioning of cloud resources, with timely
-                    resolution of any issue.
+                    We build resilient architecture for interconnected
+                    applications and proactively manage IT security across your
+                    business ecosystem.
                   </p>
                 </div>
 
@@ -113,7 +117,7 @@ export const Api = () => {
                     <Link>Discuss your idea</Link>
                   </div>
 
-                  <h6>Need Secured Cloud Services?</h6>
+                  <h6>Need Training & IT Consulting?</h6>
                   <p>
                     Our Cloud & DevOps engineers will work with you to fine-tune
                     the delivery, deployment and support of a high-quality
@@ -124,11 +128,11 @@ export const Api = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Automated API Testing</h6>
+                  <h6>Business Intelligence</h6>
                   <p>
-                    Our engineers and QA specialists use automated testing to
-                    evaluate performance and functionality of crucial business
-                    apps.
+                    Our BI consultants optimize data visualization and analytics
+                    with PowerBI. We use fact-based management and predictive
+                    modeling to drive decisions
                   </p>
                 </div>
               </div>
@@ -139,11 +143,11 @@ export const Api = () => {
         <section className="serv-sec-3">
           <div className="container">
             <h5>Our Unique Approach</h5>
-            <h3>How we provide our API Development & Integration Services</h3>
+            <h3>How we provide our Training & IT Consulting Services</h3>
             <div className="sec-3">
               <div className="sec-3-left">
                 <div className="l-card">
-                  {apiTitles.map((title) => (
+                  {trainingTitles.map((title) => (
                     <div
                       className={
                         activeApproach.id === title.id
@@ -175,6 +179,20 @@ export const Api = () => {
           </div>
         </section>
 
+        <section className="portfolio-section">
+          <div className="portfolio-home-header">
+            <h5>Our Solutions</h5>
+            <h3>The Best Solutions From Industry Experts</h3>
+
+            <p>
+              LampNets Solutions strives to provide top-tier IT solutions to
+              businesses of all sizes and locations from industry experts
+            </p>
+          </div>
+
+          <Product />
+        </section>
+
         <section className="serve-sec-4">
           <div className="container">
             <div className="sec-4">
@@ -182,7 +200,8 @@ export const Api = () => {
                 <div className="l">
                   <h5>Work With Us</h5>
                   <h3>
-                    Looking for Seamless and Personalized API Integration?
+                    Need the Best Training Solutions for Your Business
+                    Challenges?
                   </h3>
                   <p>
                     Let's start the conversation about your upcoming product
@@ -216,8 +235,7 @@ export const Api = () => {
             <div className="sec-5-top">
               <h5>The Benefits</h5>
               <h3>
-                Why Choose LampNets Solutions for your Software Product
-                Development
+                Why Choose LampNets Solutions for your Training & IT Consulting
               </h3>
 
               <p>
@@ -272,15 +290,15 @@ export const Api = () => {
 
 const benefits = [
   {
-    title: "Streamlined Integration",
-    desc: "Our API integration services help your business integrate systems seamlessly, including third-party applications, databases, and software",
+    title: "Improved IT Infrastructure",
+    desc: "We optimize your IT systems and processes for better productivity and  implement solutions tailored to your specific needs",
   },
   {
-    title: "Enhanced Security",
-    desc: "We prioritize security in our API development and integration services, ensuring that your business data is protected from unauthorized access.",
+    title: "Increased Business Performance",
+    desc: "We align our IT services with your business goals to improve efficiency and increase profitability, and  maximize business potential.",
   },
   {
-    title: "Increased Efficiency",
-    desc: "We optimize API performance and functionality, allowing your business to save time and resources, automate tasks, and simplify workflows",
+    title: "Competitive Advantage",
+    desc: "Our team of business experts help your business stay ahead of the curve and remain competitive in a rapidly-changing marketplace.",
   },
 ];

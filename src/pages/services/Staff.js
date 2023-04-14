@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { whiteApproach, whiteTitles } from "../Services";
-import { Link } from "react-router-dom";
-import { Contact } from "../components/Contact";
-import { Product } from "../components/home/Product";
+import React, {useState} from 'react';
+import { staffApproach, staffTitles } from '../../Services';
+import { Contact } from '../../components/Contact';
+import { Link } from 'react-router-dom';
+import { Product } from '../../components/home/Product';
 
-export const WhiteLabel = () => {
-  const [approachData, setApproachData] = useState(whiteApproach[0]);
-  const [activeApproach, setActiveApproach] = useState(whiteTitles[0]);
+export const Staff = () => {
+  const [approachData, setApproachData] = useState(staffApproach[0]);
+  const [activeApproach, setActiveApproach] = useState(staffTitles[0]);
 
   const handleApproachClick = (approachTitle) => {
-    for (let i = 0; i < whiteApproach.length; i++) {
-      if (whiteApproach[i].id === approachTitle.id) {
-        setApproachData(whiteApproach[i]);
+    for (let i = 0; i < staffApproach.length; i++) {
+      if (staffApproach[i].id === approachTitle.id) {
+        setApproachData(staffApproach[i]);
       }
     }
   };
@@ -26,34 +26,34 @@ export const WhiteLabel = () => {
         <img src="./images/lamp-logo.png" alt="logo" />
 
         <div className="container">
-          <h2>White Label App Customization</h2>
+          <h2>IT Staff Outsourcing & Team Augmentation</h2>
         </div>
       </section>
 
       <section className="serv-sec-1">
         <div className="container">
           <div className="sec-1">
-            <h5>White Label App Customization</h5>
+            <h5>IT Staff Outsourcing & Team Augmentation</h5>
             <h3>
-              We build Customizable Business Apps that Promote Brand Visibility
-              and Credibility
+              We Help You Achieve Your Business Goals with Top-notch Staffing
+              Solutions
             </h3>
             <p>
-              White label apps are software applications developed by one
-              company and rebranded and marketed by another company under their
-              brand name. These apps allow businesses to offer customized
-              solutions to their customers without investing in costly
-              development and infrastructure.
+              Staff outsourcing and team augmentation involve hiring external
+              professionals to work on a project or join an existing team to
+              supplement and enhance the skills and expertise of your current
+              staff. It can help your business achieve its goals while saving
+              time and resources.
             </p>
 
             <p>
-              At Lampnets Solutions, we offer white label app development
-              services to help businesses create custom mobile apps that align
-              with their brand and requirements. Our experts provide ideation,
-              design, development, testing, and maintenance support. We offer
-              flexible licensing options to fit your needs and budget,
-              delivering a seamless user experience that enhances your brand
-              identity.
+              At Lampnet Solutions, we offer staff outsourcing and team
+              augmentation services to provide specialized expertise and
+              additional resources for businesses without the need for permanent
+              hires. We provide flexible staffing solutions tailored to your
+              needs, whether it's short-term or long-term projects. With ongoing
+              support and seamless integration, let us help you achieve your
+              business goals with top-notch staffing solutions.
             </p>
           </div>
         </div>
@@ -63,51 +63,51 @@ export const WhiteLabel = () => {
         <div className="container">
           <div className="sec-2">
             <h3 className="text-center">
-              Our White Label App Customization Services Includes
+              Our IT Staff Outsourcing & Team Augmentation Services Includes
             </h3>
 
             <div className="serv-card-2-items">
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>White-label Software</h6>
+                <h6>Hire UI</h6>
                 <p>
-                  We develop custom APIs that securely extend application
-                  functionality, using clean code, top development tools, and
-                  achieving high performance.
+                  Outsource IT staff to us for access to skilled professionals
+                  without the cost of permanent hires. We handle recruitment,
+                  training, and HR management.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Branded Mobile Apps</h6>
+                <h6>Team Augmentation</h6>
                 <p>
-                  We offer businesses the opportunity to have their own branded
-                  mobile app without the cost and time required to develop one
-                  from scratch.
+                  We augment your team with our IT experts who will work
+                  seamlessly to help you scale your business faster without
+                  permanent hires.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Cloud API Integration</h6>
+                <h6>Project-based Outsourcing</h6>
                 <p>
-                  We provide secure API development, analysis, operation, and
-                  scalability, with on-premises, cloud, or hybrid
-                  on-premises/SaaS API management.
+                  We handle entire IT projects for your business, providing
+                  customized solutions that meet your business goals, help you
+                  reduce costs and increase efficiency.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Third Party APIs</h6>
+                <h6>Remote Staffing</h6>
                 <p>
-                  Our Third-Party API allows your business to integrate with
-                  third-party software systems, providing you with access to new
-                  features and functionalities.
+                  We provide access to skilled IT professionals who work
+                  remotely from our location to anywhere while saving on
+                  overhead costs.
                 </p>
               </div>
 
@@ -116,7 +116,7 @@ export const WhiteLabel = () => {
                   <Link>Discuss your idea</Link>
                 </div>
 
-                <h6>Need White Label Apps?</h6>
+                <h6>Need a Dedicated Developer ?</h6>
                 <p>
                   Our Cloud & DevOps engineers will work with you to fine-tune
                   the delivery, deployment and support of a high-quality
@@ -127,10 +127,11 @@ export const WhiteLabel = () => {
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Customizable User Interface</h6>
+                <h6>Network Outsourcing</h6>
                 <p>
-                  With our Customizable User Interface, your business can offer
-                  a unique and personalized user experience to your customers.
+                  We provide managed network services to ensure secure,
+                  reliable, and efficient network. Our team reduces downtime and
+                  improves network performance.
                 </p>
               </div>
             </div>
@@ -141,11 +142,13 @@ export const WhiteLabel = () => {
       <section className="serv-sec-3">
         <div className="container">
           <h5>Our Unique Approach</h5>
-          <h3>How we provide our White Label App Customization Services</h3>
+          <h3>
+            How we provide our IT Staff Outsourcing & Team Augmentation Services
+          </h3>
           <div className="sec-3">
             <div className="sec-3-left">
               <div className="l-card">
-                {whiteTitles.map((title) => (
+                {staffTitles.map((title) => (
                   <div
                     className={
                       activeApproach.id === title.id
@@ -177,20 +180,36 @@ export const WhiteLabel = () => {
         </div>
       </section>
 
+      <section className="portfolio-section">
+        <div className="portfolio-home-header">
+          <h5>Our Solutions</h5>
+          <h3>The Best Solutions From Industry Experts</h3>
+
+          <p>
+            LampNets Solutions strives to provide top-tier IT solutions to
+            businesses of all sizes and locations from industry experts
+          </p>
+        </div>
+
+        <Product />
+      </section>
+
       <section className="serve-sec-4">
         <div className="container">
           <div className="sec-4">
             <div className="sec-4-left">
               <div className="l">
                 <h5>Work With Us</h5>
-                <h3>Looking for Apps with World-Class Branding Features?</h3>
+                <h3>
+                  Need Seamless Access to Global Talent for your Project Needs?
+                </h3>
                 <p>
-                  Let's start the conversation about your upcoming product
-                  launch, and we'll assist you in brainstorming ideas and
-                  execution process.
+                  Our teams are behind the technical success of an array of
+                  world-renowned Fintech, eCommerce, Investment, and other
+                  brands
                 </p>
 
-                <Link>Discuss Your Ideas</Link>
+                <Link>Consult Our Expert</Link>
               </div>
             </div>
 
@@ -211,27 +230,12 @@ export const WhiteLabel = () => {
         </div>
       </section>
 
-      <section className="portfolio-section">
-        <div className="portfolio-home-header">
-          <h5>Our Solutions</h5>
-          <h3>The Best Solutions From Industry Experts</h3>
-
-          <p>
-            LampNets Solutions strives to provide top-tier IT solutions to
-            businesses of all sizes and locations from industry experts
-          </p>
-        </div>
-
-        <Product />
-      </section>
-
       <section className="serv-sec-5">
         <div className="container">
           <div className="sec-5-top">
             <h5>The Benefits</h5>
             <h3>
-              Why Choose LampNets Solutions for your White Label App
-              Customization
+              Why Choose LampNet Solutions for your Training & IT Consulting{" "}
             </h3>
 
             <p>
@@ -286,15 +290,15 @@ export const WhiteLabel = () => {
 
 const benefits = [
   {
-    title: "Branding",
-    desc: "We help your business design and develop a custom mobile app that aligns with your brand identity, helping you to establish a stronger brand presence",
+    title: "Access to Global Talent",
+    desc: "We provide your business with skilled IT professionals who have specialized skills and expertise that are hard to find in the local job market.",
   },
   {
-    title: "Cost-Effective",
-    desc: "Our flexible licensing options allow you to customize the app to your business needs and provides a unique competitive advantage in your industry..",
+    title: "Flexibility",
+    desc: "Our staffing solutions are flexible and can be tailored to meet the specific needs of your business, whether you need short-term or long-term staff augmentation.",
   },
   {
-    title: "Faster Time-to-Market",
-    desc: "Our team of experts can help you bring your app ideas to life quickly, reducing the time it takes for your business to launch a mobile app in the market.",
+    title: "Increased Productivity",
+    desc: "Our IT professionals can supplement your existing team or handle entire projects, allowing your business to increase its capacity and scale faster.",
   },
 ];

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import { Contact } from "../components/Contact";
-import { softProdApproach, softProdTitles } from '../Services';
-import { Product } from '../components/home/Product';
+import { apiApproach, apiTitles } from '../../Services';
+import { Link } from 'react-router-dom';
+import { Contact } from '../../components/Contact';
+import { Product } from '../../components/home/Product';
 
-export const SoftwareProd = () => {
-    const [approachData, setApproachData] = useState(softProdApproach[0]);
-    const [activeApproach, setActiveApproach] = useState(softProdTitles[0]);
+export const Api = () => {
+    const [approachData, setApproachData] = useState(apiApproach[0]);
+    const [activeApproach, setActiveApproach] = useState(apiTitles[0]);
 
     const handleApproachClick = (approachTitle) => {
-      for (let i = 0; i < softProdApproach.length; i++) {
-        if (softProdApproach[i].id === approachTitle.id) {
-          setApproachData(softProdApproach[i]);
+      for (let i = 0; i < apiApproach.length; i++) {
+        if (apiApproach[i].id === approachTitle.id) {
+          setApproachData(apiApproach[i]);
         }
       }
     };
@@ -26,32 +26,32 @@ export const SoftwareProd = () => {
           <img src="./images/lamp-logo.png" alt="logo" />
 
           <div className="container">
-            <h2>Software Product Development</h2>
+            <h2>API Development & Integration</h2>
           </div>
         </section>
 
         <section className="serv-sec-1">
           <div className="container">
             <div className="sec-1">
-              <h5>Software Product Development</h5>
+              <h5>API Development & Integration</h5>
               <h3>
-                We Bring Your Business Vision to Life and Give Competitive Edge
-                to Your Software Products
+                We Can Manage your system integration and bring disparate
+                systems together
               </h3>
               <p>
-                Software product development is the process of designing,
-                creating, testing, and launching software products that are
-                intended with a focus on meeting the needs of a specific market
-                or audience.
+                An API is an application programming interface. APIs are sets of
+                protocols that enable different software systems to connect and
+                share data.
               </p>
 
               <p>
-                As a leading software product development company, we are
-                committed to delivering exceptional software products and
-                services that enable our clients to transform their business
-                operations and achieve sustainable growth in the digital age.
-                Our expertise spans across various industries, including
-                healthcare, finance, education, e-commerce, and more.
+                At Lampnets Solutions, we offer comprehensive API development
+                and integration services to help businesses streamline their
+                operations and improve efficiency. Our team of experts has
+                extensive experience in building custom APIs that fit your
+                business requirements, whether you need to integrate with
+                third-party systems, automate tasks, or enhance the customer
+                experience.
               </p>
             </div>
           </div>
@@ -61,47 +61,47 @@ export const SoftwareProd = () => {
           <div className="container">
             <div className="sec-2">
               <h3 className="text-center">
-                Our Software Product Development Services Includes{" "}
+                Our API Development & Integration Services Includes
               </h3>
 
               <div className="serv-card-2-items">
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Software Quality Analysis</h6>
+                  <h6>Custom API Development</h6>
                   <p>
-                    We implement security measures to protect cloud resources
-                    from cyber threats, such as malware, hacking attempts, and
-                    data breaches.
+                    We develop custom APIs that securely extend application
+                    functionality, using clean code, top development tools, and
+                    achieving high performance.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Mobile App Development</h6>
+                  <h6>Third Party API Integration </h6>
                   <p>
-                    We implement security measures to protect cloud resources
-                    from cyber threats, such as malware, hacking attempts, and
-                    data breaches.
+                    We use Microsoft platforms like Azure for web functionality,
+                    system integration, REST API creation, documentation, and
+                    seamless integration with existing apps.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Web/Cloud Development</h6>
+                  <h6>Cloud API Integration</h6>
                   <p>
-                    We integrate development and operations processes, to enable
-                    a faster and more efficient software delivery in the cloud
-                    environment.
+                    We provide secure API development, analysis, operation, and
+                    scalability, with on-premises, cloud, or hybrid
+                    on-premises/SaaS API management.
                   </p>
                 </div>
 
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Software Architecture Design</h6>
+                  <h6>Microservice Architecture</h6>
                   <p>
                     We provide technical support and troubleshooting services to
                     ensure optimal functioning of cloud resources, with timely
@@ -125,11 +125,11 @@ export const SoftwareProd = () => {
                 <div className="serv-card">
                   <img src="./images/serv-clock.svg" alt="ic" />
 
-                  <h6>Enterprise Software Development</h6>
+                  <h6>Automated API Testing</h6>
                   <p>
-                    We provide on-demand access to computing resources, such as
-                    servers, storage, and databases, as well as software and
-                    applications.
+                    Our engineers and QA specialists use automated testing to
+                    evaluate performance and functionality of crucial business
+                    apps.
                   </p>
                 </div>
               </div>
@@ -140,11 +140,11 @@ export const SoftwareProd = () => {
         <section className="serv-sec-3">
           <div className="container">
             <h5>Our Unique Approach</h5>
-            <h3>How Do We Provide Software Product Development Services?</h3>
+            <h3>How we provide our API Development & Integration Services</h3>
             <div className="sec-3">
               <div className="sec-3-left">
                 <div className="l-card">
-                  {softProdTitles.map((title) => (
+                  {apiTitles.map((title) => (
                     <div
                       className={
                         activeApproach.id === title.id
@@ -176,6 +176,20 @@ export const SoftwareProd = () => {
           </div>
         </section>
 
+        <section className="portfolio-section">
+          <div className="portfolio-home-header">
+            <h5>Our Solutions</h5>
+            <h3>The Best Solutions From Industry Experts</h3>
+
+            <p>
+              LampNets Solutions strives to provide top-tier IT solutions to
+              businesses of all sizes and locations from industry experts
+            </p>
+          </div>
+
+          <Product />
+        </section>
+
         <section className="serve-sec-4">
           <div className="container">
             <div className="sec-4">
@@ -183,7 +197,7 @@ export const SoftwareProd = () => {
                 <div className="l">
                   <h5>Work With Us</h5>
                   <h3>
-                    Need High-quality, Usable and Sustainable Software Products?{" "}
+                    Looking for Seamless and Personalized API Integration?
                   </h3>
                   <p>
                     Let's start the conversation about your upcoming product
@@ -210,20 +224,6 @@ export const SoftwareProd = () => {
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="portfolio-section">
-          <div className="portfolio-home-header">
-            <h5>Our Solutions</h5>
-            <h3>The Best Solutions From Industry Experts</h3>
-
-            <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
-              businesses of all sizes and locations from industry experts
-            </p>
-          </div>
-
-          <Product />
         </section>
 
         <section className="serv-sec-5">
@@ -287,15 +287,15 @@ export const SoftwareProd = () => {
 
 const benefits = [
   {
-    title: "Agile Methodology",
-    desc: "We provide access to cloud resources on a pay-as-you-go basis, without having to invest in your own infrastructure and cut costs by eliminating redundant data.",
+    title: "Streamlined Integration",
+    desc: "Our API integration services help your business integrate systems seamlessly, including third-party applications, databases, and software",
   },
   {
-    title: "High Scalability",
-    desc: "We offer cloud infrastructure that enables seamless deployment of new products and resource allocation to handle sudden increases in demand.",
+    title: "Enhanced Security",
+    desc: "We prioritize security in our API development and integration services, ensuring that your business data is protected from unauthorized access.",
   },
   {
-    title: "Industry-standard solutions",
-    desc: "We provide reliable and efficient industry-standard software and tools that enable your business to focus on their core competencies ",
+    title: "Increased Efficiency",
+    desc: "We optimize API performance and functionality, allowing your business to save time and resources, automate tasks, and simplify workflows",
   },
 ];

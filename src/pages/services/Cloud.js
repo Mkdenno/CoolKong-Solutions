@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import { staffApproach, staffTitles } from '../Services';
-import { Contact } from '../components/Contact';
-import { Link } from 'react-router-dom';
-import { Product } from '../components/home/Product';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Contact } from "../../components/Contact";
+import { cloudApproach, cloudTitles } from "../../Services";
+import { Product } from "../../components/home/Product";
 
-export const Staff = () => {
-  const [approachData, setApproachData] = useState(staffApproach[0]);
-  const [activeApproach, setActiveApproach] = useState(staffTitles[0]);
+export const Cloud = () => {
+  const [approachData, setApproachData] = useState(cloudApproach[0]);
+  const [activeApproach, setActiveApproach] = useState(cloudTitles[0]);
 
   const handleApproachClick = (approachTitle) => {
-    for (let i = 0; i < staffApproach.length; i++) {
-      if (staffApproach[i].id === approachTitle.id) {
-        setApproachData(staffApproach[i]);
+    for (let i = 0; i < cloudApproach.length; i++) {
+      if (cloudApproach[i].id === approachTitle.id) {
+        setApproachData(cloudApproach[i]);
       }
     }
   };
@@ -26,34 +26,31 @@ export const Staff = () => {
         <img src="./images/lamp-logo.png" alt="logo" />
 
         <div className="container">
-          <h2>IT Staff Outsourcing & Team Augmentation</h2>
+          <h2>Cloud Solutions & Management</h2>
         </div>
       </section>
 
       <section className="serv-sec-1">
         <div className="container">
           <div className="sec-1">
-            <h5>IT Staff Outsourcing & Team Augmentation</h5>
+            <h5>Cloud Solutions & Management</h5>
             <h3>
-              We Help You Achieve Your Business Goals with Top-notch Staffing
-              Solutions
+              We Ensure That Data Security and Performance Are Optimized Across
+              Cloud Environments
             </h3>
             <p>
-              Staff outsourcing and team augmentation involve hiring external
-              professionals to work on a project or join an existing team to
-              supplement and enhance the skills and expertise of your current
-              staff. It can help your business achieve its goals while saving
-              time and resources.
+              Cloud solution & Management refers to the processes & tools used
+              to manage the delivery of computing resources, including servers,
+              storage, databases, software, and analytics, over the Internet.
             </p>
 
             <p>
-              At Lampnet Solutions, we offer staff outsourcing and team
-              augmentation services to provide specialized expertise and
-              additional resources for businesses without the need for permanent
-              hires. We provide flexible staffing solutions tailored to your
-              needs, whether it's short-term or long-term projects. With ongoing
-              support and seamless integration, let us help you achieve your
-              business goals with top-notch staffing solutions.
+              Managing and protecting your data can be complex, but with
+              Lampnets’ cloud solution and management services, it doesn't have
+              to be. We offer comprehensive services to move your enterprise
+              infrastructure to cloud platforms such as Azure, and Google, to
+              help your business conquer the challenges of cloud management and
+              ensure the safety of your data
             </p>
           </div>
         </div>
@@ -63,51 +60,51 @@ export const Staff = () => {
         <div className="container">
           <div className="sec-2">
             <h3 className="text-center">
-              Our IT Staff Outsourcing & Team Augmentation Services Includes
+              Our Cloud Solutions & Management Services Includes
             </h3>
 
             <div className="serv-card-2-items">
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Hire UI</h6>
+                <h6>Cloud Mangement</h6>
                 <p>
-                  Outsource IT staff to us for access to skilled professionals
-                  without the cost of permanent hires. We handle recruitment,
-                  training, and HR management.
+                  We implement security measures to protect cloud resources from
+                  cyber threats, such as malware, hacking attempts, and data
+                  breaches.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Team Augmentation</h6>
+                <h6>Managed Security </h6>
                 <p>
-                  We augment your team with our IT experts who will work
-                  seamlessly to help you scale your business faster without
-                  permanent hires.
+                  We implement security measures to protect cloud resources from
+                  cyber threats, such as malware, hacking attempts, and data
+                  breaches.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Project-based Outsourcing</h6>
+                <h6>Managed DevOps</h6>
                 <p>
-                  We handle entire IT projects for your business, providing
-                  customized solutions that meet your business goals, help you
-                  reduce costs and increase efficiency.
+                  We integrate development and operations processes, to enable a
+                  faster and more efficient software delivery in the cloud
+                  environment.
                 </p>
               </div>
 
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Remote Staffing</h6>
+                <h6>Managed Support</h6>
                 <p>
-                  We provide access to skilled IT professionals who work
-                  remotely from our location to anywhere while saving on
-                  overhead costs.
+                  We provide technical support and troubleshooting services to
+                  ensure optimal functioning of cloud resources, with timely
+                  resolution of any issue.
                 </p>
               </div>
 
@@ -116,7 +113,7 @@ export const Staff = () => {
                   <Link>Discuss your idea</Link>
                 </div>
 
-                <h6>Need a Dedicated Developer ?</h6>
+                <h6>Need Secured Cloud Services?</h6>
                 <p>
                   Our Cloud & DevOps engineers will work with you to fine-tune
                   the delivery, deployment and support of a high-quality
@@ -127,11 +124,11 @@ export const Staff = () => {
               <div className="serv-card">
                 <img src="./images/serv-clock.svg" alt="ic" />
 
-                <h6>Network Outsourcing</h6>
+                <h6>Cloud Computing</h6>
                 <p>
-                  We provide managed network services to ensure secure,
-                  reliable, and efficient network. Our team reduces downtime and
-                  improves network performance.
+                  We provide on-demand access to computing resources, such as
+                  servers, storage, and databases, as well as software and
+                  applications.
                 </p>
               </div>
             </div>
@@ -142,13 +139,11 @@ export const Staff = () => {
       <section className="serv-sec-3">
         <div className="container">
           <h5>Our Unique Approach</h5>
-          <h3>
-            How we provide our IT Staff Outsourcing & Team Augmentation Services
-          </h3>
+          <h3>How we provide our Cloud Solutions & Management Services</h3>
           <div className="sec-3">
             <div className="sec-3-left">
               <div className="l-card">
-                {staffTitles.map((title) => (
+                {cloudTitles.map((title) => (
                   <div
                     className={
                       activeApproach.id === title.id
@@ -201,15 +196,15 @@ export const Staff = () => {
               <div className="l">
                 <h5>Work With Us</h5>
                 <h3>
-                  Need Seamless Access to Global Talent for your Project Needs?
+                  Looking to Keep Your Data Fully Protected Across Platforms?
                 </h3>
                 <p>
-                  Our teams are behind the technical success of an array of
-                  world-renowned Fintech, eCommerce, Investment, and other
-                  brands
+                  Let's start the conversation about your upcoming product
+                  launch, and we'll assist you in brainstorming ideas and
+                  execution process.
                 </p>
 
-                <Link>Consult Our Expert</Link>
+                <Link>Discuss Your Ideas</Link>
               </div>
             </div>
 
@@ -235,7 +230,7 @@ export const Staff = () => {
           <div className="sec-5-top">
             <h5>The Benefits</h5>
             <h3>
-              Why Choose LampNet Solutions for your Training & IT Consulting{" "}
+              Why Choose LampNets Solutions for your Cloud Solutions & Mangement
             </h3>
 
             <p>
@@ -290,15 +285,15 @@ export const Staff = () => {
 
 const benefits = [
   {
-    title: "Access to Global Talent",
-    desc: "We provide your business with skilled IT professionals who have specialized skills and expertise that are hard to find in the local job market.",
+    title: "Reduced Cost of Ownership",
+    desc: "We provide access to cloud resources on a pay-as-you-go basis, without having to invest in your own infrastructure and cut costs by eliminating redundant data.",
   },
   {
-    title: "Flexibility",
-    desc: "Our staffing solutions are flexible and can be tailored to meet the specific needs of your business, whether you need short-term or long-term staff augmentation.",
+    title: "High Scalability",
+    desc: "We offer cloud infrastructure that enables seamless deployment of new products and resource allocation to handle sudden increases in demand.",
   },
   {
-    title: "Increased Productivity",
-    desc: "Our IT professionals can supplement your existing team or handle entire projects, allowing your business to increase its capacity and scale faster.",
+    title: "Industry-standard solutions",
+    desc: "We provide reliable and efficient industry-standard software and tools that enable your business to focus on their core competencies ",
   },
 ];

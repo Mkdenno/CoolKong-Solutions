@@ -7,14 +7,11 @@ nav {
   background: transparent;
   transition: var(--transition);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: var(--font-montserrat);
 }
 
-.links.scroll a.active,
-nav a.active {
-  color: var(--main-color);
-}
+
 
 .nav-section {
   display: flex;
@@ -24,23 +21,28 @@ nav a.active {
   padding: 0.8rem 0 2rem 0;
 }
 
+.nav-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;
   transition: var(--transition);
-  padding: 0 4rem;
+  padding: 0 1rem 0 10rem;
 }
 
 .links.scroll a {
-  padding: 5px 1rem;
   color: var(--black-color);
 }
 
 .links a {
   font-size: 14px;
-  padding: 30px 1rem;
+  padding: 5px .8rem;
   color: var(--white-color);
   text-decoration: none;
   transition: var(--transition);

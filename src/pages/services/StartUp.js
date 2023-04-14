@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { startUpApproach, startUpTitles } from "../Services";
+import { startUpApproach, startUpTitles } from "../../Services";
 import "./StartUp.css";
 
-import { Contact } from "../components/Contact";
+import { Contact } from "../../components/Contact";
+import { Product } from "../../components/home/Product";
 
 export const StartUp = () => {
   const [approachData, setApproachData] = useState(startUpApproach[0]);
@@ -167,6 +168,20 @@ export const StartUp = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="portfolio-section">
+        <div className="portfolio-home-header">
+          <h5>Our Solutions</h5>
+          <h3>The Best Solutions From Industry Experts</h3>
+
+          <p>
+            LampNets Solutions strives to provide top-tier IT solutions to
+            businesses of all sizes and locations from industry experts
+          </p>
+        </div>
+
+        <Product />
       </section>
 
       <section className="serve-sec-4">
