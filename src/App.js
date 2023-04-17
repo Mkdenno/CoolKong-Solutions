@@ -14,6 +14,9 @@ import { WhiteLabel } from "./pages/services/WhiteLabel";
 import { Training } from "./pages/services/Training";
 import { Design } from "./pages/services/Design";
 import { Staff } from "./pages/services/Staff";
+import { PRODUCT_ROUTES } from "./constants/constants";
+import { Foodx } from "./pages/products/foodx";
+import { MedX } from "./pages/products/medx";
 
 function App() {
   return (
@@ -31,7 +34,9 @@ function App() {
         <Route path="/training" element={<Training />} />
         <Route path="/design" element={<Design />} />
         <Route path="/staff" element={<Staff />} />
-        <Route path="/courier" element={<Courier />} />
+        <Route path={`/${PRODUCT_ROUTES.courier}`} element={<Courier />} />
+        <Route path={`/${PRODUCT_ROUTES.foodx}`} element={<Foodx />} />
+        <Route path={`/${PRODUCT_ROUTES.medx}`} element={<MedX />} />
       </Routes>
       <Footer />
     </>

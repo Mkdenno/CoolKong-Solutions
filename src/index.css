@@ -21,6 +21,14 @@
   --cx-light-color: rgba(45, 88, 72, 0.5);
   --cx-on-black-color: rgba(0, 0, 0, .5);
 
+  /* foodx colors */
+  --fx-main-color: #F6613F;
+  --fx-light-color: #f6613f33;
+
+  /* medx colors */
+  --mx-main-color: #3E83EA;
+  --mx-light-color: #3e83ea2d;
+
   --transition: all 400ms ease-in-out;
   --font-montserrat: 'Montserrat', sans-serif;
 }

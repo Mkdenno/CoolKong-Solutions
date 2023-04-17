@@ -25,6 +25,8 @@ export const ROUTES = {
 
 export const PRODUCT_ROUTES = {
   courier: "courrier",
+  foodx: "foodx",
+  medx: "medx",
 };
 
 export const navIcons = {

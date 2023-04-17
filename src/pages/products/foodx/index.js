@@ -1,13 +1,12 @@
 import React, { useRef, useState } from "react";
 import "../product.css";
 import { PartnerImg } from "../../../components/PartnerImg";
-import { Link } from "react-router-dom";
 import { Button } from "../../../components/products/Button";
 
-const primaryColor = "#54BD95";
+const primaryColor = "#F6613F";
 const onPrimaryColor = "white";
 
-export const Courier = () => {
+export const Foodx = () => {
   const [titleDat, setApproachData] = useState(titleData[0]);
   const [activeData, setActiveApproach] = useState(titles[0]);
   const [scrollIcon, setScrollIcon] = useState("./images/Scroll-l-a.svg");
@@ -39,7 +38,7 @@ export const Courier = () => {
     }
   };
 
-  const changeToGreenIcon = () => setScrollIcon("./images/Scroll-l-g.svg");
+  const changeToGreenIcon = () => setScrollIcon("./images/scroll-fx-l.svg");
   const changeToAshIcon = () => setScrollIcon("./images/Scroll-l-a.svg");
 
   return (
@@ -47,12 +46,14 @@ export const Courier = () => {
       <section className="cx-hero-sec">
         <div className="cx-hero">
           <div className="cx-hero-l">
-            <h5>CourierX</h5>
-            <h3>Manage your</h3>
+            <h5 style={{ color: primaryColor }}>FoodX</h5>
+            <h3>
+              All-in-One OMS for Cloud Kitchens, Restaurants and Cafés with
+              delivery
+            </h3>
             <p>
-              CourierX is an all-in-one customizable delivery management
-              software to keep track of delivery operations, for all types of
-              businesses
+              FoodX is a market-ready online food delivery app solution to
+              launch your online food delivery business without any hassle.
             </p>
 
             <div className="cx-hero-btns">
@@ -72,7 +73,7 @@ export const Courier = () => {
             </div>
           </div>
           <div className="cx-hero-r">
-            <img src="./images/cx-hero.svg" alt="hero" />
+            <img src="./images/fx-hero.svg" alt="hero" />
           </div>
         </div>
       </section>
@@ -84,17 +85,21 @@ export const Courier = () => {
       <section className="plart-sec">
         <div className="container">
           <div className="plart-t">
-            <h5>One Platform, All Deliveries</h5>
-            <h3>Boost Your Delivery Management and Enjoy Increase ROI </h3>
+            <h5 style={{ color: primaryColor }}>
+              One Platform, All Deliveries
+            </h5>
+            <h3>
+              Capture untapped opportunities with FoodX intuitive features
+            </h3>
             <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
-              businesses of all sizes and locations from industry experts
+              FoodX is a highly customizable online food ordering and delivery
+              system that enables ease of use and seamless management.
             </p>
           </div>
 
           <div className="plarts">
             <div className="serv-card">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
 
               <h6>Customer App</h6>
               <p>
@@ -105,7 +110,7 @@ export const Courier = () => {
             </div>
 
             <div className="serv-card">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
 
               <h6>Driver App</h6>
               <p>
@@ -116,7 +121,7 @@ export const Courier = () => {
             </div>
 
             <div className="serv-card">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
 
               <h6>Delivery Management App</h6>
               <p>
@@ -128,11 +133,11 @@ export const Courier = () => {
           </div>
         </div>
       </section>
-      <section className="cx-solution-sec">
+      <section className="cx-solution-sec fx">
         <div className="container">
           <div className="plart-t">
-            <h5>Our Solutions</h5>
-            <h3>Transform The Way You Handle Your Logistics Needs</h3>
+            <h5 style={{ color: primaryColor }}>About Foodx</h5>
+            <h3>Leverage new possibilities with FoodX</h3>
             <p>
               LampNets Solutions strives to provide top-tier IT solutions to
               businesses of all sizes and locations from industry experts
@@ -141,7 +146,10 @@ export const Courier = () => {
 
           <div className="plart-b">
             <div className="plart-b-left">
-              <h3>Real-Time Tracking and Local language Integration</h3>
+              <h3>
+                User-friendly interfaces for a streamlined online food delivery
+                business
+              </h3>
 
               <div className="track-desc">
                 <div className="track-item">
@@ -150,11 +158,10 @@ export const Courier = () => {
                   </div>
 
                   <div>
-                    <h6>Live Map</h6>
+                    <h6>Real-time Tracking</h6>
                     <p>
-                      Fully-integrated live map view and notifications that
-                      keeps you and your customers updated with real-time driver
-                      locations.
+                      Your customers can get an idea of the estimated time of
+                      arrival for your parcel with real map
                     </p>
                   </div>
                 </div>
@@ -165,11 +172,10 @@ export const Courier = () => {
                   </div>
 
                   <div>
-                    <h6>Streamlined Communication</h6>
+                    <h6>Multiple Payment Option</h6>
                     <p>
-                      Enhances customer communication by allowing them to
-                      contact their dispatchers, drivers, and admin with just a
-                      single tap.
+                      Your customers easily make payments with multiple
+                      authenticated payment gateways for quick payments
                     </p>
                   </div>
                 </div>
@@ -180,10 +186,10 @@ export const Courier = () => {
                   </div>
 
                   <div>
-                    <h6>Privacy and Security</h6>
+                    <h6>Re-order</h6>
                     <p>
-                      You may keep calls anonymous for safety and privacy
-                      without fear of security breach.
+                      Your customers have convenience to order the same item or
+                      multiple with a single tap.
                     </p>
                   </div>
                 </div>
@@ -196,7 +202,7 @@ export const Courier = () => {
               />
             </div>
             <div className="plart-b-right">
-              <img src="/images/cx-sol.svg" alt="prod" />
+              <img src="/images/about-fx.svg" alt="prod" />
             </div>
           </div>
         </div>
@@ -205,7 +211,7 @@ export const Courier = () => {
       <section className="cx-features-sec">
         <div className="container">
           <div className="feature-t">
-            <h5>The Features</h5>
+            <h5 style={{ color: primaryColor }}>The Features</h5>
             <h3>The Most Versatile Logistics & Delivery Management Platform</h3>
 
             <p>
@@ -220,14 +226,14 @@ export const Courier = () => {
               <img src={scrollIcon} alt="ic" />
             </button>
             <button onClick={handleScrollRight}>
-              <img src="./images/scroll-r.svg" alt="ic" />
+              <img src="./images/scroll-fx.svg" alt="ic" />
             </button>
           </div>
         </div>
         <div className="feature-b">
           <div className="features" ref={scrollContainerRef}>
             <div className="feature">
-              <img src="./images/feature-g.svg" alt="ic" />
+              <img src="./images/feature-fx.svg" alt="ic" />
               <h6>Featured Adverts</h6>
               <p>
                 Customize the advert listings by promoting sponsored adverts on
@@ -237,7 +243,7 @@ export const Courier = () => {
             </div>
 
             <div className="feature">
-              <img src="./images/star-g.svg" alt="ic" />
+              <img src="./images/star-fx.svg" alt="ic" />
               <h6>Ratings and Reviews</h6>
               <p>
                 Ratings and reviews system in which all your customers can be
@@ -247,7 +253,7 @@ export const Courier = () => {
             </div>
 
             <div className="feature">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
               <h6>Increased Productivity</h6>
               <p>
                 Calculate real-time estimated time of arrival (ETA) with our
@@ -257,7 +263,7 @@ export const Courier = () => {
             </div>
 
             <div className="feature">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
               <h6>Local Language</h6>
               <p>
                 Our system can also work in the areas having low data
@@ -272,8 +278,10 @@ export const Courier = () => {
       <section className="cx-business-sec">
         <div className="container">
           <div className="plart-t">
-            <h5>All businesses can use CourierX</h5>
-            <h3>Get a Jump-start with Our Pre-built Logistics Solution</h3>
+            <h5 style={{ color: primaryColor }}>
+              All businesses can use FoodX
+            </h5>
+            <h3>Explore Infinite Possibilities With FoodX</h3>
             <p>
               All businesses dealing with pickup, delivery, workforce management
               and are focused on satisfying their customers
@@ -283,27 +291,27 @@ export const Courier = () => {
 
         <div className="cx-businesses">
           <div className="cx-business">
-            <img src="./images/logistics-g.svg" alt="ic" />
+            <img src="./images/logistics-fx.svg" alt="ic" />
             <p>Logistics</p>
           </div>
 
           <div className="cx-business">
-            <img src="./images/freight-g.svg" alt="ic" />
+            <img src="./images/food-fx.svg" alt="ic" />
             <p>Freight Forwarder</p>
           </div>
 
           <div className="cx-business">
-            <img src="./images/freight-g.svg" alt="ic" />
+            <img src="./images/freight-fx.svg" alt="ic" />
             <p>Manufacturing</p>
           </div>
 
           <div className="cx-business">
-            <img src="./images/freight-g.svg" alt="ic" />
+            <img src="./images/freight-fx.svg" alt="ic" />
             <p>Quick Service Restaurants</p>
           </div>
 
           <div className="cx-business">
-            <img src="./images/freight-g.svg" alt="ic" />
+            <img src="./images/freight-fx.svg" alt="ic" />
             <p>Courier & Parcel</p>
           </div>
         </div>
@@ -321,8 +329,19 @@ export const Courier = () => {
           </h3>
 
           <div className="cx-collab-btns">
-            <button>Download Now</button>
-            <button>Become a Reseller</button>
+            <Button
+              primary
+              primaryColor={onPrimaryColor}
+              onPrimaryColor={primaryColor}
+              content={"Download Now"}
+            />
+
+            <Button
+              outline
+              primaryColor={onPrimaryColor}
+              onPrimaryColor={onPrimaryColor}
+              content={"Become a Reseller"}
+            />
           </div>
         </div>
       </section>
@@ -330,7 +349,7 @@ export const Courier = () => {
       <section className="cx-competition-sec">
         <div className="container">
           <div className="plart-t">
-            <h5>Win Against The Competition</h5>
+            <h5 style={{ color: primaryColor }}>Win Against The Competition</h5>
             <h3>White-Label Software for Your Needs</h3>
             <p>
               Expand Your On-demand Delivery Business with the Influence of our
@@ -341,7 +360,7 @@ export const Courier = () => {
 
           <div className="cx-needs">
             <div className="serv-card">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
 
               <h6>100% Customization</h6>
               <p>
@@ -352,7 +371,7 @@ export const Courier = () => {
             </div>
 
             <div className="serv-card">
-              <img src="./images/clock-g.svg" alt="ic" />
+              <img src="./images/clock-fx.svg" alt="ic" />
 
               <h6>Source Code Ownership</h6>
               <p>
@@ -363,7 +382,7 @@ export const Courier = () => {
             </div>
 
             <div className="serv-card">
-              <img src="./images/code-g.svg" alt="ic" />
+              <img src="./images/code-fx.svg" alt="ic" />
 
               <h6>Scalability and Growth</h6>
               <p>
@@ -376,7 +395,7 @@ export const Courier = () => {
         </div>
       </section>
 
-      <section className="cx-sol-sec">
+      <section className="cx-sol-sec" style={{ background: "#111827" }}>
         <div className="container">
           <div className="cx-sol">
             <div className="cx-sol-left">
@@ -387,8 +406,8 @@ export const Courier = () => {
                   <div
                     className={
                       activeData.id === title.id
-                        ? "cx-l-card-item active"
-                        : "cx-l-card-item"
+                        ? "cx-l-card-item active fx"
+                        : "cx-l-card-item fx"
                     }
                     onClick={() => {
                       handleApproachClick(title);
@@ -398,7 +417,7 @@ export const Courier = () => {
                     <img
                       src={
                         activeData.id === title.id
-                          ? "./images/rocket-g.svg"
+                          ? "./images/rocket-fx-o.svg"
                           : "./images/rocket-w.svg"
                       }
                       alt="ic"
@@ -439,7 +458,7 @@ export const Courier = () => {
       <section className="cx-studies-sec">
         <div className="container">
           <div className="plart-t">
-            <h5>Case Studies</h5>
+            <h5 style={{ color: primaryColor }}>Case Studies</h5>
             <h3>Building Your Business Is Our Passion</h3>
             <p>
               LampNets Solutions strives to provide top-tier IT solutions to
@@ -453,10 +472,10 @@ export const Courier = () => {
             </div>
 
             <div className="cx-study-r">
-              <h5>CourierX - Logistics and Delivery App</h5>
+              <h5>FoodX - Food Menu Ordering & Delivery App </h5>
               <p>
                 Fully-integrated live map view and notifications that keeps you
-                and your customers updated with real-time driver locations.
+                and your customers updated with real-time driver locations.{" "}
               </p>
 
               <div className="cx-platforms">
@@ -485,7 +504,7 @@ export const Courier = () => {
             </div>
 
             <div className="cx-study-r">
-              <h5>CourierX - Logistics and Delivery App</h5>
+              <h5>FoodX - Menu Ordering Website</h5>
               <p>
                 Fully-integrated live map view and notifications that keeps you
                 and your customers updated with real-time driver locations.
@@ -520,7 +539,7 @@ export const Courier = () => {
               <img src="./images/stacks.png" alt="stack" />
             </div>
             <div className="sec-6-r cloud">
-              <h5>Our Tech Stacks</h5>
+              <h5 style={{ color: primaryColor }}>Our Tech Stacks</h5>
               <h3>
                 We are a one-stop technology solution provider for startups and
                 businesses
@@ -536,7 +555,7 @@ export const Courier = () => {
                 primary
                 primaryColor={primaryColor}
                 onPrimaryColor={onPrimaryColor}
-                content={"Become a Partner"}
+                content={"View Our Services"}
               />
             </div>
           </div>
@@ -546,17 +565,14 @@ export const Courier = () => {
       <section className="cx-sell-sec">
         <div className="container sec-6">
           <div className="sec-6-r cloud">
-            <h5>Our Tech Stacks</h5>
-            <h3>
-              We are a one-stop technology solution provider for startups and
-              businesses
-            </h3>
+            <h5 style={{ color: primaryColor }}>Join. Sell. Earn</h5>
+            <h3>Empower your Clients and business with FoodX</h3>
             <p>
-              We employ the latest languages, frameworks and technologies to
-              ensure security, scalability and speed. We are well-equipped to
-              deliver cross-that are convenient for all users and work for all
-              devices.
+              Collaborate with us and Explore our Partnership Program to earn
+              more by selling, customizing or integrating our premium logistic
+              solution
             </p>
+
             <Button
               primary
               primaryColor={primaryColor}
@@ -576,8 +592,8 @@ export const Courier = () => {
           style={{ background: primaryColor }}
         >
           <h3>
-            Smooth delivery experience Guaranteed with our Ready-to-Launch
-            Delivery Management Software
+            A customizable online food delivery solution to explore infinite
+            possibilities
           </h3>
 
           <div className="cx-collab-btns">
@@ -625,7 +641,7 @@ const titleData = [
     id: 1,
     title: "Startup",
     sub_title: "Focused on Growing Business",
-    icon: "./images/rocket-b-w.svg",
+    icon: "./images/rocket-fx-b.svg",
     des_1:
       "I am serious and committed to the budget, looking to work in this online business for at least one year.",
     des_2: "My company is already running & receiving real orders.",

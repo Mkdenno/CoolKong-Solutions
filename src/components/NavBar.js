@@ -79,8 +79,14 @@ const NavBar = () => {
 
   const setNavButtonColor = () => {
     switch (route) {
-      case ROUTES.courier:
+      case PRODUCT_ROUTES.courier:
         setBtnColor("#54BD95");
+        break;
+      case PRODUCT_ROUTES.foodx:
+        setBtnColor("#F6613F");
+        break;
+      case PRODUCT_ROUTES.medx:
+        setBtnColor("#3E83EA");
         break;
       default:
         setBtnColor("#AB0E12");
@@ -312,11 +318,11 @@ const NavBar = () => {
                         </Link>
                         <Link
                           className="sv-nav-item"
-                          to="/courier"
+                          to={`/${PRODUCT_ROUTES.courier}`}
                           onClick={() => saveRouteState(PRODUCT_ROUTES.courier)}
                         >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>OrderX Delivery App</p>
+                          <p>Courriex App</p>
                         </Link>
                         <Link className="sv-nav-item">
                           <img src="./images/cloud-setting.svg" alt="ic" />
@@ -356,11 +362,19 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>OrderX Online Store & Delivery App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          to={`/${PRODUCT_ROUTES.foodx}`}
+                          className="sv-nav-item"
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.foodx)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>OrderX Online Store & Delivery App</p>
+                          <p>Foodx App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          to={`/${PRODUCT_ROUTES.medx}`}
+                          className="sv-nav-item"
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.medx)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>OrderX Pharmacy Delivery App</p>
                         </Link>
