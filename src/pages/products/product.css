@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.cx-hero-l h3 {
+  width: 50%;
+}
+
 .cx-hero-l h5 {
   color: var(--cx-main-color);
 }
