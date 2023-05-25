@@ -133,6 +133,19 @@
   scroll-snap-align: start;
 }
 
+.feature.ex {
+  background: var(--cx-white-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.cx-collab.ex h3 {
+  padding: 0 2rem;
+}
+
+.flexibility-sec {
+  font-family: var(--font-montserrat);
+}
+
 ::-webkit-scrollbar {
   background: transparent;
 }
@@ -329,6 +342,10 @@
 }
 /* medx x colors */
 
+/* estatex */
+.cx-solution-sec.ex {
+  background: #FFFFFF;
+}
 
 
 .cx-sol-right {
@@ -430,4 +447,28 @@
 .cx-sell-sec {
   font-family: var(--font-montserrat);
   padding: 3rem 0;
+}
+
+
+.schedules {
+  display: flex;
+  margin: 5rem 0 3rem 0;
+}
+
+.sched-desc p {
+  width: 60%;
+  padding: 2rem 0;
+}
+
+.integration {
+  display: flex;
+  align-items: center;
+}
+
+.integration img {
+  margin: -1rem 1rem 0 0;
+}
+
+.integration p {
+  line-height: .1rem;
 }

@@ -88,6 +88,9 @@ const NavBar = () => {
       case PRODUCT_ROUTES.medx:
         setBtnColor("#3E83EA");
         break;
+      case PRODUCT_ROUTES.estatex:
+        setBtnColor("#222222");
+        break;
       default:
         setBtnColor("#AB0E12");
     }
@@ -328,9 +331,13 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>CryptoX Trading App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.school360}`}
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.school360)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>School 360 SMS Solution</p>
+                          <p>School 360 Solution</p>
                         </Link>
                       </div>
 
@@ -343,9 +350,13 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>GrowthX Business Suite App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.estatex}`}
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.estatex)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>PayX Loan & Investment App</p>
+                          <p>EstateX App</p>
                         </Link>
                         <Link className="sv-nav-item">
                           <img src="./images/cloud-setting.svg" alt="ic" />

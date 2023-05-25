@@ -17,6 +17,8 @@ import { Staff } from "./pages/services/Staff";
 import { PRODUCT_ROUTES } from "./constants/constants";
 import { Foodx } from "./pages/products/foodx";
 import { MedX } from "./pages/products/medx";
+import { EstateX } from "./pages/products/estatex";
+import { SchoolX } from "./pages/products/school360";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path={`/${PRODUCT_ROUTES.courier}`} element={<Courier />} />
         <Route path={`/${PRODUCT_ROUTES.foodx}`} element={<Foodx />} />
         <Route path={`/${PRODUCT_ROUTES.medx}`} element={<MedX />} />
+        <Route path={`/${PRODUCT_ROUTES.estatex}`} element={<EstateX />} />
+        <Route path={`/${PRODUCT_ROUTES.school360}`} element={<SchoolX />} />
       </Routes>
       <Footer />
     </>
