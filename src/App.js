@@ -20,6 +20,8 @@ import { MedX } from "./pages/products/medx";
 import { EstateX } from "./pages/products/estatex";
 import { SchoolX } from "./pages/products/school360";
 import { FintechX } from "./pages/products/fintechx";
+import { Thriftx } from "./pages/products/thriftx";
+import { WorkspaceX } from "./pages/products/workspacex";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
         <Route path={`/${PRODUCT_ROUTES.estatex}`} element={<EstateX />} />
         <Route path={`/${PRODUCT_ROUTES.school360}`} element={<SchoolX />} />
         <Route path={`/${PRODUCT_ROUTES.fintech360}`} element={<FintechX />} />
+        <Route path={`/${PRODUCT_ROUTES.thriftx}`} element={<Thriftx />} />
+        <Route path={`/${PRODUCT_ROUTES.workspaceX}`} element={<WorkspaceX />} />
       </Routes>
       <Footer />
     </>

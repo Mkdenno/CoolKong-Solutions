@@ -30,6 +30,8 @@ export const PRODUCT_ROUTES = {
   estatex: "estatex",
   school360: "schoolx",
   fintech360: "fintechx",
+  thriftx: "thriftx",
+  workspaceX: "workspacex",
 };
 
 export const navIcons = {

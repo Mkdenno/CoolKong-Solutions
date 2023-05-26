@@ -94,6 +94,12 @@ const NavBar = () => {
       case PRODUCT_ROUTES.fintech360:
         setBtnColor("#453787");
         break;
+      case PRODUCT_ROUTES.thriftx:
+        setBtnColor("#E47E1F");
+        break;
+      case PRODUCT_ROUTES.workspaceX:
+        setBtnColor("#1628F4");
+        break;
       default:
         setBtnColor("#AB0E12");
     }
@@ -357,9 +363,13 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>TotalX CRM App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.workspaceX}`}
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.workspaceX)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>GrowthX Business Suite App</p>
+                          <p>Co-WorkspaceX App</p>
                         </Link>
                         <Link
                           className="sv-nav-item"
@@ -376,9 +386,13 @@ const NavBar = () => {
                       </div>
 
                       <div style={{ margin: "0 0 0 2rem" }}>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.thriftx}`}
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.thriftx)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>UberX Taxi Hailing App</p>
+                          <p>ThriftX App</p>
                         </Link>
                         <Link className="sv-nav-item">
                           <img src="./images/cloud-setting.svg" alt="ic" />
