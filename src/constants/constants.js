@@ -32,6 +32,8 @@ export const PRODUCT_ROUTES = {
   fintech360: "fintechx",
   thriftx: "thriftx",
   workspaceX: "workspacex",
+  orderX: "orderX",
+  uberX: "uberX",
 };
 
 export const navIcons = {

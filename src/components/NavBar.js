@@ -100,6 +100,12 @@ const NavBar = () => {
       case PRODUCT_ROUTES.workspaceX:
         setBtnColor("#1628F4");
         break;
+      case PRODUCT_ROUTES.orderX:
+        setBtnColor("#F76C6C");
+        break;
+      case PRODUCT_ROUTES.uberX:
+        setBtnColor("#0F479C");
+        break;
       default:
         setBtnColor("#AB0E12");
     }
@@ -324,7 +330,13 @@ const NavBar = () => {
                       onMouseLeave={() => setHideProducts(!hideProducts)}
                     >
                       <div>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.uberX}`}
+                          onClick={() =>
+                            saveRouteState(PRODUCT_ROUTES.uberX)
+                          }
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>UberX Ride Hailing App </p>
                         </Link>
@@ -366,7 +378,9 @@ const NavBar = () => {
                         <Link
                           className="sv-nav-item"
                           to={`/${PRODUCT_ROUTES.workspaceX}`}
-                          onClick={() => saveRouteState(PRODUCT_ROUTES.workspaceX)}
+                          onClick={() =>
+                            saveRouteState(PRODUCT_ROUTES.workspaceX)
+                          }
                         >
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>Co-WorkspaceX App</p>
@@ -394,9 +408,13 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>ThriftX App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.orderX}`}
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.orderX)}
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>OrderX Online Store & Delivery App</p>
+                          <p>OrderX Online App</p>
                         </Link>
                         <Link
                           to={`/${PRODUCT_ROUTES.foodx}`}

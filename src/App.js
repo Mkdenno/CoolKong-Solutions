@@ -22,6 +22,8 @@ import { SchoolX } from "./pages/products/school360";
 import { FintechX } from "./pages/products/fintechx";
 import { Thriftx } from "./pages/products/thriftx";
 import { WorkspaceX } from "./pages/products/workspacex";
+import { OrderX } from "./pages/products/orderx";
+import { UberX } from "./pages/products/uberx";
 
 function App() {
   return (
@@ -47,6 +49,8 @@ function App() {
         <Route path={`/${PRODUCT_ROUTES.fintech360}`} element={<FintechX />} />
         <Route path={`/${PRODUCT_ROUTES.thriftx}`} element={<Thriftx />} />
         <Route path={`/${PRODUCT_ROUTES.workspaceX}`} element={<WorkspaceX />} />
+        <Route path={`/${PRODUCT_ROUTES.orderX}`} element={<OrderX />} />
+        <Route path={`/${PRODUCT_ROUTES.uberX}`} element={<UberX />} />
       </Routes>
       <Footer />
     </>
