@@ -226,7 +226,7 @@ export const Courier = () => {
         </div>
         <div className="feature-b">
           <div className="features" ref={scrollContainerRef}>
-            <div className="feature">
+            <div className="feature p">
               <img src="./images/feature-g.svg" alt="ic" />
               <h6>Featured Adverts</h6>
               <p>
@@ -236,7 +236,7 @@ export const Courier = () => {
               </p>
             </div>
 
-            <div className="feature">
+            <div className="feature p">
               <img src="./images/star-g.svg" alt="ic" />
               <h6>Ratings and Reviews</h6>
               <p>
@@ -246,7 +246,7 @@ export const Courier = () => {
               </p>
             </div>
 
-            <div className="feature">
+            <div className="feature p">
               <img src="./images/clock-g.svg" alt="ic" />
               <h6>Increased Productivity</h6>
               <p>
@@ -256,7 +256,7 @@ export const Courier = () => {
               </p>
             </div>
 
-            <div className="feature">
+            <div className="feature p">
               <img src="./images/clock-g.svg" alt="ic" />
               <h6>Local Language</h6>
               <p>
@@ -436,78 +436,78 @@ export const Courier = () => {
         </div>
       </section>
 
-      <section className="cx-studies-sec">
+      <section className="flexibility-sec" style={{paddingTop: "4rem"}}>
         <div className="container">
           <div className="plart-t">
-            <h5>Case Studies</h5>
+            <h5 style={{ color: primaryColor }}>Explore More Flexiblities</h5>
             <h3>Building Your Business Is Our Passion</h3>
             <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
-              businesses of all sizes and locations from industry experts
+              LampNets School 360 Solutions works for all use cases and strives
+              to provide top-tier IT solutions to businesses of all sizes and
+              locations in the learning industry
             </p>
           </div>
 
-          <div className="cx-platform-bg">
-            <div className="cx-study-l">
-              <img src="./images/study-b.svg" alt="pic" />
-            </div>
-
-            <div className="cx-study-r">
-              <h5>CourierX - Logistics and Delivery App</h5>
+          <div className="schedules">
+            <div className="sched-desc">
+              <h5>CourierX Courier & Logistics App</h5>
               <p>
-                Fully-integrated live map view and notifications that keeps you
-                and your customers updated with real-time driver locations.
+                Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos.
               </p>
-
-              <div className="cx-platforms">
-                <div className="cx-platform">
-                  <p>Downloads</p>
-                  <p>100k</p>
-                </div>
-
-                <div className="cx-platform">
-                  <p>Platforms</p>
-                  <p>iOS, Android</p>
-                </div>
-              </div>
-
-              <div className="cx-platform-btns">
-                <button>View Case Study</button>
-                <img src="./images/playstore.svg" alt="pic" />
-                <img src="./images/apple.svg" alt="pic" />
-              </div>
+              <Button
+                primary
+                primaryColor={primaryColor}
+                onPrimaryColor={onPrimaryColor}
+                content={"Schedule Demo"}
+              />
+            </div>
+            <div className="sched-img">
+              <img src="./images/flex-img.svg" alt="pic" />
             </div>
           </div>
 
-          <div className="cx-platform-bg orange">
-            <div className="cx-study-l">
-              <img src="./images/study-o.svg" alt="pic" />
-            </div>
-
-            <div className="cx-study-r">
-              <h5>CourierX - Logistics and Delivery App</h5>
+          <div className="schedules">
+            <div className="sched-desc">
+              <h5>CourierX Courier & Logistics Website</h5>
               <p>
-                Fully-integrated live map view and notifications that keeps you
-                and your customers updated with real-time driver locations.
+                Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos.
               </p>
+              <Button
+                primary
+                primaryColor={primaryColor}
+                onPrimaryColor={onPrimaryColor}
+                content={"Schedule Demo"}
+              />
+            </div>
+            <div className="sched-img">
+              <img src="./images/flex-img.svg" alt="pic" />
+            </div>
+          </div>
 
-              <div className="cx-platforms">
-                <div className="cx-platform">
-                  <p>Downloads</p>
-                  <p>100k</p>
-                </div>
-
-                <div className="cx-platform">
-                  <p>Platforms</p>
-                  <p>iOS, Android</p>
-                </div>
-              </div>
-
-              <div className="cx-platform-btns">
-                <button>View Case Study</button>
-                <img src="./images/playstore.svg" alt="pic" />
-                <img src="./images/apple.svg" alt="pic" />
-              </div>
+          <div className="schedules">
+            <div className="sched-desc">
+              <h5>CourierX Delivery Management Solution</h5>
+              <p>
+                Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos.
+              </p>
+              <Button
+                primary
+                primaryColor={primaryColor}
+                onPrimaryColor={onPrimaryColor}
+                content={"Schedule Demo"}
+              />
+            </div>
+            <div className="sched-img">
+              <img src="./images/flex-img.svg" alt="pic" />
             </div>
           </div>
         </div>
@@ -520,24 +520,30 @@ export const Courier = () => {
               <img src="./images/stacks.png" alt="stack" />
             </div>
             <div className="sec-6-r cloud">
-              <h5>Our Tech Stacks</h5>
-              <h3>
-                We are a one-stop technology solution provider for startups and
-                businesses
-              </h3>
+              <h5 style={{ color: primaryColor }}>One-Click Integrations</h5>
+              <h3>Integrated with thousands of apps</h3>
               <p>
-                We employ the latest languages, frameworks and technologies to
-                ensure security, scalability and speed. We are well-equipped to
-                deliver cross-that are convenient for all users and work for all
-                devices.
+                School 360 uses one single database and an integrated school
+                management system to serve your entire campus and integrates
+                seamlessly with a number of third-party solutions
               </p>
 
-              <Button
-                primary
-                primaryColor={primaryColor}
-                onPrimaryColor={onPrimaryColor}
-                content={"Become a Partner"}
-              />
+              <div>
+                <div className="integration">
+                  <img src="./images/tick.svg" alt="ic" />
+                  <p>100+ Major Addons</p>
+                </div>
+
+                <div className="integration">
+                  <img src="./images/tick.svg" alt="ic" />
+                  <p>Major Access Provider</p>
+                </div>
+
+                <div className="integration">
+                  <img src="./images/tick.svg" alt="ic" />
+                  <p>Free Open API</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -24,6 +24,8 @@ import { Thriftx } from "./pages/products/thriftx";
 import { WorkspaceX } from "./pages/products/workspacex";
 import { OrderX } from "./pages/products/orderx";
 import { UberX } from "./pages/products/uberx";
+import { RestaurantX } from "./pages/products/restaurantx";
+import { HotelX } from "./pages/products/hotelx";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
         <Route path={`/${PRODUCT_ROUTES.workspaceX}`} element={<WorkspaceX />} />
         <Route path={`/${PRODUCT_ROUTES.orderX}`} element={<OrderX />} />
         <Route path={`/${PRODUCT_ROUTES.uberX}`} element={<UberX />} />
+        <Route path={`/${PRODUCT_ROUTES.restaurant360}`} element={<RestaurantX />} />
+        <Route path={`/${PRODUCT_ROUTES.hotelX}`} element={<HotelX />} />
       </Routes>
       <Footer />
     </>

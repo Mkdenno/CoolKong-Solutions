@@ -106,6 +106,9 @@ const NavBar = () => {
       case PRODUCT_ROUTES.uberX:
         setBtnColor("#0F479C");
         break;
+      case PRODUCT_ROUTES.hotelX:
+        setBtnColor("#34A853");
+        break;
       default:
         setBtnColor("#AB0E12");
     }
@@ -333,9 +336,7 @@ const NavBar = () => {
                         <Link
                           className="sv-nav-item"
                           to={`/${PRODUCT_ROUTES.uberX}`}
-                          onClick={() =>
-                            saveRouteState(PRODUCT_ROUTES.uberX)
-                          }
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.uberX)}
                         >
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>UberX Ride Hailing App </p>
@@ -371,9 +372,15 @@ const NavBar = () => {
                       </div>
 
                       <div style={{ margin: "0 0 0 2rem" }}>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.hotelX}`}
+                          onClick={() =>
+                            saveRouteState(PRODUCT_ROUTES.hotelX)
+                          }
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>TotalX CRM App</p>
+                          <p>HotelX App</p>
                         </Link>
                         <Link
                           className="sv-nav-item"
@@ -393,9 +400,15 @@ const NavBar = () => {
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>EstateX App</p>
                         </Link>
-                        <Link className="sv-nav-item">
+                        <Link
+                          className="sv-nav-item"
+                          to={`/${PRODUCT_ROUTES.restaurant360}`}
+                          onClick={() =>
+                            saveRouteState(PRODUCT_ROUTES.restaurant360)
+                          }
+                        >
                           <img src="./images/cloud-setting.svg" alt="ic" />
-                          <p>HotelX Mangement & POS App</p>
+                          <p>Restaurant 360 App</p>
                         </Link>
                       </div>
 

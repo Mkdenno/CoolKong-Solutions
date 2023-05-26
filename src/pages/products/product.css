@@ -158,7 +158,12 @@
   background: transparent;
 }
 
-.feature h6 {
+.feature.ex h6 {
+  color: var(--black-color);
+  padding: 1rem 0 0 0;
+}
+
+.feature.p h6 {
   color: var(--white-color);
   padding: 1rem 0 0 0;
 }

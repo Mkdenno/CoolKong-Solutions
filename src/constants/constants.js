@@ -34,6 +34,8 @@ export const PRODUCT_ROUTES = {
   workspaceX: "workspacex",
   orderX: "orderX",
   uberX: "uberX",
+  restaurant360: "restaurantX",
+  hotelX: "hotelx"
 };
 
 export const navIcons = {
