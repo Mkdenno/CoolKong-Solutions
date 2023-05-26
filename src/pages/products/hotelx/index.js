@@ -57,7 +57,7 @@ export const HotelX = () => {
             </div>
           </div>
           <div className="cx-hero-r">
-            <img src="./images/hotelx.svg" alt="hero" />
+            <img src="./images/restaurantx.svg" alt="hero" />
           </div>
         </div>
       </section>
