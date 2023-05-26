@@ -1,11 +1,14 @@
-import React from "react";
-import { blogsCategory } from "../BlogsCategory";
-import { Blog } from "../components/Blog";
+import React, { useEffect } from "react";
+import { blogsCategory } from "../../BlogsCategory";
+import { Blog } from "../../components/blog/Blog";
 
 import "./Blog.css";
-
+import { ROUTES, saveRoute } from "../../constants/constants";
 
 export const Blogs = () => {
+
+  useEffect(() => saveRoute(ROUTES.blog), []);
+
   return (
     <>
       <section className="blogs-header-section">

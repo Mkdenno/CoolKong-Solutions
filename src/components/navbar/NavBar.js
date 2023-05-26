@@ -8,7 +8,7 @@ import {
   getRoute,
   navIcons,
   saveRoute,
-} from "../constants/constants";
+} from "../../constants/constants";
 
 const lightShadow = "rgba(0, 0, 0, 0.08) 0px 4px 12px";
 
@@ -32,8 +32,7 @@ const NavBar = () => {
   const [hidePartnership, setHidePartnership] = useState(false);
 
   useEffect(() => {
-    setRoute(getRoute());
-    setNavButtonColor();
+    saveRouteState(getRoute());
     route === ROUTES.home
       ? changeToLightColors()
       : changeToDarkColors("transparent", "none");
@@ -375,9 +374,7 @@ const NavBar = () => {
                         <Link
                           className="sv-nav-item"
                           to={`/${PRODUCT_ROUTES.hotelX}`}
-                          onClick={() =>
-                            saveRouteState(PRODUCT_ROUTES.hotelX)
-                          }
+                          onClick={() => saveRouteState(PRODUCT_ROUTES.hotelX)}
                         >
                           <img src="./images/cloud-setting.svg" alt="ic" />
                           <p>HotelX App</p>

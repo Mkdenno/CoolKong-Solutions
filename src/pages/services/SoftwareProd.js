@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { Contact } from "../../components/Contact";
+import { Contact } from "../../components/contact/Contact";
 import { softProdApproach, softProdTitles } from '../../Services';
 import { Product } from '../../components/home/Product';
 

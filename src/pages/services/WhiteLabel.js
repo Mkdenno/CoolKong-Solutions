@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { whiteApproach, whiteTitles } from "../../Services";
 import { Link } from "react-router-dom";
 import { Product } from "../../components/home/Product";
-import { Contact } from "../../components/Contact";
+import { Contact } from "../../components/contact/Contact";
 
 export const WhiteLabel = () => {
   const [approachData, setApproachData] = useState(whiteApproach[0]);

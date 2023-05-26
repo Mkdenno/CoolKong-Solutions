@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { designApproach, designTitles } from '../../Services';
 import { Link } from 'react-router-dom';
-import { Contact } from '../../components/Contact';
+import { Contact } from '../../components/contact/Contact';
 import { Product } from '../../components/home/Product';
 
 export const Design = () => {

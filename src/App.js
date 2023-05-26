@@ -1,10 +1,10 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import NavBar from "./components/NavBar";
-import { Footer } from "./components/Footer";
-import { About } from "./pages/About";
-import { Blogs } from "./pages/Blogs";
+import { Home } from "./pages/home/Home";
+import NavBar from "./components/navbar/NavBar";
+import { Footer } from "./components/footer/Footer";
+import { About } from "./pages/about/About";
+import { Blogs } from "./pages/blog/Blogs";
 import { Courier } from "./pages/products/courriex";
 import { StartUp } from "./pages/services/StartUp";
 import { Cloud } from "./pages/services/Cloud";
@@ -14,7 +14,7 @@ import { WhiteLabel } from "./pages/services/WhiteLabel";
 import { Training } from "./pages/services/Training";
 import { Design } from "./pages/services/Design";
 import { Staff } from "./pages/services/Staff";
-import { PRODUCT_ROUTES } from "./constants/constants";
+import { PRODUCT_ROUTES, ROUTES } from "./constants/constants";
 import { Foodx } from "./pages/products/foodx";
 import { MedX } from "./pages/products/medx";
 import { EstateX } from "./pages/products/estatex";
@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path={`/${ROUTES.blog}`} element={<Blogs />} />
         <Route path="/start-up" element={<StartUp />} />
         <Route path="/cloud" element={<Cloud />} />
         <Route path="/software-product" element={<SoftwareProd />} />
@@ -50,10 +50,16 @@ function App() {
         <Route path={`/${PRODUCT_ROUTES.school360}`} element={<SchoolX />} />
         <Route path={`/${PRODUCT_ROUTES.fintech360}`} element={<FintechX />} />
         <Route path={`/${PRODUCT_ROUTES.thriftx}`} element={<Thriftx />} />
-        <Route path={`/${PRODUCT_ROUTES.workspaceX}`} element={<WorkspaceX />} />
+        <Route
+          path={`/${PRODUCT_ROUTES.workspaceX}`}
+          element={<WorkspaceX />}
+        />
         <Route path={`/${PRODUCT_ROUTES.orderX}`} element={<OrderX />} />
         <Route path={`/${PRODUCT_ROUTES.uberX}`} element={<UberX />} />
-        <Route path={`/${PRODUCT_ROUTES.restaurant360}`} element={<RestaurantX />} />
+        <Route
+          path={`/${PRODUCT_ROUTES.restaurant360}`}
+          element={<RestaurantX />}
+        />
         <Route path={`/${PRODUCT_ROUTES.hotelX}`} element={<HotelX />} />
       </Routes>
       <Footer />

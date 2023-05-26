@@ -21,6 +21,7 @@ export const ROUTES = {
   training: "training",
   ui: "ui",
   staff: "staff",
+  blog: "blogs"
 };
 
 export const PRODUCT_ROUTES = {

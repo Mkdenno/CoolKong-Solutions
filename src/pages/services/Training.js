@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { trainingApproach, trainingTitles } from '../../Services';
-import { Contact } from '../../components/Contact';
+import { Contact } from '../../components/contact/Contact';
 import { Link } from 'react-router-dom';
 import { Product } from '../../components/home/Product';
 

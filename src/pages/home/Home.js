@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { serviceDesc, services } from "../../src/products";
-import { Blog } from "../components/Blog";
+import { serviceDesc, services } from "../../../src/products";
+import { Blog } from "../../components/blog/Blog";
 
 import "./Home.css";
 
-import { PartnerImg } from "../components/PartnerImg";
+import { PartnerImg } from "../../components/PartnerImg";
 import { BsArrowRight } from "react-icons/bs";
-import { SliderLayout } from "../components/SliderLayout";
-import { Product } from "../components/home/Product";
-import { HeroSlider } from "../components/home/HeroSlider";
+import { SliderLayout } from "../../components/slider/SliderLayout";
+import { Product } from "../../components/home/Product";
+import { HeroSlider } from "../../components/home/HeroSlider";
 import { Link } from "react-router-dom";
-import { saveRoute } from "../constants/constants";
+import { ROUTES, saveRoute } from "../../constants/constants";
 
 export const Home = () => {
   const [serviceData, setServiceData] = useState(serviceDesc[0]);
   const [activeServiceL, setActiveServiceL] = useState(services[0]);
 
-  useEffect(() => saveRoute("home"),[])
+  useEffect(() => saveRoute("home"), []);
   const handleServiceClick = (id) => {
     for (let i = 0; i < serviceDesc.length; i++) {
       if (serviceDesc[i].id === id) {
@@ -371,7 +371,7 @@ export const Home = () => {
           </div>
 
           <div className="blog-home-button">
-            <Link to="/blogs">Read all</Link>
+            <Link to={`/${ROUTES.blog}`} onClick={() => saveRoute(ROUTES.blog)}>Read all</Link>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { startUpApproach, startUpTitles } from "../../Services";
 import "./StartUp.css";
 
-import { Contact } from "../../components/Contact";
+import { Contact } from "../../components/contact/Contact";
 import { Product } from "../../components/home/Product";
 
 export const StartUp = () => {

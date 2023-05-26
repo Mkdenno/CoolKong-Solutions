@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./About.css";
-import { PartnerImg } from "../components/PartnerImg";
-import { Contact } from "../components/Contact";
-import { SliderLayout } from "../components/SliderLayout";
+import { PartnerImg } from "../../components/PartnerImg";
+import { Contact } from "../../components/contact/Contact";
+import { SliderLayout } from "../../components/slider/SliderLayout";
 
 export const About = () => {
   return (
