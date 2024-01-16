@@ -181,7 +181,7 @@ export const Cloud = () => {
           <h3>The Best Solutions From Industry Experts</h3>
 
           <p>
-            LampNets Solutions strives to provide top-tier IT solutions to
+          CoolKong Solutions strives to provide top-tier IT solutions to
             businesses of all sizes and locations from industry experts
           </p>
         </div>
@@ -216,8 +216,8 @@ export const Cloud = () => {
                 </div>
                 <div className="cd-right">
                   <img src="./images/umoh.png" alt="person" />
-                  <p>Umoh Emmanuel</p>
-                  <p>Business Manager</p>
+                  <p>Dennis Masiror</p>
+                  <p>Business Director</p>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ export const Cloud = () => {
           <div className="sec-5-top">
             <h5>The Benefits</h5>
             <h3>
-              Why Choose LampNets Solutions for your Cloud Solutions & Mangement
+              Why Choose CoolKong Solutions for your Cloud Solutions & Mangement
             </h3>
 
             <p>

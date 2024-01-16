@@ -44,7 +44,7 @@ export const SliderLayout = () => {
 
                 <div className="testimony-img-wrapper">
                   <div className="testimony-img">
-                    <img src="./images/t-pic.png" alt="person" />
+                    <img src="./images/tpic.png" alt="Img" />
                   </div>
 
                   <div>
@@ -93,23 +93,23 @@ export const SliderLayout = () => {
 
 export const slides = [
   {
-    desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Bure",
-    company: "Doxapedia",
+    desc: "Working with CoolKong has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
+    name: "Sheldon",
+    company: "Cool",
   },
   {
-    desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Bukola .E. Oluwolero",
-    company: "Doxapedia",
+    desc: "Working with CoolKong has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
+    name: "Beverly",
+    company: "Cool",
   },
   {
-    desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Doro",
-    company: "Doxapedia",
+    desc: "Working with CoolKong has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
+    name: "Millers",
+    company: "Cool",
   },
   {
-    desc: "Working with Lampnets has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
-    name: "Bukola .E. Oluwoleoro",
-    company: "Doxapedia",
+    desc: "Working with CoolKong has been a pleasure. Their team of expert developers and designers exceeded our expectations. They were exceptional in promptly resolving an IT issue that had remained unresolved by previous consultants. We look forward to future projects with them",
+    name: "Millers",
+    company: "Cool",
   },
 ];

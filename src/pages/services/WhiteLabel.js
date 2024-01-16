@@ -47,7 +47,7 @@ export const WhiteLabel = () => {
             </p>
 
             <p>
-              At Lampnets Solutions, we offer white label app development
+              At CoolKong Solutions, we offer white label app development
               services to help businesses create custom mobile apps that align
               with their brand and requirements. Our experts provide ideation,
               design, development, testing, and maintenance support. We offer
@@ -183,7 +183,7 @@ export const WhiteLabel = () => {
           <h3>The Best Solutions From Industry Experts</h3>
 
           <p>
-            LampNets Solutions strives to provide top-tier IT solutions to
+          CoolKong Solutions strives to provide top-tier IT solutions to
             businesses of all sizes and locations from industry experts
           </p>
         </div>
@@ -216,8 +216,8 @@ export const WhiteLabel = () => {
                 </div>
                 <div className="cd-right">
                   <img src="./images/umoh.png" alt="person" />
-                  <p>Umoh Emmanuel</p>
-                  <p>Business Manager</p>
+                  <p>Dennis Masiror</p>
+                  <p>Business Director</p>
                 </div>
               </div>
             </div>
@@ -230,7 +230,7 @@ export const WhiteLabel = () => {
           <div className="sec-5-top">
             <h5>The Benefits</h5>
             <h3>
-              Why Choose LampNets Solutions for your White Label App
+              Why Choose CoolKong Solutions for your White Label App
               Customization
             </h3>
 

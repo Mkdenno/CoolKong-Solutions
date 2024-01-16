@@ -381,7 +381,7 @@ export const SchoolX = () => {
             <h5 style={{ color: primaryColor }}>Explore More Flexiblities</h5>
             <h3>Building Your Business Is Our Passion</h3>
             <p>
-              LampNets School 360 Solutions works for all use cases and strives
+            CoolKong School 360 Solutions works for all use cases and strives
               to provide top-tier IT solutions to businesses of all sizes and
               locations in the learning industry
             </p>
@@ -391,10 +391,10 @@ export const SchoolX = () => {
             <div className="sched-desc">
               <h5>Course Creation and E-learning App</h5>
               <p>
-                LampNet Course Creation and E-learning App is an enterprise
+              CoolKong Course Creation and E-learning App is an enterprise
                 learning management system engineered to support the most
                 demanding and complex learning ecosystems. Simplify e-Learning
-                with LampNet learning solution.
+                with CoolKong learning solution.
               </p>
               <Button
                 primary
@@ -412,10 +412,10 @@ export const SchoolX = () => {
             <div className="sched-desc">
               <h5>CBT Exam System</h5>
               <p>
-                LampNet Course Creation and E-learning App is an enterprise
+              CoolKong Course Creation and E-learning App is an enterprise
                 learning management system engineered to support the most
                 demanding and complex learning ecosystems. Simplify e-Learning
-                with LampNet learning solution.
+                with CoolKong learning solution.
               </p>
 
               <Button
@@ -434,10 +434,10 @@ export const SchoolX = () => {
             <div className="sched-desc">
               <h5>School Management System</h5>
               <p>
-                LampNet Course Creation and E-learning App is an enterprise
+              CoolKong Course Creation and E-learning App is an enterprise
                 learning management system engineered to support the most
                 demanding and complex learning ecosystems. Simplify e-Learning
-                with LampNet learning solution.
+                with CoolKong learning solution.
               </p>
 
               <Button

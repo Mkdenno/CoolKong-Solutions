@@ -139,7 +139,7 @@ export const Foodx = () => {
             <h5 style={{ color: primaryColor }}>About Foodx</h5>
             <h3>Leverage new possibilities with FoodX</h3>
             <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
+            CoolKong Solutions strives to provide top-tier IT solutions to
               businesses of all sizes and locations from industry experts
             </p>
           </div>
@@ -461,7 +461,7 @@ export const Foodx = () => {
             <h5 style={{ color: primaryColor }}>Explore More Flexiblities</h5>
             <h3>Building Your Business Is Our Passion</h3>
             <p>
-              LampNets School 360 Solutions works for all use cases and strives
+            CoolKong School 360 Solutions works for all use cases and strives
               to provide top-tier IT solutions to businesses of all sizes and
               locations in the learning industry
             </p>

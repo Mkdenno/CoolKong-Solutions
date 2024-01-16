@@ -227,7 +227,7 @@ export const whiteApproach = [
     id: 1,
     title: "Ideation",
     des_one:
-      "Our team at Lampnets Solutions works closely with your business to identify your goals and target audience, as well as your specific requirements for the app. We believe that a thorough understanding of your business needs and objectives is essential to developing an effective white label app that aligns with your brand and meets your customers' needs.",
+      "Our team at CoolKong Solutions works closely with your business to identify your goals and target audience, as well as your specific requirements for the app. We believe that a thorough understanding of your business needs and objectives is essential to developing an effective white label app that aligns with your brand and meets your customers' needs.",
     des_two:
       "Through this collaborative process, we aim to ensure that your white label app is not only functional and user-friendly but also meets the specific needs of your business and target audience.",
   },
@@ -237,7 +237,7 @@ export const whiteApproach = [
     des_one:
       "In the design phase, we prioritize user experience by creating an intuitive and engaging interface. Our team will work with your business to ensure that the design aligns with your brand identity and resonates with your target audience. We also take into account factors such as device compatibility and screen sizes to ensure that the app will function seamlessly across multiple platforms.",
     des_two:
-      "At Lampnets Solutions, we understand that the visual design of your app is crucial to its success. That's why we use the latest design tools and techniques to ensure your white label app is aesthetically pleasing and easy to use. We will work closely with your business to create a design that not only meets your expectations but exceeds them.",
+      "At CoolKong Solutions, we understand that the visual design of your app is crucial to its success. That's why we use the latest design tools and techniques to ensure your white label app is aesthetically pleasing and easy to use. We will work closely with your business to create a design that not only meets your expectations but exceeds them.",
   },
   {
     id: 3,

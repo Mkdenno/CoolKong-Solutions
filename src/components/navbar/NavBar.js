@@ -134,14 +134,9 @@ const NavBar = () => {
 
         <div className="container">
           <div className="nav-section">
-            <NavLink to="/" onClick={() => saveRouteState(ROUTES.home)}>
-              <img
-                src={navbarStyles.navLogo}
-                alt="logo"
-                width={100}
-                onClick={() => saveRouteState(ROUTES.home)}
-              />
-            </NavLink>
+            <div>
+            COOLKONG SOLUTION
+            </div>
 
             <div className="nav-right">
               <div>

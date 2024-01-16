@@ -47,7 +47,7 @@ export const Staff = () => {
             </p>
 
             <p>
-              At Lampnet Solutions, we offer staff outsourcing and team
+              At CoolKong Solutions, we offer staff outsourcing and team
               augmentation services to provide specialized expertise and
               additional resources for businesses without the need for permanent
               hires. We provide flexible staffing solutions tailored to your
@@ -186,7 +186,7 @@ export const Staff = () => {
           <h3>The Best Solutions From Industry Experts</h3>
 
           <p>
-            LampNets Solutions strives to provide top-tier IT solutions to
+          CoolKong Solutions strives to provide top-tier IT solutions to
             businesses of all sizes and locations from industry experts
           </p>
         </div>
@@ -221,8 +221,8 @@ export const Staff = () => {
                 </div>
                 <div className="cd-right">
                   <img src="./images/umoh.png" alt="person" />
-                  <p>Umoh Emmanuel</p>
-                  <p>Business Manager</p>
+                  <p>Dennis Masiror</p>
+                  <p>Business Director</p>
                 </div>
               </div>
             </div>

@@ -37,13 +37,13 @@ export const Home = () => {
           <div className="container">
             <div className="home-section-left">
               <h3>
-                No. 1 Pre-built Solution Development Company In West Africa
+                No. 1 Pre-built Solution Development Company In Kenya
               </h3>
 
               <p>
-                LampNet Solutions is the leading provider of comprehensive ICT
+              CoolKong Solutions is the leading provider of comprehensive ICT
                 services like SAAS, PAAS, IAAS services for all African
-                businesses in West Africa.
+                businesses in Kenya.
               </p>
 
               <div className="hero-btn">
@@ -70,7 +70,7 @@ export const Home = () => {
       <section className="services-home-section">
         <div className="service-home-header">
           <h5>Our services</h5>
-          <h3>LampNets Solutions Provides Flexible IT Services</h3>
+          <h3>CoolKong Solutions Provides Flexible IT Services</h3>
 
           <p>
             Our African Technology company strives to provide top-tier IT
@@ -163,7 +163,7 @@ export const Home = () => {
               </h3>
 
               <p style={{ paddingTop: "1rem" }}>
-                LampNet Solutions is a remote-based agile IT Consulting & Mobile
+              CoolKong Solutions is a remote-based agile IT Consulting & Mobile
                 Technology Development company in West Africa, who are service
                 providers of world-class solutions and mobile technologies for
                 high business growth and transformation with vast experience in
@@ -183,7 +183,7 @@ export const Home = () => {
           <h3>The Best Solutions From Industry Experts</h3>
 
           <p>
-            LampNets Solutions strives to provide top-tier IT solutions to
+          CoolKong Solutions strives to provide top-tier IT solutions to
             businesses of all sizes and locations from industry experts
           </p>
         </div>
@@ -256,7 +256,7 @@ export const Home = () => {
                 <div>
                   <h6>Customer Centric Approach</h6>
                   <p>
-                    At Lampnet Solutions, we employ a consultative approach to
+                    At CoolKong Solutions, we employ a consultative approach to
                     discover our clients' journeys and assist in reimagining
                     their businesses for unparalleled success.
                   </p>

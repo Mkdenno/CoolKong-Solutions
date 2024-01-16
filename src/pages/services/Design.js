@@ -46,7 +46,7 @@ export const Design = () => {
               </p>
 
               <p>
-                Lampnets Solutions offers UI/UX design services to businesses,
+              CoolKong Solutions offers UI/UX design services to businesses,
                 creating modern and user-friendly interfaces that meet their
                 specific needs. Our experts develop customized solutions
                 optimized for ease of use and functionality. We offer UI/UX
@@ -184,7 +184,7 @@ export const Design = () => {
             <h3>The Best Solutions From Industry Experts</h3>
 
             <p>
-              LampNets Solutions strives to provide top-tier IT solutions to
+            CoolKong Solutions strives to provide top-tier IT solutions to
               businesses of all sizes and locations from industry experts
             </p>
           </div>
@@ -220,8 +220,8 @@ export const Design = () => {
                   </div>
                   <div className="cd-right">
                     <img src="./images/umoh.png" alt="person" />
-                    <p>Umoh Emmanuel</p>
-                    <p>Business Manager</p>
+                    <p>Dennis Masiror</p>
+                    <p>Business Director</p>
                   </div>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export const Design = () => {
             <div className="sec-5-top">
               <h5>The Benefits</h5>
               <h3>
-                Why Choose LampNets Solutions for your Software Product
+                Why Choose CoolKong Solutions for your Software Product
                 Development
               </h3>
 

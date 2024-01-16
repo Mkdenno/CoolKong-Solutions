@@ -35,7 +35,7 @@ export const Contact = () => {
                   style={{ margin: "-1rem 0.5rem 0 0" }}
                   alt="ic"
                 />
-                <p>support@lampnets.com</p>
+                <p>support@coolkong.com</p>
               </div>
             </div>
             <div className="col-md-6 contact-about-right">

@@ -10,8 +10,7 @@ export const Footer = () => {
       <footer>
         <div className="top-footer container">
           <div className="footer-1">
-            <img src="./images/Logo.png" alt="logo" />
-
+          CoolKong Solutions
             <div>
               <p>
                 We offer a suite of secure & compliant solutions that meets and
@@ -71,7 +70,7 @@ export const Footer = () => {
                   style={{ margin: "-1rem 0.5rem 0 0" }}
                   alt="ic"
                 />
-                <p>128 Itire Rd, Lawanson Surulere Lagos, Nigeria</p>
+                <p>7513 Eldoret, Kenya</p>
               </div>
               <div className="footer-1-item">
                 <img
@@ -79,7 +78,7 @@ export const Footer = () => {
                   style={{ margin: "-1rem 0.5rem 0 0" }}
                   alt="ic"
                 />
-                <p>+234 816 663 7303</p>
+                <p>+254715886876</p>
               </div>
               <div className="footer-1-item">
                 <img
@@ -87,7 +86,7 @@ export const Footer = () => {
                   style={{ margin: "-1rem 0.5rem 0 0" }}
                   alt="ic"
                 />
-                <p>support@lampnets.com</p>
+                <p>support@coolkong.com</p>
               </div>
             </div>
           </div>
@@ -96,7 +95,7 @@ export const Footer = () => {
         <div className="bottom-footer">
           <div className="container bottom">
             <div className="footer-rights">
-              <p>&copy;Copyrights by LampNets Solutions</p>
+              <p>&copy;Copyrights by CoolKong Solutions</p>
             </div>
             <div className="footer-rights">
               <p>All rights reserved.</p>

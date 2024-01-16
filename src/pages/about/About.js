@@ -44,7 +44,7 @@ export const About = () => {
 
             <div className="col-md-6 weare-section-right">
               <p>
-                LampNet is a team of innovative and world-class professionals
+              CoolKong is a team of innovative and world-class professionals
                 relentlessly obsessed with the consistent delivery of
                 trail-blazing solutions that guarantee your optimum
                 productivity. We provide customized solutions that drive growth,
@@ -127,7 +127,7 @@ export const About = () => {
               </h3>
 
               <p style={{ padding: "1rem 0 0 0" }}>
-                At Lampnet Solutions, our vision is to become the leading
+                At CoolKong Solutions, our vision is to become the leading
                 digital transformation partner for African businesses. We are
                 committed to empowering organizations across the continent with
                 cutting-edge technology solutions that drive growth and success.
